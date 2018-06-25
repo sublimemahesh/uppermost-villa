@@ -35,15 +35,15 @@
                 include 'header.php';
                 ?>
                 <!-- /Header -->
-                
-                  <!-- Slider -->
+
+                <!-- Slider -->
                 <?php
                 include 'slider.php';
                 ?>
                 <!-- /Slider -->
 
 
-                
+
                 <div class="ps_header">
                     <div class="content_wrap">
                         <div class="sc_section scheme_dark">
@@ -221,9 +221,10 @@
                             </div>
                         </div>
                     </div>
-                    <div class="sc_section overflow_hidden bg_color_1">
+                    <div class="accommo-section" style="background-image: url(images/image-9-1.jpg);padding-bottom: 25px;">
+
                         <div class="content_wrap margin_top_large margin_bottom_medium">
-                            <h4 class="sc_title margin_top_null margin_bottom_medium">recent properties</h4>
+                            <h2 class="sec-title-one h2 accommo-text">Accommodations</h2>
                             <div class="sc_property_wrap">
                                 <div class="sc_property sc_property_style_property-1">
                                     <div class="sc_columns columns_wrap">
@@ -316,6 +317,37 @@
                             </div>
                         </div>
                     </div>
+
+                    <div class="sc_section mobile-box back_image_1">
+                        <div class="content_wrap">
+                            <div class="bgtext1">
+                                <p>MOBILE</p>
+                            </div>
+                            <div class="columns_wrap sc_columns">
+                                <div class="column-1_2 sc_column_item">
+                                    <h1 class="sc_title">Search Best Deals <b>on Go</b></h1>
+                                    <div class="sc_section margin_bottom_medium section_style_1">
+                                        <div class="sc_section_inner">
+                                            <p>The European languages are members of the same family. Their separate existence is a myth. For science, music, sport, etc, Europe uses the same vocabulary.</p>
+                                        </div>
+                                    </div>
+                                    <div class="sc_section">
+                                        <div class="sc_section_inner">
+                                            <figure class="sc_image alignleft margin_bottom_small">
+                                                <a href="#"><img src="images/img_b1.png" alt="" /></a>
+                                            </figure>
+                                            <figure class="sc_image alignleft margin_bottom_large">
+                                                <a href="#"><img src="images/img_b2.png" alt="" /></a>
+                                            </figure>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="column-1_2 sc_column_item">
+                                    <figure class="sc_image customImgHome1"><img src="images/img_mobile.png" alt="" /></figure>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                     <div class="sc_parallax" data-vc-parallax="1.5" data-vc-parallax-image="images/img_map.jpg">
                         <div class="content_wrap">
                             <div class="sc_section scheme_dark">
@@ -374,102 +406,16 @@
                             </div>
                         </div>
                     </div>
-                    <div class="sc_section mobile-box back_image_1">
-                        <div class="content_wrap">
-                            <div class="bgtext1">
-                                <p>MOBILE</p>
-                            </div>
-                            <div class="columns_wrap sc_columns">
-                                <div class="column-1_2 sc_column_item">
-                                    <h1 class="sc_title">Search Best Deals <b>on Go</b></h1>
-                                    <div class="sc_section margin_bottom_medium section_style_1">
-                                        <div class="sc_section_inner">
-                                            <p>The European languages are members of the same family. Their separate existence is a myth. For science, music, sport, etc, Europe uses the same vocabulary.</p>
-                                        </div>
-                                    </div>
-                                    <div class="sc_section">
-                                        <div class="sc_section_inner">
-                                            <figure class="sc_image alignleft margin_bottom_small">
-                                                <a href="#"><img src="images/img_b1.png" alt="" /></a>
-                                            </figure>
-                                            <figure class="sc_image alignleft margin_bottom_large">
-                                                <a href="#"><img src="images/img_b2.png" alt="" /></a>
-                                            </figure>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="column-1_2 sc_column_item">
-                                    <figure class="sc_image customImgHome1"><img src="images/img_mobile.png" alt="" /></figure>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="sc_section back_image_2">
-                        <div class="sc_testimonials sc_testimonials_style_testimonials-2 sc_slider_swiper sc_slider_pagination sc_slider_pagination_bottom sc_slider_nocontrols scheme_dark" data-interval="7529" data-slides-min-width="250">
-                            <div class="slides swiper-wrapper">
-                                <div class="swiper-slide">
-                                    <div class="sc_testimonial_item">
-                                        <div class="sc_testimonial_content">
-                                            <p>Thank your team for your hard work, advice, honesty and commitment to enable us to sell my mothers house.</p>
-                                        </div>
-                                        <div class="sc_testimonial_author">
-                                            <a href="#" class="sc_testimonial_author_name">Irine Gosh</a>
-                                            <br><span class="sc_testimonial_author_position">22 years</span>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="swiper-slide">
-                                    <div class="sc_testimonial_item">
-                                        <div class="sc_testimonial_content">
-                                            <p>Thank you so much for your good wishes and for your not insignificant part in our move. You are stars!</p>
-                                        </div>
-                                        <div class="sc_testimonial_author">
-                                            <span class="sc_testimonial_author_name">Emma Bennett</span>
-                                            <br><span class="sc_testimonial_author_position">40 years</span>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="swiper-slide">
-                                    <div  class="sc_testimonial_item">
-                                        <div class="sc_testimonial_content">
-                                            <p>You were superb from the start! We made the best decision. We wish the company well for the future.</p>
-                                        </div>
-                                        <div class="sc_testimonial_author">
-                                            <a href="#" class="sc_testimonial_author_name">Logan Hughes</a>
-                                            <br><span class="sc_testimonial_author_position">31 years</span>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="sc_slider_controls_wrap">
-                                <a class="sc_slider_prev" href="#"></a>
-                                <a class="sc_slider_next" href="#"></a>
-                            </div>
-                            <div class="sc_slider_pagination_wrap"></div>
-                        </div>
-                    </div>
+
                 </div>
-                <div class="contacts_emailer_wrap">
-                    <div class="content_wrap">
-                        <div class="sc_emailer">
-                            <div class="sc_emailer_title">Sign up for updates</div>
-                            <div class="sc_emailer_content">
-                                <form class="sc_emailer_form">
-                                    <input type="text" class="sc_emailer_input" name="email" value="" placeholder="Please, enter you email address.">
-                                    <a href="#" class="sc_emailer_button sc_button sc_button_box sc_button_style_style3" title="Submit">subscribe</a>
-                                </form>
-                            </div>
-                            <div class="cL"></div>
-                        </div>
-                    </div>
-                </div>
-                
+
+
                 <!-- Header -->
                 <?php
                 include 'footer.php';
                 ?>
                 <!-- /header -->
-               
+
             </div>
         </div>
         <a href="#" class="scroll_to_top icon-up"></a>

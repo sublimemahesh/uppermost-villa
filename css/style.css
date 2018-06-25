@@ -53,7 +53,7 @@ Primary use:	Retail
 
 /* 1. Reset tags
 -------------------------------------------------------------- */
- html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, font, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, input, textarea, button, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, address, section, video, audio {
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, font, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, input, textarea, button, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, address, section, video, audio {
     font-family: inherit;
     font-size: 100%;
     font-style: inherit;
@@ -75,16 +75,16 @@ body {
 html {
     font-size: 100%;
     /* Corrects text resizing oddly in IE6/7 when body font-size is set using em units http://clagnut.com/blog/348/#c790 */
-    
+
     overflow-y: scroll;
     /* Keeps page centred in all browsers regardless of content height */
-    
+
     -webkit-text-size-adjust: 100%;
     /* Prevents iOS text size adjust after orientation change, without disabling user zoom */
-    
+
     -ms-text-size-adjust: 100%;
     /* www.456bereastreet.com/archive/201012/controlling_text_size_in_safari_for_ios_without_disabling_user_zoom/ */
-    
+
     -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
 body {
@@ -411,10 +411,10 @@ textarea {
     font-size: 1em;
     /* Corrects font size not being inherited in all browsers */
     /*	line-height: 1.2857em;*/
-    
+
     margin: 0;
     /* Addresses margins set differently in IE6/7, F3/4, S5, Chrome */
-    
+
     vertical-align: baseline;
     /* Improves appearance and consistency in all browsers */
 }
@@ -467,7 +467,7 @@ input[type="number"]::-webkit-outer-spin-button {
 input[type="search"] {
     -webkit-appearance: none;
     /* Addresses appearance set to searchfield in S5, Chrome */
-    
+
     -webkit-appearance: textfield;
 }
 input[type="search"]::-webkit-search-cancel-button,
@@ -478,7 +478,7 @@ input[type="search"]::-webkit-search-decoration {
 button::-moz-focus-inner,
 input::-moz-focus-inner {
     /* Corrects inner padding and border displayed oddly in FF3/4 www.sitepen.com/blog/2008/05/14/the-devils-in-the-details-fixing-dojos-toolbar-buttons/ */
-    
+
     border: 0;
     padding: 0;
 }
@@ -524,10 +524,10 @@ textarea:focus {
 textarea {
     overflow: auto;
     /* Removes default vertical scrollbar in IE6/7/8/9 */
-    
+
     vertical-align: top;
     /* Improves readability and alignment in all browsers */
-    
+
     min-height: 5em;
 }
 .content textarea {
@@ -739,7 +739,7 @@ select {
 .columns_wrap {
     margin-left: 0px;
     /* -15px; */
-    
+
     margin-right: -30px;
     /* -15px; */
 }
@@ -751,10 +751,10 @@ select {
     min-height: 1px;
     padding-left: 0px;
     /* 15px; */
-    
+
     padding-right: 30px;
     /* 15px; */
-    
+
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
     box-sizing: border-box;
@@ -2500,7 +2500,7 @@ x:-moz-any-link {
     position: absolute;
     right: 0.9em;
     /*top:1.5em;*/
-    
+
     height: 1em;
     width: 1em;
     margin-right: 0;
@@ -2914,8 +2914,8 @@ li.opened > a > .open_child_menu:before {
 .widget_area aside .post_item + .post_item,
 .search_results.widget_area .post_item + .post_item {
     /*margin-top:10px;
-	padding-top:1em;*/
-    
+        padding-top:1em;*/
+
     margin-top: 0.571em;
     padding-top: 0.571em;
 }
@@ -3159,7 +3159,7 @@ li.opened > a > .open_child_menu:before {
 .tparrows.default {
     /* 	display: none; */
     /* Remove this row if you want display slides navigation arrows */
-    
+
     background: none;
     background-color: transparent;
     line-height: 40px;
@@ -3212,7 +3212,7 @@ li.opened > a > .open_child_menu:before {
     margin: 0;
     font-size: 2.143em;
     /* Remove to default */
-    
+
     font-weight: bold;
     line-height: 1.2em;
     padding: 1.567em 0 1.733em;
@@ -3519,7 +3519,7 @@ blockquote > .sc_quote_title {
 .post_item_related .post_featured {
     width: 100%;
     /*height:56.25%;*/
-    
+
     overflow: hidden;
     margin: 0;
     float: none ;
@@ -3900,7 +3900,7 @@ blockquote > .sc_quote_title {
 .post_item_colored .post_info_wrap .post_buttons {
     position: absolute;
     left: 8%;
-    
+
     right: 8%;
     bottom: 1.875em;
     height: 3em;
@@ -4527,7 +4527,7 @@ blockquote > .sc_quote_title {
     padding: 1.15em 1.15em 0;
     width: 53.8462%;
     /* 210px; */
-    
+
     height: 6.1428em;
     color: #222222;
     font-size: 0.875em;
@@ -4545,7 +4545,7 @@ blockquote > .sc_quote_title {
     float: right;
     width: 30.7692%;
     /* 120px; */
-    
+
     height: 7.375em;
     position: relative;
     overflow: hidden;
@@ -4584,7 +4584,7 @@ blockquote > .sc_quote_title {
 .post_rating .reviews_stars_wrap {
     position: relative;
     height: 1em;
-    
+
     display: inline-block;
     vertical-align: top;
     -webkit-box-sizing: border-box;
@@ -4746,11 +4746,11 @@ blockquote > .sc_quote_title {
     display: none;
 }
 .comments_list_wrap ul ul {
-    
+
     margin-left: 95px;
 }
 .comments_list_wrap ul ul ul ul ul {
-    
+
     margin-left: 0;
 }
 .comments_list_wrap .comment_author_avatar {
@@ -4778,8 +4778,8 @@ li.comment .comment_author_avatar + .comment_content {
 }
 .comments_list_wrap .comment_info > span + span:before {
     /*	content: "|";
-	display:inline-block;
-	margin: 0 0.8em;*/
+        display:inline-block;
+        margin: 0 0.8em;*/
 }
 .comments_list_wrap .comment_info .comment_reply {
     float: right;
@@ -5735,7 +5735,7 @@ footer.twitter_wrap .sc_section_overlay {
     opacity: 0;
     filter: alpha(opacity=0);
     /*	margin-top: 100px;*/
-    
+
     -webkit-transition: all ease .5s;
     -moz-transition: all ease .5s;
     -ms-transition: all ease .5s;
@@ -6415,7 +6415,7 @@ columns_wrap,
     float: right;
     padding: 0 30px 0 0;
     /*max-width: 501px;*/
-    
+
     max-width: 551px;
 }
 .custom_box_right {
@@ -6555,8 +6555,8 @@ h1 b {
 }
 .cfs_date_time .picker {
     top: 0 !important;
-	padding: 0 !important;
-	width: 280px !important;
+    padding: 0 !important;
+    width: 280px !important;
 }
 .cfs_date_time .picker--opened {
     padding: 1em 0 !important;
@@ -6620,7 +6620,7 @@ h1 b {
     padding-top: 35px;
 }
 /********************************
-	-	FLAT LIGHT BUTTONS -
+        -	FLAT LIGHT BUTTONS -
 *********************************/
 
 .estate .navigationbuttons,
@@ -7117,4 +7117,29 @@ h6.margin_bottom_large {
     background-image: url(../images/img_hello75e9.png?id=592) ;
     background-position: 0 0 ;
     background-repeat: no-repeat ;
+}
+.accommo-section {
+    position: relative;
+    background-attachment: fixed;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 10px 0px 100px 0px;
+}
+.sec-title-one h2 {
+    position: absolute;
+    color: #ffffff;
+    font-size: 55px;
+    text-align: center;
+    font-weight: 700;
+    text-transform: uppercase;
+    width: 100%;
+    height: auto;
+    top: -40px;
+}
+.accommo-text{
+    text-align: center;
+    color: #ffff;
+    font-size: 50px;
+    margin-top: -55px;
 }
