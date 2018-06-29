@@ -14,9 +14,10 @@
         <link rel='stylesheet' href='js/vendor/booked/styles.css' type='text/css' media='all' />
         <link rel='stylesheet' href='js/vendor/revslider/settings.css' type='text/css' media='all' />
         <link rel='stylesheet' href='css/fontello/css/fontello.css' type='text/css' media='all' />
-        <link rel='stylesheet' href='css/style.css' type='text/css' media='all' />
+
         <link rel='stylesheet' href='css/custom/_animation.css' type='text/css' media='all' />
         <link rel='stylesheet' href='css/custom/shortcodes.css' type='text/css' media='all' />
+        <link rel='stylesheet' href='css/style.css' type='text/css' media='all' />
         <link rel='stylesheet' href='css/custom/skin.css' type='text/css' media='all' />
         <link rel='stylesheet' href='css/custom/custom-style.css' type='text/css' media='all' />
         <link rel='stylesheet' href='css/custom/colors.css' type='text/css' media='all' />
@@ -24,6 +25,10 @@
         <link rel='stylesheet' href='css/custom/skin.responsive.css' type='text/css' media='all' />
         <link rel='stylesheet' href='js/vendor/swiper/swiper.css' type='text/css' media='all' />
         <link rel='stylesheet' href='css/custom/_messages.css' type='text/css' media='all' />
+        <link href="css/custom/_portfolio.css" rel="stylesheet" type="text/css"/>
+        <link href="plugins/owl-carousel/css/owl.carousel.min.css" rel="stylesheet" type="text/css"/>
+        <link href="plugins/owl-carousel/css/owl.theme.default.min.css" rel="stylesheet" type="text/css"/>
+        <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
 
     </head>
     <body class="body_style_wide responsive_menu scheme_original top_panel_show top_panel_over sidebar_hide">
@@ -51,87 +56,27 @@
                                 <div class="sc_property_search">
                                     <form method="get" action="#">
                                         <div class="sc_ps_status">
+                                            <h5>ROOM TYPE</h5>
                                             <select name="ps_status">
-                                                <option value="-1">Property Status</option>
-                                                <option value="sale">For sale</option>
-                                                <option value="rent">For rent</option>
+                                                <option value="">Apartment with sea View</option>
+                                                <option value="">Deluxe Double room with Balcony and Mountain View</option>
+                                                <option value="">Deluxe Double room with ocean view</option>
+                                                <option value="">Deluxe Double room with pool view</option>
+                                                <option value="">Deluxe Double room with sea view</option>
+                                                <option value="">Deluxe Single room with ocean view</option>
                                             </select>
                                         </div>
                                         <div class="sc_ps_location">
-                                            <select name="ps_location">
-                                                <option value="-1">Property Location</option>
-                                                <option value="Upper East Side">Upper East Side</option>
-                                                <option value="Upper West Side">Upper West Side</option>
-                                                <option value="Midtown East">Midtown East</option>
-                                                <option value="Midtown West">Midtown West</option>
-                                                <option value="Downtown">Downtown</option>
-                                                <option value="Upper Manhattan">Upper Manhattan</option>
-                                                <option value="Brooklyn">Brooklyn</option>
-                                                <option value="Queens">Queens</option>
-                                                <option value="Bronx">Bronx</option>
-                                                <option value="Staten Island">Staten Island</option>
-                                            </select>
+                                            <h5>ARRIVAL DATE</h5>
+                                            <input type="text" id="datepicker" placeholder="Select date">                                  
                                         </div>
                                         <div class="sc_ps_type">
-                                            <select name="ps_type">
-                                                <option value="-1">Property Type</option>
-                                                <option value="Cooperative">Cooperative</option>
-                                                <option value="Condominium">Condominium</option>
-                                                <option value="Cond-op">Cond-op</option>
-                                                <option value="House">House</option>
-                                                <option value="Investment">Investment</option>
-                                                <option value="Commercial">Commercial</option>
-                                                <option value="Professional / Medical">Professional / Medical</option>
-                                                <option value="New Development">New Development</option>
-                                                <option value="Townhouse">Townhouse</option>
-                                                <option value="Vacant Lot / Land">Vacant Lot / Land</option>
-                                            </select>
+                                            <h5>DEPARTURE DATE</h5>
+                                            <input type="text" id="datepicker" placeholder="Select date">    
                                         </div>
-                                        <div class="sc_ps_style">
-                                            <select name="ps_style">
-                                                <option value="-1">Property Style</option>
-                                                <option value="Pre-war">Pre-war</option>
-                                                <option value="Post-war">Post-war</option>
-                                                <option value="Loft">Loft</option>
-                                                <option value="Townhouse Apartment">Townhouse Apartment</option>
-                                                <option value="Penthouse">Penthouse</option>
-                                            </select>
-                                        </div>
-                                        <div class="sc_ps_bedrooms">
-                                            <select name="ps_bedrooms">
-                                                <option value="-1">Bedrooms</option>
-                                                <option value="1">Bedrooms at least 1</option>
-                                                <option value="2">Bedrooms at least 2</option>
-                                                <option value="3">Bedrooms at least 3</option>
-                                                <option value="4">Bedrooms at least 4</option>
-                                                <option value="5">Bedrooms 5 or more</option>
-                                            </select>
-                                        </div>
-                                        <div class="sc_ps_bathrooms">
-                                            <select name="ps_bathrooms">
-                                                <option value="-1">Bathrooms</option>
-                                                <option value="1">Bathrooms at least 1</option>
-                                                <option value="2">Bathrooms at least 2</option>
-                                                <option value="3">Bathrooms at least 3</option>
-                                                <option value="4">Bathrooms at least 4</option>
-                                                <option value="5">Bathrooms 5 or more</option>
-                                            </select>
-                                        </div>
-                                        <div class="sc_ps_area">
-                                            <div class="ps_area ps_range_slider">
-                                                <div class="ps_area_info">
-                                                    <div class="ps_area_info_title">Area</div>
-                                                    <div class="ps_area_info_value"></div>
-                                                    <div class="cL"></div>
-                                                </div>
-                                                <div id="slider-range-area"></div>
-                                                <input type="hidden" class="ps_area_min" name="ps_area_min" value="0">
-                                                <input type="hidden" class="ps_area_max" name="ps_area_max" value="10000">
-                                                <input type="hidden" class="ps_area_big" name="ps_area_big" value="10000">
-                                            </div>
-                                        </div>
+
                                         <div class="sc_ps_price">
-                                            <div class="ps_price ps_range_slider">
+                                            <div class="ps_price ps_range_slider sc-price-style">
                                                 <div class="ps_price_info">
                                                     <div class="ps_price_info_title">Price</div>
                                                     <div class="ps_price_info_value"></div>
@@ -143,7 +88,7 @@
                                                 <input type="hidden" class="ps_price_big" name="ps_price_big" value="10000000">
                                             </div>
                                         </div>
-                                        <div class="sc_ps_submit">
+                                        <div class="sc_ps_submit sc-price-style1">
                                             <input type="submit" class="sc_button sc_button_box sc_button_style_style2" value="Search">
                                         </div>
                                     </form>
@@ -157,9 +102,12 @@
                         <div class="content_wrap">
                             <div class="columns_wrap margin_top_xlarge margin_bottom_xmedium">
                                 <div class="column-1_2">
+                                    <div class="bgtext1 bg bgtext1-welcome">
+                                        <p>WELCOME</p>
+                                    </div>
                                     <h2 class="sc_title sc_title_iconed ind2 margin_top_null margin_bottom_xmedium">
                                         <span class="sc_title_box">
-                                            <a href="#">Welcome</a>
+                                            <a href="#" class="page-topic-black">Welcome</a>
                                             <span class="sc_title_subtitle">Dartmouth, MA 02748</span>
                                         </span>
                                     </h2>
@@ -221,95 +169,102 @@
                             </div>
                         </div>
                     </div>
-                    <div class="accommo-section" style="background-image: url(images/image-9-1.jpg);padding-bottom: 25px;">
-
+                    <div class="accommo-section" style="background-image: url(images/image-9-1.jpg);padding-bottom: 15px;">                  
                         <div class="content_wrap margin_top_large margin_bottom_medium">
-                            <h2 class="sec-title-one h2 accommo-text">Accommodations</h2>
+                            <div class="bgtext1 bgtext1-accommo">
+                                <p>ACCOMMODATIONS</p>
+                            </div>
+                            <h2 class="sec-title-one h2 accommo-text page-topic-white">Accommodations</h2>
                             <div class="sc_property_wrap">
                                 <div class="sc_property sc_property_style_property-1">
                                     <div class="sc_columns columns_wrap">
                                         <div class="column-1_3 column_padding_bottom">
-                                            <div class="sc_property_item">
-                                                <div class="sc_property_image">
-                                                    <a href="single-post.html">
-                                                        <div class="property_price_box"><span class="property_price_box_sign">$</span><span class="property_price_box_price">1,249,000</span></div>
-                                                        <img alt="" src="images/image-7-1-770x460.jpg">
-                                                    </a>
-                                                </div>
-                                                <div class="sc_property_info">
-                                                    <div class="sc_property_description">House for sale</div>
-                                                    <div>
-                                                        <div class="sc_property_icon">
-                                                            <span class="icon-location"></span>
+                                            <div class="isotope_item isotope_item_portfolio isotope_column_3">
+                                                <article class="post_item post_item_portfolio">
+                                                    <div class="post_content isotope_item_content ih-item colored square effect_more left_to_right">
+                                                        <div class="post_featured img">
+                                                            <a href="#">
+                                                                <img src="images/img/img1.jpg" alt=""/>
+                                                            </a>
                                                         </div>
-                                                        <div class="sc_property_title">
-                                                            <div class="sc_property_title_address_1">
-                                                                <a href="single-post.html">87 Mishaum Point Rd</a> 
+                                                        <div class="post_info_wrap info">
+                                                            <div class="info-back">
+                                                                <h4 class="post_title"><a href="#">Single Room</a></h4>
+                                                                <div class="post_descr">
+                                                                    <p class="post_info">
+                                                                        <span class="post_info_item">On <a href="#">February 17, 2016</a></span>
+                                                                        <span class="post_info_item post_info_counters">	
+                                                                            <a class="post_counters_item" href="#"><span>0</span> Comments</a>
+                                                                        </span>
+                                                                    </p>
+                                                                    <p><a href="#">This handy tool helps you create dummy text for all your layout needs.
+                                                                            We are gradually adding new functionality and we welcome your suggestions and feedback.
+                                                                            Please feel free to send us any additional dummy texts.</a></p>
+                                                                    <p><a href="#" class="btnClose">Read More</a></p>
+                                                                    <p class="post_buttons"></p>
+                                                                </div>
                                                             </div>
-                                                            <div class="sc_property_title_address_2">Dartmouth, MA 02748</div>
                                                         </div>
-                                                        <div class="cL"></div>
                                                     </div>
-                                                </div>
-                                                <div class="sc_property_info_list">
-                                                    <span class="icon-building113">1,286 sqft</span><span class="icon-bed">2</span><span class="icon-bath">3</span><span class="icon-warehouse">2</span>
-                                                </div>
+                                                </article>
                                             </div>
                                         </div>
                                         <div class="column-1_3 column_padding_bottom">
-                                            <div class="sc_property_item">
-                                                <div class="sc_property_image">
-                                                    <a href="single-post.html">
-                                                        <div class="property_price_box"><span class="property_price_box_sign">$</span><span class="property_price_box_price">2,189,000</span></div>
-                                                        <img alt="" src="images/image-12-1-770x460.jpg">
-                                                    </a>
-                                                </div>
-                                                <div class="sc_property_info">
-                                                    <div class="sc_property_description">Townhouse for sale</div>
-                                                    <div>
-                                                        <div class="sc_property_icon">
-                                                            <span class="icon-location"></span>
+                                            <div class="isotope_item isotope_item_portfolio isotope_column_3">
+                                                <article class="post_item post_item_portfolio">
+                                                    <div class="post_content isotope_item_content ih-item colored square effect_more left_to_right">
+                                                        <div class="post_featured img">
+                                                            <a href="#"><img alt="" src="images/img/img2.jpg"></a>
                                                         </div>
-                                                        <div class="sc_property_title">
-                                                            <div class="sc_property_title_address_1">
-                                                                <a href="single-post.html">9615 Shore Rd APT BA</a> 
+                                                        <div class="post_info_wrap info">
+                                                            <div class="info-back">
+                                                                <h4 class="post_title"><a href="#">Double Room</a></h4>
+                                                                <div class="post_descr">
+                                                                    <p class="post_info">
+                                                                        <span class="post_info_item">On <a href="#">February 17, 2016</a></span>
+                                                                        <span class="post_info_item post_info_counters">	
+                                                                            <a class="post_counters_item" href="##respond"><span>0</span> Comments</a>
+                                                                        </span>
+                                                                    </p>
+                                                                    <p><a href="#">This handy tool helps you create dummy text for all your layout needs.
+                                                                            We are gradually adding new functionality and we welcome your suggestions and feedback.
+                                                                            Please feel free to send us any additional dummy texts.</a></p>
+                                                                    <p><a href="#" class="btnClose">Read More</a></p>
+                                                                    <p class="post_buttons"></p>
+                                                                </div>
                                                             </div>
-                                                            <div class="sc_property_title_address_2">Brooklyn, NY 11209</div>
                                                         </div>
-                                                        <div class="cL"></div>
                                                     </div>
-                                                </div>
-                                                <div class="sc_property_info_list">
-                                                    <span class="icon-building113">1,286 sqft</span><span class="icon-bed">2</span><span class="icon-bath">3</span><span class="icon-warehouse">3</span>
-                                                </div>
+                                                </article>
                                             </div>
                                         </div>
                                         <div class="column-1_3 column_padding_bottom">
-                                            <div class="sc_property_item">
-                                                <div class="sc_property_image">
-                                                    <a href="single-post.html">
-                                                        <div class="property_price_box"><span class="property_price_box_sign">$</span><span class="property_price_box_price">3,449</span><span class="property_price_box_per">/year</span></div>
-                                                        <img alt="" src="images/image-11-1-770x460.jpg">
-                                                    </a>
-                                                </div>
-                                                <div class="sc_property_info">
-                                                    <div class="sc_property_description">House for rent</div>
-                                                    <div>
-                                                        <div class="sc_property_icon">
-                                                            <span class="icon-location"></span>
+                                            <div class="isotope_item isotope_item_portfolio isotope_column_3">
+                                                <article class="post_item post_item_portfolio">
+                                                    <div class="post_content isotope_item_content ih-item colored square effect_more left_to_right">
+                                                        <div class="post_featured img">
+                                                            <a href="#"><img alt="" src="images/img/img2.jpg"></a>
                                                         </div>
-                                                        <div class="sc_property_title">
-                                                            <div class="sc_property_title_address_1">
-                                                                <a href="single-post.html">80646 Via Pessaro</a> 
+                                                        <div class="post_info_wrap info">
+                                                            <div class="info-back">
+                                                                <h4 class="post_title"><a href="#">Family Room</a></h4>
+                                                                <div class="post_descr">
+                                                                    <p class="post_info">
+                                                                        <span class="post_info_item">On <a href="#">February 17, 2016</a></span>
+                                                                        <span class="post_info_item post_info_counters">	
+                                                                            <a class="post_counters_item" href="#"><span>0</span> Comments</a>
+                                                                        </span>
+                                                                    </p>
+                                                                    <p><a href="#">This handy tool helps you create dummy text for all your layout needs.
+                                                                            We are gradually adding new functionality and we welcome your suggestions and feedback.
+                                                                            Please feel free to send us any additional dummy texts.</a></p>
+                                                                    <p><a href="#" class="btnClose">Read More</a></p>
+                                                                    <p class="post_buttons"></p>
+                                                                </div>
                                                             </div>
-                                                            <div class="sc_property_title_address_2">La Quinta, CA 32453</div>
                                                         </div>
-                                                        <div class="cL"></div>
                                                     </div>
-                                                </div>
-                                                <div class="sc_property_info_list">
-                                                    <span class="icon-building113">886 sqft</span><span class="icon-bed">2</span><span class="icon-bath">3</span><span class="icon-warehouse">2</span>
-                                                </div>
+                                                </article>
                                             </div>
                                         </div>
                                     </div>
@@ -318,38 +273,121 @@
                         </div>
                     </div>
 
-                    <div class="sc_section mobile-box back_image_1">
-                        <div class="content_wrap">
-                            <div class="bgtext1">
-                                <p>MOBILE</p>
+                    <div class="sc_section overflow_hidden bg_color_1 excursion-bottom">
+                        <div class="content_wrap margin_top_large margin_bottom_medium excursion-top">
+                            <div class="bgtext1 bgtext1-excursions">
+                                <p>EXCURSIONS</p>
                             </div>
-                            <div class="columns_wrap sc_columns">
-                                <div class="column-1_2 sc_column_item">
-                                    <h1 class="sc_title">Search Best Deals <b>on Go</b></h1>
-                                    <div class="sc_section margin_bottom_medium section_style_1">
-                                        <div class="sc_section_inner">
-                                            <p>The European languages are members of the same family. Their separate existence is a myth. For science, music, sport, etc, Europe uses the same vocabulary.</p>
+                            <h2 class="sc_title margin_top_null margin_bottom_medium page-topic-black">Excursions</h2>
+                            <div class="sc_property_wrap">
+                                <div class="sc_property sc_property_style_property-1">
+                                    <div class="owl-carousel sc_columns columns_wrap">
+                                        <div class="column_padding_bottom">
+                                            <div class="sc_property_item">
+                                                <div class="sc_property_image">
+                                                    <a href="#">
+
+                                                        <img alt="" src="images/image-7-1-770x460.jpg">
+                                                    </a>
+                                                </div>
+                                                <div class="sc_property_info">
+                                                    <div class="sc_property_description"></div>
+                                                    <div>
+                                                        <div class="sc_property_title">
+                                                            <div class="sc_property_title_address_1">
+                                                                <a href="#">87 Mishaum Point Rd</a> 
+                                                            </div>
+                                                            <div class="text-justify">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa...</div>
+                                                        </div>
+                                                        <div class="cL"></div>
+                                                    </div>
+                                                </div>
+                                                <div class="sc_property_info_list">
+<!--                                                    <span class="icon-bed">2</span>
+                                                    <span class="icon-bath">3</span>
+                                                    <span class="icon-warehouse">2</span>-->
+                                                    <span>
+                                                        <button class="read-more">Read More</button>
+                                                    </span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="column_padding_bottom">
+                                            <div class="sc_property_item">
+                                                <div class="sc_property_image">
+                                                    <a href="#">
+                                                        <img alt="" src="images/image-12-1-770x460.jpg">
+                                                    </a>
+                                                </div>
+                                                <div class="sc_property_info">
+                                                    <div class="sc_property_description"></div>
+                                                    <div>
+                                                        <div class="sc_property_title">
+                                                            <div class="sc_property_title_address_1">
+                                                                <a href="#">9615 Shore Rd APT BA</a> 
+                                                            </div>
+                                                            <div class="text-justify">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa...</div>
+                                                        </div>
+                                                        <div class="cL"></div>
+                                                    </div>
+                                                </div>
+                                                <div class="sc_property_info_list">
+<!--                                                    <span class="icon-bed">2</span>
+                                                    <span class="icon-bath">3</span>
+                                                    <span class="icon-warehouse">3</span>-->
+                                                    <span><button  class="read-more">Read More</button></span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="column_padding_bottom">
+                                            <div class="sc_property_item">
+                                                <div class="sc_property_image">
+                                                    <a href="#">
+                                                        <img alt="" src="images/image-11-1-770x460.jpg">
+                                                    </a>
+                                                </div>
+                                                <div class="sc_property_info">
+                                                    <div class="sc_property_description"></div>
+                                                    <div>
+                                                        <div class="sc_property_title">
+                                                            <div class="sc_property_title_address_1">
+                                                                <a href="#">80646 Via Pessaro</a> 
+                                                            </div>
+                                                            <div class="sc_property_title_address_2">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa...</div>
+                                                        </div>
+                                                        <div class="cL"></div>
+                                                    </div>
+                                                </div>
+                                                <div class="sc_property_info_list">
+<!--                                                    <span class="icon-bed">2</span>
+                                                    <span class="icon-bath">3</span>
+                                                    <span class="icon-warehouse">2</span>-->
+                                                    <span><button  class="read-more">Read More</button></span>
+                                                </div>
+                                                <!--                                                <div class="owl-controls">
+                                                                                                    <div class="owl-next">
+                                                                                                        <div class="owl-prev" style="">
+                                                                                                            <span class="fa fa-angle-left"></span>
+                                                                                                        </div>
+                                                                                                        <div class="owl-next" style="">
+                                                                                                            <span class="fa fa-angle-right"></span>
+                                                                                                        </div>
+                                                                                                    </div>
+                                                                                                </div>-->
+                                            </div>
                                         </div>
                                     </div>
-                                    <div class="sc_section">
-                                        <div class="sc_section_inner">
-                                            <figure class="sc_image alignleft margin_bottom_small">
-                                                <a href="#"><img src="images/img_b1.png" alt="" /></a>
-                                            </figure>
-                                            <figure class="sc_image alignleft margin_bottom_large">
-                                                <a href="#"><img src="images/img_b2.png" alt="" /></a>
-                                            </figure>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="column-1_2 sc_column_item">
-                                    <figure class="sc_image customImgHome1"><img src="images/img_mobile.png" alt="" /></figure>
                                 </div>
                             </div>
                         </div>
                     </div>
                     <div class="sc_parallax" data-vc-parallax="1.5" data-vc-parallax-image="images/img_map.jpg">
+
                         <div class="content_wrap">
+                            <div class="bgtext1 bgtext1-facilities">
+                                <p>FACILITIES</p>
+                            </div>
+                            <h2 class="sec-title-one h2 facilities-text page-topic-white">Facilities</h2>
                             <div class="sc_section scheme_dark">
                                 <div class="sc_section_inner">
                                     <div class="sc_services_wrap">
@@ -440,7 +478,41 @@
         <script type='text/javascript' src='js/vendor/parallax.js'></script>
         <script type='text/javascript' src='js/vendor/skrollr.min.js'></script>
         <script type='text/javascript' src='js/vendor/swiper/swiper.min.js'></script>
+        <script src="js/vendor/isotope.min.js" type="text/javascript"></script>
+        <script src="plugins/owl-carousel/js/owl.carousel.min.js" type="text/javascript"></script>
 
+        <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+        <script>
+            $(function () {
+                $("#datepicker").datepicker();
+            });
+        </script>
+        <script>
+            $(document).ready(function () {
+                $(".owl-carousel").owlCarousel({
+                    loop: true,
+                    margin: 7,
+                    nav: true,
+                    autoplay: true,
+                    autoplayTimeout: 2000,
+                    autoplayHoverPause: true,
+                    dots: true,
+                    responsive: {
+                        0: {
+                            items: 1
+                        },
+                        600: {
+                            items: 2
+                        },
+                        1000: {
+                            items: 3
+                        }
+                    }
+                });
+            });
+
+
+        </script>
 
 
     </body>

@@ -3263,7 +3263,7 @@ li.opened > a > .open_child_menu:before {
 
 .post_featured {
     overflow: hidden;
-    margin-bottom: 1.786em;
+    margin-bottom: 0px;
     position: relative;
 }
 .article_style_boxed .post_featured {
@@ -6381,10 +6381,10 @@ columns_wrap,
 }
 .bgtext1 {
     position: absolute;
-    top: -66px;
+    top: -44px;
     left: -100px;
     font-family: Open Sans;
-    font-size: 185px;
+    font-size: 118px;
     font-weight: 800;
     line-height: normal;
     text-transform: uppercase;
@@ -6889,7 +6889,7 @@ h1 b {
     margin-top: 36px !important;
 }
 .margin_top_large {
-    margin-top: 56px ;
+    margin-top: 90px ;
 }
 .margin_top_xlarge {
     margin-top: 70px ;
@@ -7142,4 +7142,75 @@ h6.margin_bottom_large {
     color: #ffff;
     font-size: 50px;
     margin-top: -55px;
+}
+.facilities-text{
+    text-align: center;
+    color: #ffff;
+    font-size: 50px;
+    margin-top: 50px;
+}
+.auto-container {
+    position: static;
+    max-width: 1200px;
+    padding: 0px 15px;
+    margin: 0 auto;
+}
+.rooms-section .four-item-carousel {
+    position: static;
+}
+.room-box {
+    position: relative;
+    margin-bottom: 50px;
+}
+.room-box .inner-box {
+    position: relative;
+    background-color: #ffffff;
+}
+.room-box .inner-box .image-box {
+    position: relative;
+}
+.excursion-top{
+    margin-top: 50px;
+}
+.excursion-bottom{
+    padding-bottom: 30px;
+}
+.icon-padding{
+    padding-left: 20px;
+}
+.read-more {
+    padding-left: 15px;
+    padding-right: 15px;
+    margin: -7px 0px 4px 207px;
+}
+.sc_services_style_services-1 {
+    padding: 50px 0 8.000em;
+}
+.bgtext1-welcome{
+    padding-left: 80px;
+}
+.bgtext1-accommo{
+    padding-left: 80px;
+}
+.bgtext1-excursions{
+    padding-left: 285px;
+}
+.bgtext1-facilities{
+    padding-left: 375px;
+}
+.sc-price-style{
+    width: 775px;
+}
+.sc-price-style1{
+    padding-left: 400px;
+}
+.page-topic-black{
+    font-size: 55px;
+    color: #000;
+    text-align: center;
+}
+.page-topic-white{
+    font-size: 55px;
+    color: #fff;
+    text-align: center;
 }
