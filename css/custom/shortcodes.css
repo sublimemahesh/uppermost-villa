@@ -5350,7 +5350,7 @@ body.sidebar_hide .sc_recent_news_style_news-announce .post_size_small { height:
 }
 .sc_property.sc_property_style_property-1 .sc_property_info_list,
 .content > .sc_property_item .sc_property_info_list {
-	padding: 0.857em 2em 0.929em;
+	padding: 0.857em 2em 0.071em;
 }
 .sc_property.sc_property_style_property-1 .sc_property_image > a {
 	display: block;
