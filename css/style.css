@@ -7239,7 +7239,85 @@ h6.margin_bottom_large {
     font-size: 60px;
     color: #ef595a;
 }
-
 .owl-next {
     float: right;
+}
+.accommo-column{
+    padding-right: 0px;
+}
+.entry-title{
+    font-size: 26px;
+    text-align: center;
+    padding-top: 25px;
+}
+.entry-content{
+    text-align: center;
+    padding-top: 15px;
+    padding-bottom: 24px;
+    padding-left: 28px;
+    padding-right: 28px;
+}
+h3:hover {
+    color: #e07a0c;
+}
+.entry-footer {
+    background-color: #f6f6f6;
+    display: inline-block;
+    width: 100%;
+    margin-top: 33px;
+    padding: 15px 0;
+    text-align: left;
+    font-size: 22px;
+}
+.column-1_2.column_padding_bottom.accommo-column {
+    padding-bottom: 0px;
+    padding-right: 0px;
+}
+.column-1_2.column_padding_bottom.accommo-column1 {
+    padding-bottom: 0px;
+    padding-right: 0px;
+}
+.accommo-icons {
+    padding: 0px;
+    width: 100%;
+}
+.btn-readmore{
+    margin-left: 235px;
+}
+.bed-style{
+    padding-right: 33px;
+    margin-left: 33px;
+}
+.bath-style{
+    padding-right: 35px;
+}
+
+.owl-nav{
+    margin-top: -235px;
+}
+#accommodation-carousel .columns_wrap {
+    margin-left: 0px;
+    margin-right: 0px;
+}
+.property_price_box1 {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    vertical-align: top;
+    z-index: 1;
+    padding: 0.636em 1.500em;
+    font-family: Montserrat;
+    font-size: 1.571em;
+    background: #ffffff;
+    font-size: 20px;
+    color: #1d3a53;
+    border: 2px solid red;
+    margin-right: 2px;
+}
+.price-font{
+    font-weight: bold;
+    font-size: 22px;
+}
+.price-day{
+    font-size: 15px
 }

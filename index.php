@@ -30,7 +30,6 @@
         <link href="plugins/owl-carousel/css/owl.theme.default.min.css" rel="stylesheet" type="text/css"/>
         <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
 
-
     </head>
     <body class="body_style_wide responsive_menu scheme_original top_panel_show top_panel_over sidebar_hide">
         <div class="body_wrap">
@@ -178,94 +177,86 @@
                             <h2 class="sec-title-one h2 accommo-text page-topic-white">Accommodations</h2>
                             <div class="sc_property_wrap">
                                 <div class="sc_property sc_property_style_property-1">
-                                    <div class="sc_columns columns_wrap">
-                                        <div class="column-1_3 column_padding_bottom">
-                                            <div class="isotope_item isotope_item_portfolio isotope_column_3">
-                                                <article class="post_item post_item_portfolio">
-                                                    <div class="post_content isotope_item_content ih-item colored square effect_more left_to_right">
-                                                        <div class="post_featured img">
-                                                            <a href="#">
-                                                                <img src="images/img/img1.jpg" alt=""/>
-                                                            </a>
-                                                        </div>
-                                                        <div class="post_info_wrap info">
-                                                            <div class="info-back">
-                                                                <h4 class="post_title"><a href="#">Single Room</a></h4>
-                                                                <div class="post_descr">
-                                                                    <p class="post_info">
-                                                                        <span class="post_info_item">On <a href="#">February 17, 2016</a></span>
-                                                                        <span class="post_info_item post_info_counters">	
-                                                                            <a class="post_counters_item" href="#"><span>0</span> Comments</a>
-                                                                        </span>
-                                                                    </p>
-                                                                    <p><a href="#">This handy tool helps you create dummy text for all your layout needs.
-                                                                            We are gradually adding new functionality and we welcome your suggestions and feedback.
-                                                                            Please feel free to send us any additional dummy texts.</a></p>
-                                                                    <p><a href="#" class="btnClose">Read More</a></p>
-                                                                    <p class="post_buttons"></p>
-                                                                </div>
+                                    <div class="owl-carousel" id="accommodation-carousel">
+                                        <div class="my-corousel">
+                                            <div class="sc_columns columns_wrap bg_color_1">
+                                                <div class="column-1_2 column_padding_bottom accommo-column">
+                                                    <img src="images/img-600x410.jpg" alt=""/>
+                                                </div>
+                                                <div class="column-1_2 column_padding_bottom accommo-column1">
+                                                    <h3 class="entry-title">Deluxe Double room with ocean view</h3>
+                                                    <p class="entry-content">Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage.</p>
+                                                    <span>
+                                                        <button class="read-more btn-readmore">Read More</button>
+                                                    </span>
+                                                    <div class="accommo-icons">
+                                                        <div class="entry-footer">
+                                                            <span class="icon-bed bed-style"></span>
+                                                            <span class="icon-bath bath-style"></span>
+                                                            <span class="icon-warehouse"></span>
+
+                                                            <div class="property_price_box1">
+                                                                <span class="property_price_box_sign price-font">$</span>
+                                                                <span class="property_price_box_price price-font">1,249,000</span>
+                                                                <span class="price-day"> / Day</span>
                                                             </div>
                                                         </div>
                                                     </div>
-                                                </article>
+                                                </div>
                                             </div>
                                         </div>
-                                        <div class="column-1_3 column_padding_bottom">
-                                            <div class="isotope_item isotope_item_portfolio isotope_column_3">
-                                                <article class="post_item post_item_portfolio">
-                                                    <div class="post_content isotope_item_content ih-item colored square effect_more left_to_right">
-                                                        <div class="post_featured img">
-                                                            <a href="#"><img alt="" src="images/img/img2.jpg"></a>
-                                                        </div>
-                                                        <div class="post_info_wrap info">
-                                                            <div class="info-back">
-                                                                <h4 class="post_title"><a href="#">Double Room</a></h4>
-                                                                <div class="post_descr">
-                                                                    <p class="post_info">
-                                                                        <span class="post_info_item">On <a href="#">February 17, 2016</a></span>
-                                                                        <span class="post_info_item post_info_counters">	
-                                                                            <a class="post_counters_item" href="##respond"><span>0</span> Comments</a>
-                                                                        </span>
-                                                                    </p>
-                                                                    <p><a href="#">This handy tool helps you create dummy text for all your layout needs.
-                                                                            We are gradually adding new functionality and we welcome your suggestions and feedback.
-                                                                            Please feel free to send us any additional dummy texts.</a></p>
-                                                                    <p><a href="#" class="btnClose">Read More</a></p>
-                                                                    <p class="post_buttons"></p>
-                                                                </div>
+                                        <div class="my-corousel">
+                                            <div class="sc_columns columns_wrap bg_color_1">
+                                                <div class="column-1_2 column_padding_bottom accommo-column">
+                                                    <img src="images/img-600x410.jpg" alt=""/>
+                                                </div>
+                                                <div class="column-1_2 column_padding_bottom accommo-column1">
+                                                    <h3 class="entry-title">Deluxe Double room with pool view </h3>
+                                                    <p class="entry-content">Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage.</p>
+                                                    <span>
+                                                        <button class="read-more btn-readmore">Read More</button>
+                                                    </span>
+                                                    <div class="accommo-icons">
+                                                        <div class="entry-footer">
+                                                            <span class="icon-bed bed-style"></span>
+                                                            <span class="icon-bath bath-style"></span>
+                                                            <span class="icon-warehouse"></span>
+
+                                                            <div class="property_price_box1">
+                                                                <span class="property_price_box_sign price-font">$</span>
+                                                                <span class="property_price_box_price price-font">1,249,000</span>
+                                                                <span class="price-day"> / Day</span>
                                                             </div>
                                                         </div>
                                                     </div>
-                                                </article>
+                                                </div>
                                             </div>
                                         </div>
-                                        <div class="column-1_3 column_padding_bottom">
-                                            <div class="isotope_item isotope_item_portfolio isotope_column_3">
-                                                <article class="post_item post_item_portfolio">
-                                                    <div class="post_content isotope_item_content ih-item colored square effect_more left_to_right">
-                                                        <div class="post_featured img">
-                                                            <a href="#"><img alt="" src="images/img/img2.jpg"></a>
-                                                        </div>
-                                                        <div class="post_info_wrap info">
-                                                            <div class="info-back">
-                                                                <h4 class="post_title"><a href="#">Family Room</a></h4>
-                                                                <div class="post_descr">
-                                                                    <p class="post_info">
-                                                                        <span class="post_info_item">On <a href="#">February 17, 2016</a></span>
-                                                                        <span class="post_info_item post_info_counters">	
-                                                                            <a class="post_counters_item" href="#"><span>0</span> Comments</a>
-                                                                        </span>
-                                                                    </p>
-                                                                    <p><a href="#">This handy tool helps you create dummy text for all your layout needs.
-                                                                            We are gradually adding new functionality and we welcome your suggestions and feedback.
-                                                                            Please feel free to send us any additional dummy texts.</a></p>
-                                                                    <p><a href="#" class="btnClose">Read More</a></p>
-                                                                    <p class="post_buttons"></p>
-                                                                </div>
+                                        <div class="my-corousel">
+                                            <div class="sc_columns columns_wrap bg_color_1">
+                                                <div class="column-1_2 column_padding_bottom accommo-column">
+                                                    <img src="images/img-600x410.jpg" alt=""/>
+                                                </div>
+                                                <div class="column-1_2 column_padding_bottom accommo-column1">
+                                                    <h3 class="entry-title">Deluxe Single room with ocean view </h3>
+                                                    <p class="entry-content">Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage.</p>
+                                                    <span>
+                                                        <button class="read-more btn-readmore">Read More</button>
+                                                    </span>
+                                                    <div class="accommo-icons">
+                                                        <div class="entry-footer">
+                                                            <span class="icon-bed bed-style"></span>
+                                                            <span class="icon-bath bath-style"></span>
+                                                            <span class="icon-warehouse"></span>
+
+                                                            <div class="property_price_box1">
+                                                                <span class="property_price_box_sign price-font">$</span>
+                                                                <span class="property_price_box_price price-font">1,249,000</span>
+                                                                <span class="price-day"> / Day</span>
                                                             </div>
                                                         </div>
                                                     </div>
-                                                </article>
+                                                </div>
                                             </div>
                                         </div>
                                     </div>
@@ -572,6 +563,38 @@
                         }
                     }
                 });
+            });
+
+
+        </script>
+        <script>
+            $(document).ready(function () {
+                $("#accommodation-carousel").owlCarousel({
+                    loop: true,
+                    margin: 7,
+                    nav: true,
+                    autoplay: true,
+                    autoplayTimeout: 3000,
+                    autoplayHoverPause: true,
+                    responsive: {
+                        0: {
+                            items: 1
+                        },
+                        600: {
+                            items: 1
+                        },
+                        1000: {
+                            items: 1
+                        }
+                    }
+                });
+                
+                $('#accommodation-carousel').on('mouseover', function (e) {
+                    owl.trigger('play.owl.autoplay');
+                })
+                $('#accommodation-carousel').on('mouseleave', function (e) {
+                    owl.trigger('stop.owl.autoplay');
+                })
             });
 
 
