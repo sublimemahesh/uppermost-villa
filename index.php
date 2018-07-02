@@ -30,6 +30,7 @@
         <link href="plugins/owl-carousel/css/owl.theme.default.min.css" rel="stylesheet" type="text/css"/>
         <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
 
+
     </head>
     <body class="body_style_wide responsive_menu scheme_original top_panel_show top_panel_over sidebar_hide">
         <div class="body_wrap">
@@ -107,7 +108,7 @@
                                     </div>
                                     <h2 class="sc_title sc_title_iconed ind2 margin_top_null margin_bottom_xmedium">
                                         <span class="sc_title_box">
-                                            <a href="#" class="page-topic-black">Welcome</a>
+                                            <h2 class="page-topic-black text-welcome">Welcome</h2>
                                             <span class="sc_title_subtitle">Dartmouth, MA 02748</span>
                                         </span>
                                     </h2>
@@ -281,7 +282,7 @@
                             <h2 class="sc_title margin_top_null margin_bottom_medium page-topic-black">Excursions</h2>
                             <div class="sc_property_wrap">
                                 <div class="sc_property sc_property_style_property-1">
-                                    <div class="owl-carousel sc_columns columns_wrap">
+                                    <div class="owl-carousel sc_columns columns_wrap" id="excurision-carousel">
                                         <div class="column_padding_bottom">
                                             <div class="sc_property_item">
                                                 <div class="sc_property_image">
@@ -442,6 +443,45 @@
                                     </div>
                                 </div>
                             </div>
+
+                        </div>
+                        <div class="sc_section overflow_hidden bg_color_1 excursion-bottom">
+                            <div class="content_wrap margin_top_large margin_bottom_medium excursion-top">
+                                <div class="bgtext1 bgtext1-feedback">
+                                    <p>FEEDBACK</p>
+                                </div>
+                                <h2 class="sc_title margin_top_null margin_bottom_medium page-topic-black">Feedback</h2>
+                                <div class="sc_property_wrap">
+                                    <div class="sc_property sc_property_style_property-1">
+                                        <div class="owl-carousel" id="feedback-carousel">
+                                            <div class="my-corousel">
+                                                <img alt="" src="images/img-img.jpg" class="img-circle center-block">
+                                                <h4 class="feed-name"><center>Emma Watson</center></h4>
+                                                <p>
+                                                    Fugiat enim eram quae cillum dolore dolor amet nulla culpa multos export minim fugiat minim velit minim dolor enim duis veniam ipsum anim magna sunt elit fore quem dolore labore illum veniam.
+                                                    Fugiat enim eram quae cillum dolore dolor amet nulla culpa multos export minim fugiat minim velit minim dolor enim duis veniam ipsum anim magna sunt elit fore quem dolore labore illum veniam.....
+                                                </p>
+                                            </div>
+                                            <div class="">
+                                                <img alt="" src="images/img-img.jpg" class="img-circle center-block">
+                                                <h4 class="feed-name"><center>Emma Watson1</center></h4>
+                                                <p>
+                                                    Fugiat enim eram quae cillum dolore dolor amet nulla culpa multos export minim fugiat minim velit minim dolor enim duis veniam ipsum anim magna sunt elit fore quem dolore labore illum veniam.
+                                                    Fugiat enim eram quae cillum dolore dolor amet nulla culpa multos export minim fugiat minim velit minim dolor enim duis veniam ipsum anim magna sunt elit fore quem dolore labore illum veniam.....
+                                                </p>
+                                            </div>
+                                            <div class="">
+                                                <img alt="" src="images/img-img.jpg" class="img-circle center-block">
+                                                <h4 class="feed-name"><center>Emma Watson2</center></h4>
+                                                <p>
+                                                    Fugiat enim eram quae cillum dolore dolor amet nulla culpa multos export minim fugiat minim velit minim dolor enim duis veniam ipsum anim magna sunt elit fore quem dolore labore illum veniam.
+                                                    Fugiat enim eram quae cillum dolore dolor amet nulla culpa multos export minim fugiat minim velit minim dolor enim duis veniam ipsum anim magna sunt elit fore quem dolore labore illum veniam.....
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
 
@@ -489,7 +529,7 @@
         </script>
         <script>
             $(document).ready(function () {
-                $(".owl-carousel").owlCarousel({
+                $("#excurision-carousel").owlCarousel({
                     loop: true,
                     margin: 7,
                     nav: true,
@@ -506,6 +546,29 @@
                         },
                         1000: {
                             items: 3
+                        }
+                    }
+                });
+            });
+        </script>
+        <script>
+            $(document).ready(function () {
+                $("#feedback-carousel").owlCarousel({
+                    loop: true,
+                    margin: 7,
+                    nav: true,
+                    autoplay: true,
+                    autoplayTimeout: 2000,
+                    autoplayHoverPause: true,
+                    responsive: {
+                        0: {
+                            items: 1
+                        },
+                        600: {
+                            items: 1
+                        },
+                        1000: {
+                            items: 1
                         }
                     }
                 });

@@ -7198,6 +7198,9 @@ h6.margin_bottom_large {
 .bgtext1-facilities{
     padding-left: 375px;
 }
+.bgtext1-feedback{
+    padding-left: 380px;
+}
 .sc-price-style{
     width: 775px;
 }
@@ -7213,4 +7216,30 @@ h6.margin_bottom_large {
     font-size: 55px;
     color: #fff;
     text-align: center;
+}
+.feed-name{
+    color: red;
+    font-size: 25px;
+}
+.img-circle{
+    border-radius: 200px;
+}
+.my-corousel {
+    width: 100%;
+}
+#feedback-carousel .owl-item img{
+    width: 100px;
+}
+.text-welcome{
+    text-align: left;
+}
+.owl-nav {
+    position: inherit;
+    margin: -150px -30px 174px -30px;
+    font-size: 60px;
+    color: #ef595a;
+}
+
+.owl-next {
+    float: right;
 }
