@@ -4,27 +4,24 @@ include_once(dirname(__FILE__) . '/../../class/include.php');
 
 if (isset($_POST['create'])) {
 
-    $ACTIVITY_PHOTO = new ActivitiesPhoto(NULL);
+    $EXCURSION = new Excursions(NULL);
     $VALID = new Validator();
 
-    $ACTIVITY_PHOTO->activities = $_POST['id'];
-    $ACTIVITY_PHOTO->caption = filter_input(INPUT_POST, 'caption');
+    $EXCURSION->title = mysql_real_escape_string($_POST['title']);
+    $EXCURSION->short_description = mysql_real_escape_string($_POST['short_description']);
+    $EXCURSION->description = mysql_real_escape_string($_POST['description']);
 
-    $dir_dest = '../../upload/activity/gallery/';
-    $dir_dest_thumb = '../../upload/activity/gallery/thumb/';
+    $dir_dest = '../../upload/excursion/';
 
     $handle = new Upload($_FILES['image']);
 
     $imgName = null;
-    $img = Helper::randamId();
 
     if ($handle->uploaded) {
         $handle->image_resize = true;
-        $handle->file_new_name_body = TRUE;
-        $handle->file_overwrite = TRUE;
         $handle->file_new_name_ext = 'jpg';
         $handle->image_ratio_crop = 'C';
-        $handle->file_new_name_body = $img;
+        $handle->file_new_name_body = Helper::randamId();
         $handle->image_x = 900;
         $handle->image_y = 500;
 
@@ -34,34 +31,19 @@ if (isset($_POST['create'])) {
             $info = getimagesize($handle->file_dst_pathname);
             $imgName = $handle->file_dst_name;
         }
-
-
-        $handle->image_resize = true;
-        $handle->file_new_name_body = TRUE;
-        $handle->file_overwrite = TRUE;
-        $handle->file_new_name_ext = 'jpg';
-        $handle->image_ratio_crop = 'C';
-        $handle->file_new_name_body = $img;
-        $handle->image_x = 300;
-        $handle->image_y = 175;
-
-        $handle->Process($dir_dest_thumb);
-
-        if ($handle->processed) {
-            $info = getimagesize($handle->file_dst_pathname);
-            $imgName = $handle->file_dst_name;
-        }
     }
 
-    $ACTIVITY_PHOTO->image_name = $imgName;
+    $EXCURSION->image_name = $imgName;
 
-    $VALID->check($ACTIVITY_PHOTO, [
-        'caption' => ['required' => TRUE],
+    $VALID->check($EXCURSION, [
+        'title' => ['required' => TRUE],
+        'short_description' => ['required' => TRUE],
+        'description' => ['required' => TRUE],
         'image_name' => ['required' => TRUE]
     ]);
 
     if ($VALID->passed()) {
-        $ACTIVITY_PHOTO->create();
+        $EXCURSION->create();
 
         if (!isset($_SESSION)) {
             session_start();
@@ -69,7 +51,7 @@ if (isset($_POST['create'])) {
         $VALID->addError("Your data was saved successfully", 'success');
         $_SESSION['ERRORS'] = $VALID->errors();
 
-        header('Location: ' . $_SERVER['HTTP_REFERER']);
+        header("location: ../view-excursion-photos.php?id=" . $EXCURSION->id);
     } else {
 
         if (!isset($_SESSION)) {
@@ -83,13 +65,11 @@ if (isset($_POST['create'])) {
 }
 
 if (isset($_POST['update'])) {
-
-    $dir_dest = '../../upload/activity/gallery/';
-    $dir_dest_thumb = '../../upload/activity/gallery/thumb/';
+    $dir_dest = '../../upload/excursion/';
 
     $handle = new Upload($_FILES['image']);
 
-    $img = $_POST ["oldImageName"];
+    $imgName = null;
 
     if ($handle->uploaded) {
         $handle->image_resize = true;
@@ -97,7 +77,7 @@ if (isset($_POST['update'])) {
         $handle->file_overwrite = TRUE;
         $handle->file_new_name_ext = FALSE;
         $handle->image_ratio_crop = 'C';
-        $handle->file_new_name_body = $img;
+        $handle->file_new_name_body = $_POST ["oldImageName"];
         $handle->image_x = 900;
         $handle->image_y = 500;
 
@@ -105,40 +85,27 @@ if (isset($_POST['update'])) {
 
         if ($handle->processed) {
             $info = getimagesize($handle->file_dst_pathname);
-            $img = $handle->file_dst_name;
-        }
-
-
-        $handle->image_resize = true;
-        $handle->file_new_name_body = TRUE;
-        $handle->file_overwrite = TRUE;
-        $handle->file_new_name_ext = FALSE;
-        $handle->image_ratio_crop = 'C';
-        $handle->file_new_name_body = $img;
-        $handle->image_x = 300;
-        $handle->image_y = 175;
-
-        $handle->Process($dir_dest_thumb);
-
-        if ($handle->processed) {
-            $info = getimagesize($handle->file_dst_pathname);
-            $img = $handle->file_dst_name;
+            $imgName = $handle->file_dst_name;
         }
     }
 
-    $ACTIVITY_PHOTO = new ActivitiesPhoto($_POST['id']);
+    $EXCURSION = new Excursions($_POST['id']);
 
-    $ACTIVITY_PHOTO->image_name = $_POST['oldImageName'];
-    $ACTIVITY_PHOTO->caption = filter_input(INPUT_POST, 'caption');
+    $EXCURSION->image_name = $_POST['oldImageName'];
+    $EXCURSION->title = mysql_real_escape_string($_POST['title']);
+    $EXCURSION->short_description = mysql_real_escape_string($_POST['short_description']);
+    $EXCURSION->description = mysql_real_escape_string($_POST['description']);
 
     $VALID = new Validator();
-    $VALID->check($ACTIVITY_PHOTO, [
-        'caption' => ['required' => TRUE],
+    $VALID->check($EXCURSION, [
+        'title' => ['required' => TRUE],
+        'short_description' => ['required' => TRUE],
+        'description' => ['required' => TRUE],
         'image_name' => ['required' => TRUE]
     ]);
 
     if ($VALID->passed()) {
-        $ACTIVITY_PHOTO->update();
+        $EXCURSION->update();
 
         if (!isset($_SESSION)) {
             session_start();
@@ -164,7 +131,7 @@ if (isset($_POST['save-data'])) {
     foreach ($_POST['sort'] as $key => $img) {
         $key = $key + 1;
 
-        $ACTIVITY_PHOTO = ActivitiesPhoto::arrange($key, $img);
+        $EXCURSION = Excursions::arrange($key, $img);
 
         header('Location: ' . $_SERVER['HTTP_REFERER']);
     }

@@ -7,11 +7,11 @@
  */
 
 /**
- * Description of activities
+ * Description of excursions
  *
  * @author Suharshana DsW
  */
-class Activities {
+class Excursions {
 
     public $id;
     public $title;
@@ -23,7 +23,7 @@ class Activities {
     public function __construct($id) {
         if ($id) {
 
-            $query = "SELECT `id`,`title`,`image_name`,`short_description`,`description`,`queue` FROM `activities` WHERE `id`=" . $id;
+            $query = "SELECT `id`,`title`,`image_name`,`short_description`,`description`,`queue` FROM `excursions` WHERE `id`=" . $id;
 
             $db = new Database();
 
@@ -42,7 +42,7 @@ class Activities {
 
     public function create() {
 
-        $query = "INSERT INTO `activities` (`title`,`image_name`,`short_description`,`description`,`queue`) VALUES  ('"
+        $query = "INSERT INTO `excursions` (`title`,`image_name`,`short_description`,`description`,`queue`) VALUES  ('"
                 . $this->title . "','"
                 . $this->image_name . "', '"
                 . $this->short_description . "', '"
@@ -64,7 +64,7 @@ class Activities {
 
     public function all() {
 
-        $query = "SELECT * FROM `activities` ORDER BY queue ASC";
+        $query = "SELECT * FROM `excursions` ORDER BY queue ASC";
         $db = new Database();
         $result = $db->readQuery($query);
         $array_res = array();
@@ -78,7 +78,7 @@ class Activities {
 
     public function update() {
 
-        $query = "UPDATE  `activities` SET "
+        $query = "UPDATE  `excursions` SET "
                 . "`title` ='" . $this->title . "', "
                 . "`image_name` ='" . $this->image_name . "', "
                 . "`short_description` ='" . $this->short_description . "', "
@@ -101,9 +101,9 @@ class Activities {
 
         $this->deletePhotos();
 
-        unlink(Helper::getSitePath() . "upload/activity/" . $this->image_name);
+        unlink(Helper::getSitePath() . "upload/excursion/" . $this->image_name);
 
-        $query = 'DELETE FROM `activities` WHERE id="' . $this->id . '"';
+        $query = 'DELETE FROM `excursions` WHERE id="' . $this->id . '"';
 
         $db = new Database();
 
@@ -112,23 +112,23 @@ class Activities {
 
     public function deletePhotos() {
 
-        $ACTIVITY_PHOTO = new ActivitiesPhoto(NULL);
+        $EXCURSION_PHOTO = new ExcursionsPhoto(NULL);
 
-        $allPhotos = $ACTIVITY_PHOTO->getActivitiesPhotosById($this->id);
+        $allPhotos = $EXCURSION_PHOTO->getExcursionsPhotosById($this->id);
 
         foreach ($allPhotos as $photo) {
 
-            $IMG = $ACTIVITY_PHOTO->image_name = $photo["image_name"];
-            unlink(Helper::getSitePath() . "upload/activity/gallery/" . $IMG);
-            unlink(Helper::getSitePath() . "upload/activity/gallery/thumb/" . $IMG);
+            $IMG = $EXCURSION_PHOTO->image_name = $photo["image_name"];
+            unlink(Helper::getSitePath() . "upload/excursion/gallery/" . $IMG);
+            unlink(Helper::getSitePath() . "upload/excursion/gallery/thumb/" . $IMG);
 
-            $ACTIVITY_PHOTO->id = $photo["id"];
-            $ACTIVITY_PHOTO->delete();
+            $EXCURSION_PHOTO->id = $photo["id"];
+            $EXCURSION_PHOTO->delete();
         }
     }
 
     public function arrange($key, $img) {
-        $query = "UPDATE `activities` SET `queue` = '" . $key . "'  WHERE id = '" . $img . "'";
+        $query = "UPDATE `excursions` SET `queue` = '" . $key . "'  WHERE id = '" . $img . "'";
         $db = new Database();
         $result = $db->readQuery($query);
         return $result;
