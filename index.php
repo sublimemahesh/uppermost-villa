@@ -106,7 +106,7 @@
                                         <p>WELCOME</p>
                                     </div>
                                     <h2 class="sc_title sc_title_iconed ind2 margin_top_null margin_bottom_xmedium">
-                                        <span class="sc_title_box">
+                                        <span class="sc_title_box welcome-title">
                                             <h2 class="page-topic-black text-welcome">Welcome</h2>
                                             <span class="sc_title_subtitle">Dartmouth, MA 02748</span>
                                         </span>
