@@ -99,7 +99,7 @@
                 </div>
                 <div class="page_content_wrap page_paddings_no">
                     <div class="sc_section">
-                        <div class="content_wrap">
+                        <div class="content_wrap title_margin_top1 margin_bottom_medium">
                             <div class="columns_wrap margin_top_xlarge margin_bottom_xmedium">
                                 <div class="column-1_2">
                                     <div class="bgtext1 bg bgtext1-welcome">
@@ -169,13 +169,13 @@
                             </div>
                         </div>
                     </div>
-                    <div class="accommo-section" style="background-image: url(images/image-9-1.jpg);padding-bottom: 15px;">                  
-                        <div class="content_wrap margin_top_large margin_bottom_medium">
+                    <div class="accommo-section" style="background-image: url(images/image-9-1.jpg);padding-bottom: 36px;">                  
+                        <div class="content_wrap title_margin_top2 margin_bottom_medium">
                             <div class="bgtext1 bgtext1-accommo">
                                 <p>ACCOMMODATIONS</p>
                             </div>
                             <h2 class="sec-title-one h2 accommo-text page-topic-white">Accommodations</h2>
-                            <div class="sc_property_wrap">
+                            <div class="sc_property_wrap property-wrap-top">
                                 <div class="sc_property sc_property_style_property-1">
                                     <div class="owl-carousel" id="accommodation-carousel">
                                         <div class="my-corousel">
@@ -266,7 +266,7 @@
                     </div>
 
                     <div class="sc_section overflow_hidden bg_color_1 excursion-bottom">
-                        <div class="content_wrap margin_top_large margin_bottom_medium excursion-top">
+                        <div class="content_wrap title_margin_top1 margin_bottom_medium excursion-top">
                             <div class="bgtext1 bgtext1-excursions">
                                 <p>EXCURSIONS</p>
                             </div>
@@ -375,14 +375,14 @@
                     </div>
                     <div class="sc_parallax" data-vc-parallax="1.5" data-vc-parallax-image="images/img_map.jpg">
 
-                        <div class="content_wrap">
+                        <div class="content_wrap title_margin_top margin_bottom_medium">
                             <div class="bgtext1 bgtext1-facilities">
                                 <p>FACILITIES</p>
                             </div>
-                            <h2 class="sec-title-one h2 facilities-text page-topic-white">Facilities</h2>
+                            <h2 class="sec-title-one h2 accommo-text page-topic-white">Facilities</h2>
                             <div class="sc_section scheme_dark">
                                 <div class="sc_section_inner">
-                                    <div class="sc_services_wrap">
+                                    <div class="sc_services_wrap home-facilities-section">
                                         <div class="sc_services sc_services_style_services-1">
                                             <div class="sc_columns columns_wrap">
                                                 <div class="column-1_4 column_padding_bottom">
@@ -436,39 +436,39 @@
                             </div>
 
                         </div>
-                        <div class="sc_section overflow_hidden bg_color_1 excursion-bottom">
-                            <div class="content_wrap margin_top_large margin_bottom_medium excursion-top">
-                                <div class="bgtext1 bgtext1-feedback">
-                                    <p>FEEDBACK</p>
-                                </div>
-                                <h2 class="sc_title margin_top_null margin_bottom_medium page-topic-black">Feedback</h2>
-                                <div class="sc_property_wrap">
-                                    <div class="sc_property sc_property_style_property-1">
-                                        <div class="owl-carousel" id="feedback-carousel">
-                                            <div class="my-corousel">
-                                                <img alt="" src="images/img-img.jpg" class="img-circle center-block">
-                                                <h4 class="feed-name"><center>Emma Watson</center></h4>
-                                                <p>
-                                                    Fugiat enim eram quae cillum dolore dolor amet nulla culpa multos export minim fugiat minim velit minim dolor enim duis veniam ipsum anim magna sunt elit fore quem dolore labore illum veniam.
-                                                    Fugiat enim eram quae cillum dolore dolor amet nulla culpa multos export minim fugiat minim velit minim dolor enim duis veniam ipsum anim magna sunt elit fore quem dolore labore illum veniam.....
-                                                </p>
-                                            </div>
-                                            <div class="">
-                                                <img alt="" src="images/img-img.jpg" class="img-circle center-block">
-                                                <h4 class="feed-name"><center>Emma Watson1</center></h4>
-                                                <p>
-                                                    Fugiat enim eram quae cillum dolore dolor amet nulla culpa multos export minim fugiat minim velit minim dolor enim duis veniam ipsum anim magna sunt elit fore quem dolore labore illum veniam.
-                                                    Fugiat enim eram quae cillum dolore dolor amet nulla culpa multos export minim fugiat minim velit minim dolor enim duis veniam ipsum anim magna sunt elit fore quem dolore labore illum veniam.....
-                                                </p>
-                                            </div>
-                                            <div class="">
-                                                <img alt="" src="images/img-img.jpg" class="img-circle center-block">
-                                                <h4 class="feed-name"><center>Emma Watson2</center></h4>
-                                                <p>
-                                                    Fugiat enim eram quae cillum dolore dolor amet nulla culpa multos export minim fugiat minim velit minim dolor enim duis veniam ipsum anim magna sunt elit fore quem dolore labore illum veniam.
-                                                    Fugiat enim eram quae cillum dolore dolor amet nulla culpa multos export minim fugiat minim velit minim dolor enim duis veniam ipsum anim magna sunt elit fore quem dolore labore illum veniam.....
-                                                </p>
-                                            </div>
+                    </div>
+                    <div class="sc_section overflow_hidden bg_color_1 excursion-bottom">
+                        <div class="content_wrap title_margin_top1 margin_bottom_medium excursion-top">
+                            <div class="bgtext1 bgtext1-feedback">
+                                <p>FEEDBACK</p>
+                            </div>
+                            <h2 class="sc_title margin_top_null margin_bottom_medium page-topic-black">Feedback</h2>
+                            <div class="sc_property_wrap">
+                                <div class="sc_property sc_property_style_property-1">
+                                    <div class="owl-carousel" id="feedback-carousel">
+                                        <div class="my-corousel">
+                                            <img alt="" src="images/img-img.jpg" class="img-circle center-block">
+                                            <h4 class="feed-name"><center>Emma Watson</center></h4>
+                                            <p>
+                                                Fugiat enim eram quae cillum dolore dolor amet nulla culpa multos export minim fugiat minim velit minim dolor enim duis veniam ipsum anim magna sunt elit fore quem dolore labore illum veniam.
+                                                Fugiat enim eram quae cillum dolore dolor amet nulla culpa multos export minim fugiat minim velit minim dolor enim duis veniam ipsum anim magna sunt elit fore quem dolore labore illum veniam.....
+                                            </p>
+                                        </div>
+                                        <div class="">
+                                            <img alt="" src="images/img-img.jpg" class="img-circle center-block">
+                                            <h4 class="feed-name"><center>Emma Watson1</center></h4>
+                                            <p>
+                                                Fugiat enim eram quae cillum dolore dolor amet nulla culpa multos export minim fugiat minim velit minim dolor enim duis veniam ipsum anim magna sunt elit fore quem dolore labore illum veniam.
+                                                Fugiat enim eram quae cillum dolore dolor amet nulla culpa multos export minim fugiat minim velit minim dolor enim duis veniam ipsum anim magna sunt elit fore quem dolore labore illum veniam.....
+                                            </p>
+                                        </div>
+                                        <div class="">
+                                            <img alt="" src="images/img-img.jpg" class="img-circle center-block">
+                                            <h4 class="feed-name"><center>Emma Watson2</center></h4>
+                                            <p>
+                                                Fugiat enim eram quae cillum dolore dolor amet nulla culpa multos export minim fugiat minim velit minim dolor enim duis veniam ipsum anim magna sunt elit fore quem dolore labore illum veniam.
+                                                Fugiat enim eram quae cillum dolore dolor amet nulla culpa multos export minim fugiat minim velit minim dolor enim duis veniam ipsum anim magna sunt elit fore quem dolore labore illum veniam.....
+                                            </p>
                                         </div>
                                     </div>
                                 </div>
@@ -588,7 +588,7 @@
                         }
                     }
                 });
-                
+
                 $('#accommodation-carousel').on('mouseover', function (e) {
                     owl.trigger('play.owl.autoplay');
                 })

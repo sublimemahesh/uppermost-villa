@@ -7173,7 +7173,7 @@ h6.margin_bottom_large {
     margin-top: 50px;
 }
 .excursion-bottom{
-    padding-bottom: 30px;
+    padding-bottom: 0px;
 }
 .icon-padding{
     padding-left: 20px;
@@ -7191,6 +7191,9 @@ h6.margin_bottom_large {
 }
 .bgtext1-accommo{
     padding-left: 80px;
+}
+.bgtext1-facilities{
+    padding-left: 385px;
 }
 .bgtext1-excursions{
     padding-left: 285px;
@@ -7320,4 +7323,26 @@ h3:hover {
 }
 .price-day{
     font-size: 15px
+}
+.margin_top_large1 {
+    margin-top: 48px;
+}
+.margin_top_large {
+    margin-top: 0px;
+}
+.title_margin_top {
+    margin-top: 100px;
+}
+.title_margin_top1 {
+    margin-top: 44px;
+}
+.title_margin_top2 {
+    margin-top: 92px;
+}
+.home-facilities-section .sc_services_style_services-1 {
+    padding: 50px 0 0px;
+    margin-bottom: -25px;
+}
+.property-wrap-top{
+    padding-top: 10px;
 }
