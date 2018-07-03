@@ -1738,12 +1738,13 @@ select {
 /* Top panel */
 
 .header-bg {
+    /*    background-color: rgba(32, 36, 43, 0.4);*/
     background-color: rgba(32, 36, 43, 0.4);
 }
 .top_panel_wrap {
     position: relative;
     color: #fff;
-    background-color: rgba(32, 36, 43, 1);
+    /*background-color: rgba(32, 36, 43, 1);*/
     background-position: center top;
     background-repeat: no-repeat;
     background-size: cover;
@@ -1919,7 +1920,8 @@ x:-moz-any-link {
     z-index: 10000;
 }
 .top_panel_wrap.top_panel_style_1 {
-    background-image: url(../images/img_header.jpg);
+    /*background-image: url(../images/img_header.jpg);*/
+    z-index: 99999;
 }
 .top_panel_style_1 .top_panel_middle,
 .top_panel_style_2 .top_panel_middle,
@@ -3235,6 +3237,7 @@ li.opened > a > .open_child_menu:before {
 }
 .top_panel_title.title_present:not(.navi_present) .breadcrumbs {
     padding: 3.857em 0 1em 2.143em;
+    margin-top: -115px;
 }
 .top_panel_style_3.title_present .breadcrumbs {
     padding: 0 0 1.5em 0;
@@ -7263,6 +7266,9 @@ h6.margin_bottom_large {
 h3:hover {
     color: #e07a0c;
 }
+h4:hover {
+    color: #ef595a;
+}
 .entry-footer {
     background-color: #f6f6f6;
     display: inline-block;
@@ -7345,4 +7351,44 @@ h3:hover {
 }
 .property-wrap-top{
     padding-top: 10px;
+}
+.heading-banner.top_panel_style_1 {
+    background-image: url(../images/img_header.jpg);
+    top: -97px;
+    position: relative;
+    height: 300px;
+}
+.top_panel_title_inner .page_title {
+    color: #fff;
+    margin-top: 85px;
+    font-size: 46px;
+}
+.para-about{
+    text-align: justify;
+}
+.image-about{
+    padding-left: 15px;
+    float: right;
+}
+.sec-title {
+    position: relative;
+    margin-bottom: 50px;
+}
+.icon-vision-mission{
+    font-size: 50px;
+    color: #ef595a;
+}
+.topics-about{
+    text-align: center;
+}
+.banner-title{
+    text-align: center;
+    width: 100%;
+}
+.page_content_wrap.content-about {
+    padding-top: 0px;
+}
+.top_panel_title.title_present:not(.navi_present) .breadcrumbs.banner-title {
+    padding: 3.857em 0 1em 2.143em;
+    margin-top: -132px;
 }

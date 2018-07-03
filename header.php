@@ -23,7 +23,7 @@
                                      <a href="index.php">Home</a>
                                  </li>
                                  <li class="menu-item">
-                                    <a href="about-us.php">About Us</a>
+                                     <a href="about.php">About Us</a>
                                  </li>
                                 <li class="menu-item">
                                     <a href="accommodations.php">Accommodations</a>
