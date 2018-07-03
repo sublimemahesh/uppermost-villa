@@ -1,5 +1,5 @@
 $(document).ready(function () {
-    $('.delete-activity').click(function () {
+    $('.delete-excursion-photo').click(function () {
 
         var id = $(this).attr("data-id");
 
@@ -14,7 +14,7 @@ $(document).ready(function () {
         }, function () {
 
             $.ajax({
-                url: "delete/ajax/activity.php",
+                url: "delete/ajax/excursion-photo.php",
                 type: "POST",
                 data: {id: id, option: 'delete'},
                 dataType: "JSON",
