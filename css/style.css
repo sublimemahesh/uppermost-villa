@@ -7395,3 +7395,22 @@ h4:hover {
 .welcome-title{
     margin-top: -60px;
 }
+.accommo-readmore{
+    width: 40%;
+    margin: -7px 0px 4px 38px;
+    background: none;
+    color: #000;
+    border: 1px solid red;
+}
+.sc_property.sc_property_style_property-1 .sc_property_info, .content > .sc_property_item .sc_property_info .accommo-property-item{
+    padding-top: 20px;
+}
+.accommo-property-content{
+    margin-top: 10px;
+}
+.page_content_wrap.accommo-padding {
+    padding: 0em 0 6.143em;
+}
+.text-justify {
+    text-align: justify;
+}
