@@ -7414,3 +7414,17 @@ h4:hover {
 .text-justify {
     text-align: justify;
 }
+.text-bottom{
+    margin-bottom: 2px;
+}
+.image-view{
+    width: 75%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding-bottom: 15px;
+}
+.property-price-box1{
+    font-size: 18px;
+    padding: 0.636em 0.5em;
+}
