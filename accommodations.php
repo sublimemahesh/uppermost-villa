@@ -45,11 +45,11 @@
                 <div class="top_panel_title heading-banner top_panel_style_1  title_present scheme_original">
                     <div class="top_panel_title_inner top_panel_inner_style_1 breadcrumbs_present_inner">
                         <div class="content_wrap">
-                            <h1 class="page_title banner-title">Excursion</h1>
+                            <h1 class="page_title banner-title">Accommodations</h1>
                             <div class="breadcrumbs banner-title">
                                 <a class="breadcrumbs_item home" href="index.php">Home</a>
                                 <span class="breadcrumbs_delimiter"></span>
-                                <span class="breadcrumbs_item current">Excursion</span>
+                                <span class="breadcrumbs_item current">Accommodations</span>
                             </div>
                         </div>
                     </div>
@@ -100,7 +100,7 @@
                                                         </div>
                                                     </div>
                                                     <span>
-                                                        <button class="read-more btn-readmore1">Read More</button>
+                                                        <a href="view-accommodation.php?id=1"><button class="read-more btn-readmore1">Read More</button></a>
                                                     </span>
                                                     <span>
                                                         <button class="read-more btn-readmore1">Book Now</button>
@@ -159,7 +159,7 @@
                                                         </div>
                                                     </div>
                                                     <span>
-                                                        <button class="read-more btn-readmore1">Read More</button>
+                                                        <a href="view-accommodation.php?id=1"><button class="read-more btn-readmore1">Read More</button></a>
                                                     </span>
                                                     <span>
                                                         <button class="read-more btn-readmore1">Book Now</button>
@@ -218,7 +218,7 @@
                                                         </div>
                                                     </div>
                                                     <span>
-                                                        <button class="read-more btn-readmore1">Read More</button>
+                                                        <a href="view-accommodation.php?id=1"><button class="read-more btn-readmore1">Read More</button></a>
                                                     </span>
                                                     <span>
                                                         <button class="read-more btn-readmore1">Book Now</button>
