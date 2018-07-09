@@ -45,312 +45,191 @@
                 <div class="top_panel_title heading-banner top_panel_style_1  title_present scheme_original">
                     <div class="top_panel_title_inner top_panel_inner_style_1 breadcrumbs_present_inner">
                         <div class="content_wrap">
-                            <h1 class="page_title banner-title">Accommodations</h1>
+                            <h1 class="page_title banner-title">Excursion</h1>
                             <div class="breadcrumbs banner-title">
                                 <a class="breadcrumbs_item home" href="index.php">Home</a>
                                 <span class="breadcrumbs_delimiter"></span>
-                                <span class="breadcrumbs_item current">Accommodations</span>
+                                <span class="breadcrumbs_item current">Excursion</span>
                             </div>
                         </div>
                     </div>
                 </div>
                 <!--/breadcrumbs-->
 
-                <div class="page_content_wrap accommo-padding">
+                <div class="page_content_wrap accommo-padding1">
                     <div class="content_wrap">
                         <div class="content">
                             <div class="sc_property sc_property_style_property-1">
-                                <div class="columns_wrap ">
+                                <div class="columns_wrap1 ">
+                                    <div class="sc_property_wrap">
+                                        <div class="sc_property sc_property_style_property-1">
 
-                                    <div class="column-1_3 column_padding_bottom">
-                                        <div class="sc_property_item">
-                                            <div class="sc_property_image">
-                                                <a href="">
-                                                    <div class="property_price_box">
-                                                        <span class="property_price_box_sign">$</span><span class="property_price_box_price">1,249,000</span>
-                                                    </div>
-                                                    <img alt="" src="images/image-7-1-770x460.jpg">
-                                                </a>
-                                            </div>
-                                            <div class="sc_property_info">
-                                                <div>
-                                                    <div class="sc_property_title">
-                                                        <div class="sc_property_title_address_1">
-                                                            <a href="#">87 Mishaum Point Rd</a> 
-                                                        </div>
-                                                        <div class="text-justify accommo-property-content">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa...</div>
-                                                    </div>
-                                                    <div class="cL"></div>
+                                            <div class="sc_columns columns_wrap excursion-bg-color col-margin">
+                                                <div class="ribbon"><span>$100</span></div>
+                                                <div class="column-1_4 col-4 padding-col">
+                                                    <img src="images/img-600x410.jpg" alt=""/>
                                                 </div>
-                                            </div>
-                                            <div class="sc_property_info_list">
-                                                <span class="icon-bed">2</span>
-                                                <span class="icon-bath">3</span>
-                                                <span class="icon-warehouse">2</span>
+                                                <div class="column-1_2 col-2 entry-box">
+                                                    <h3 class="entry-title-accommo">Deluxe Double room with ocean view</h3>
+                                                    <p class="entry-content-accommo p-margin text-justify">Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical.It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. </p>
 
-                                                <button class="read-more accommo-readmore">Read More</button>
-
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="column-1_3 column_padding_bottom">
-                                        <div class="sc_property_item">
-                                            <div class="sc_property_image">
-                                                <a href="single-post.html">
-                                                    <div class="property_price_box">
-                                                        <span class="property_price_box_sign">$</span><span class="property_price_box_price">2,189,000</span>
-                                                    </div>
-                                                    <img alt="" src="images/image-12-1-770x460.jpg">
-                                                </a>
-                                            </div>
-                                            <div class="sc_property_info">
-                                                <div>
-                                                    <div class="sc_property_title">
-                                                        <div class="sc_property_title_address_1">
-                                                            <a href="#">87 Mishaum Point Rd</a> 
+                                                    <div class="columns_wrap sc_columns">
+                                                        <div class="column-1_2 sc_column_item entry-ul">
+                                                            <ul class="sc_list sc_list_style_iconed color_1">
+                                                                <li class="sc_list_item">
+                                                                    <span class="sc_list_icon icon-stop color_2"></span>
+                                                                    <p>Quiet Neighbourhood</p>
+                                                                </li>
+                                                                <li class="sc_list_item">
+                                                                    <span class="sc_list_icon icon-stop color_2"></span>
+                                                                    <p>Great Local Community</p>
+                                                                </li>
+                                                            </ul>
                                                         </div>
-                                                        <div class="text-justify accommo-property-content">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa...</div>
-                                                    </div>
-                                                    <div class="cL"></div>
-                                                </div>
-                                            </div>
-                                            <div class="sc_property_info_list">
-                                                <span class="icon-bed">2</span>
-                                                <span class="icon-bath">3</span>
-                                                <span class="icon-warehouse">2</span>
-
-                                                <button class="read-more accommo-readmore">Read More</button>
-
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="column-1_3 column_padding_bottom">
-                                        <div class="sc_property_item">
-                                            <div class="sc_property_image">
-                                                <a href="single-post.html">
-                                                    <div class="property_price_box">
-                                                        <span class="property_price_box_sign">$</span><span class="property_price_box_price">3,449</span><span class="property_price_box_per">/year</span>
-                                                    </div>
-                                                    <img alt="" src="images/image-11-1-770x460.jpg">
-                                                </a>
-                                            </div>
-                                            <div class="sc_property_info">
-                                                <div>
-                                                    <div class="sc_property_title">
-                                                        <div class="sc_property_title_address_1">
-                                                            <a href="#">87 Mishaum Point Rd</a> 
+                                                        <div class="column-1_2 sc_column_item">
+                                                            <ul class="sc_list sc_list_style_iconed color_1">
+                                                                <li class="sc_list_item">
+                                                                    <span class="sc_list_icon icon-stop color_2"></span>
+                                                                    <p>Fabulous Views</p>
+                                                                </li>
+                                                                <li class="sc_list_item">
+                                                                    <span class="sc_list_icon icon-stop color_2"></span>
+                                                                    <p>Large Play Center In Yard</p>
+                                                                </li>
+                                                            </ul>
                                                         </div>
-                                                        <div class="text-justify accommo-property-content">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa...</div>
                                                     </div>
-                                                    <div class="cL"></div>
-                                                </div>
-                                            </div>
-                                            <div class="sc_property_info_list">
-                                                <span class="icon-bed">2</span>
-                                                <span class="icon-bath">3</span>
-                                                <span class="icon-warehouse">2</span>
-
-                                                <button class="read-more accommo-readmore">Read More</button>
-
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="column-1_3 column_padding_bottom">
-                                        <div class="sc_property_item">
-                                            <div class="sc_property_image">
-                                                <a href="single-property.html">
-                                                    <div class="property_price_box">
-                                                        <span class="property_price_box_sign">$</span><span class="property_price_box_price">1,249,000</span>
-                                                    </div>
-                                                    <img alt="" src="images/image-10-1-770x460.jpg">
-                                                </a>
-                                            </div>
-                                            <div class="sc_property_info">
-                                                <div>
-                                                    <div class="sc_property_title">
-                                                        <div class="sc_property_title_address_1">
-                                                            <a href="#">87 Mishaum Point Rd</a> 
-                                                        </div>
-                                                        <div class="text-justify accommo-property-content">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa...</div>
-                                                    </div>
-                                                    <div class="cL"></div>
-                                                </div>
-                                            </div>
-                                            <div class="sc_property_info_list">
-                                                <span class="icon-bed">2</span>
-                                                <span class="icon-bath">3</span>
-                                                <span class="icon-warehouse">2</span>
-
-                                                <button class="read-more accommo-readmore">Read More</button>
-
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="column-1_3 column_padding_bottom">
-                                        <div class="sc_property_item">
-                                            <div class="sc_property_image">
-                                                <a href="single-post.html">
-                                                    <div class="property_price_box">
-                                                        <span class="property_price_box_sign">$</span><span class="property_price_box_price">1,000</span><span class="property_price_box_per">/year</span>
-                                                    </div>
-                                                    <img alt="" src="images/image-3-1-770x460.jpg">
-                                                </a>
-                                            </div>
-                                            <div class="sc_property_info">
-                                                <div>
-                                                    <div class="sc_property_title">
-                                                        <div class="sc_property_title_address_1">
-                                                            <a href="#">87 Mishaum Point Rd</a> 
-                                                        </div>
-                                                        <div class="text-justify accommo-property-content">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa...</div>
-                                                    </div>
-                                                    <div class="cL"></div>
-                                                </div>
-                                            </div>
-                                            <div class="sc_property_info_list">
-                                                <span class="icon-bed">2</span>
-                                                <span class="icon-bath">3</span>
-                                                <span class="icon-warehouse">2</span>
-
-                                                <button class="read-more accommo-readmore">Read More</button>
-
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="column-1_3 column_padding_bottom">
-                                        <div class="sc_property_item">
-                                            <div class="sc_property_image">
-                                                <a href="single-property.html">
-                                                    <div class="property_price_box">
-                                                        <span class="property_price_box_sign">$</span><span class="property_price_box_price">249,900</span>
-                                                    </div>
-                                                    <img alt="" src="images/image-14-770x460.jpg">
-                                                </a>
-                                            </div>
-                                            <div class="sc_property_info">
-                                                <div>
-                                                    <div class="sc_property_title">
-                                                        <div class="sc_property_title_address_1">
-                                                            <a href="#">87 Mishaum Point Rd</a> 
-                                                        </div>
-                                                        <div class="text-justify accommo-property-content">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa...</div>
-                                                    </div>
-                                                    <div class="cL"></div>
-                                                </div>
-                                            </div>
-                                            <div class="sc_property_info_list">
-                                                <span class="icon-bed">2</span>
-                                                <span class="icon-bath">3</span>
-                                                <span class="icon-warehouse">2</span>
-
-                                                <button class="read-more accommo-readmore">Read More</button>
-
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="column-1_3 column_padding_bottom">
-                                        <div class="sc_property_item">
-                                            <div class="sc_property_image">
-                                                <a href="single-property.html">
-                                                    <div class="property_price_box">
-                                                        <span class="property_price_box_sign">$</span><span class="property_price_box_price">1,500</span><span class="property_price_box_per">/year</span>
-                                                    </div>
-                                                    <img alt="" src="images/image-13-770x460.jpg">
-                                                </a>
-                                            </div>
-                                            <div class="sc_property_info">
-                                                <div>
-                                                    <div class="sc_property_title">
-                                                        <div class="sc_property_title_address_1">
-                                                            <a href="#">87 Mishaum Point Rd</a> 
-                                                        </div>
-                                                        <div class="text-justify accommo-property-content">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa...</div>
-                                                    </div>
-                                                    <div class="cL"></div>
-                                                </div>
-                                            </div>
-                                            <div class="sc_property_info_list">
-                                                <span class="icon-bed">2</span>
-                                                <span class="icon-bath">3</span>
-                                                <span class="icon-warehouse">2</span>
-
-                                                <button class="read-more accommo-readmore">Read More</button>
-
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="column-1_3 column_padding_bottom">
-                                        <div class="sc_property_item">
-                                            <div class="sc_property_image">
-                                                <a href="single-property.html">
-                                                    <div class="property_price_box">
-                                                        <span class="property_price_box_sign">$</span><span class="property_price_box_price">150,000</span>
-                                                    </div>
-                                                    <img alt="" src="images/image-4-770x460.jpg">
-                                                </a>
-                                            </div>
-                                            <div class="sc_property_info">
-                                                <div>
-                                                    <div class="sc_property_title">
-                                                        <div class="sc_property_title_address_1">
-                                                            <a href="#">87 Mishaum Point Rd</a> 
-                                                        </div>
-                                                        <div class="text-justify accommo-property-content">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa...</div>
-                                                    </div>
-                                                    <div class="cL"></div>
-                                                </div>
-                                            </div>
-                                            <div class="sc_property_info_list">
-                                                <span class="icon-bed">2</span>
-                                                <span class="icon-bath">3</span>
-                                                <span class="icon-warehouse">2</span>
-
-                                                <button class="read-more accommo-readmore">Read More</button>
-
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="column-1_3 column_padding_bottom">
-                                        <div class="sc_property_item">
-                                            <div class="sc_property_image">
-                                                <a href="single-property.html">
-                                                    <div class="property_price_box">
-                                                        <span class="property_price_box_sign">$</span><span class="property_price_box_price">150,000</span>
-                                                    </div>
-                                                    <img alt="" src="images/image-4-770x460.jpg">
-                                                </a>
-                                            </div>
-                                            <div class="sc_property_info">
-                                                <div>
-                                                    <div class="sc_property_title">
-                                                        <div class="sc_property_title_address_1">
-                                                            <a href="#">87 Mishaum Point Rd</a> 
-                                                        </div>
-                                                        <div class="text-justify accommo-property-content">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa...</div>
-                                                    </div>
-                                                    <div class="cL"></div>
-                                                </div>
-                                            </div>
-                                            <div class="sc_property_info_list">
-                                                <span class="icon-bed">2</span>
-                                                <span class="icon-bath">3</span>
-                                                <span class="icon-warehouse">2</span>
-
-                                                <button class="read-more accommo-readmore">Read More</button>
-
+                                                    <span>
+                                                        <button class="read-more btn-readmore1">Read More</button>
+                                                    </span>
+                                                    <span>
+                                                        <button class="read-more btn-readmore1">Book Now</button>
+                                                    </span>
+                                                </div>                                              
                                             </div>
                                         </div>
                                     </div>
                                 </div>
-                            </div>
-                            <nav id="pagination" class="pagination_wrap pagination_pages">
-                                <span class="pager_current active">1</span>
-                                <a href="#" class="">2</a>
-                                <a href="#" class="pager_next"></a>
-                                <a href="#" class="pager_last"></a>
-                            </nav>
+                            </div>                          
                         </div>
+                    </div>
+                </div>
+                
+                <div class="page_content_wrap accommo-padding1">
+                    <div class="content_wrap">
+                        <div class="content">
+                            <div class="sc_property sc_property_style_property-1">
+                                <div class="columns_wrap1 ">
+                                    <div class="sc_property_wrap">
+                                        <div class="sc_property sc_property_style_property-1">
 
+                                            <div class="sc_columns columns_wrap excursion-bg-color col-margin">
+                                                <div class="ribbon"><span>$100</span></div>
+                                                <div class="column-1_4 col-4 padding-col">
+                                                    <img src="images/img-600x410.jpg" alt=""/>
+                                                </div>
+                                                <div class="column-1_2 col-2 entry-box">
+                                                    <h3 class="entry-title-accommo">Deluxe Double room with ocean view</h3>
+                                                    <p class="entry-content-accommo p-margin text-justify">Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical.It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. </p>
+
+                                                    <div class="columns_wrap sc_columns">
+                                                        <div class="column-1_2 sc_column_item entry-ul">
+                                                            <ul class="sc_list sc_list_style_iconed color_1">
+                                                                <li class="sc_list_item">
+                                                                    <span class="sc_list_icon icon-stop color_2"></span>
+                                                                    <p>Quiet Neighbourhood</p>
+                                                                </li>
+                                                                <li class="sc_list_item">
+                                                                    <span class="sc_list_icon icon-stop color_2"></span>
+                                                                    <p>Great Local Community</p>
+                                                                </li>
+                                                            </ul>
+                                                        </div>
+                                                        <div class="column-1_2 sc_column_item">
+                                                            <ul class="sc_list sc_list_style_iconed color_1">
+                                                                <li class="sc_list_item">
+                                                                    <span class="sc_list_icon icon-stop color_2"></span>
+                                                                    <p>Fabulous Views</p>
+                                                                </li>
+                                                                <li class="sc_list_item">
+                                                                    <span class="sc_list_icon icon-stop color_2"></span>
+                                                                    <p>Large Play Center In Yard</p>
+                                                                </li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                    <span>
+                                                        <button class="read-more btn-readmore1">Read More</button>
+                                                    </span>
+                                                    <span>
+                                                        <button class="read-more btn-readmore1">Book Now</button>
+                                                    </span>
+                                                </div>                                              
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>                          
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="page_content_wrap accommo-padding1">
+                    <div class="content_wrap">
+                        <div class="content">
+                            <div class="sc_property sc_property_style_property-1">
+                                <div class="columns_wrap1 ">
+                                    <div class="sc_property_wrap">
+                                        <div class="sc_property sc_property_style_property-1">
+
+                                            <div class="sc_columns columns_wrap excursion-bg-color col-margin">
+                                                <div class="ribbon"><span>$100</span></div>
+                                                <div class="column-1_4 col-4 padding-col">
+                                                    <img src="images/img-600x410.jpg" alt=""/>
+                                                </div>
+                                                <div class="column-1_2 col-2 entry-box">
+                                                    <h3 class="entry-title-accommo">Deluxe Double room with ocean view</h3>
+                                                    <p class="entry-content-accommo p-margin text-justify">Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical.It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. </p>
+
+                                                    <div class="columns_wrap sc_columns">
+                                                        <div class="column-1_2 sc_column_item entry-ul">
+                                                            <ul class="sc_list sc_list_style_iconed color_1">
+                                                                <li class="sc_list_item">
+                                                                    <span class="sc_list_icon icon-stop color_2"></span>
+                                                                    <p>Quiet Neighbourhood</p>
+                                                                </li>
+                                                                <li class="sc_list_item">
+                                                                    <span class="sc_list_icon icon-stop color_2"></span>
+                                                                    <p>Great Local Community</p>
+                                                                </li>
+                                                            </ul>
+                                                        </div>
+                                                        <div class="column-1_2 sc_column_item">
+                                                            <ul class="sc_list sc_list_style_iconed color_1">
+                                                                <li class="sc_list_item">
+                                                                    <span class="sc_list_icon icon-stop color_2"></span>
+                                                                    <p>Fabulous Views</p>
+                                                                </li>
+                                                                <li class="sc_list_item">
+                                                                    <span class="sc_list_icon icon-stop color_2"></span>
+                                                                    <p>Large Play Center In Yard</p>
+                                                                </li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                    <span>
+                                                        <button class="read-more btn-readmore1">Read More</button>
+                                                    </span>
+                                                    <span>
+                                                        <button class="read-more btn-readmore1">Book Now</button>
+                                                    </span>
+                                                </div>                                              
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>                          
+                        </div>
                     </div>
                 </div>
 
