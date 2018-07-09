@@ -77,13 +77,14 @@
                                                 <li><img src="upload/room/gallery/thumb/image-3-370x294-tn.jpg" alt=""/>                                                    
                                                 </li>
                                             </ul>
+                                            <div>
                                             <ul class="amazingslider-thumbnails" style="display:none;">
                                                 <li><img src="upload/room/gallery/thumb/image-1-1-tn.jpg" alt=""/></li>                                               
                                                 <li><img src="upload/room/gallery/thumb/image-2-1-tn.jpg" alt=""/></li>
                                                 <li><img src="upload/room/gallery/thumb/image-3-1-tn.jpg" alt=""/></li>
                                                 <li><img src="upload/room/gallery/thumb/image-3-370x294-tn.jpg" alt=""/></li>                                               
                                             </ul>
-                                            
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
@@ -251,6 +252,7 @@
         <script src="js/vendor/magnific-popup/jquery.magnific-popup.min.js" type="text/javascript"></script>
         <script src="plugins/sliderengine/amazingslider.js" type="text/javascript"></script>
         <script src="plugins/sliderengine/initslider-1.js" type="text/javascript"></script>
+        
 
         <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
 

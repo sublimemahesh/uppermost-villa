@@ -30,7 +30,7 @@
         <link href="js/vendor/booked/booked.css" rel="stylesheet" type="text/css"/>
         <link href="css/custom/instagram-widget.css" rel="stylesheet" type="text/css"/>
         <link href="js/vendor/magnific-popup/magnific-popup.css" rel="stylesheet" type="text/css"/>
-
+        <link href="plugins/sliderengine/amazingslider-1.css" rel="stylesheet" type="text/css"/>
 
     </head>
     <body class="body_style_wide responsive_menu scheme_original top_panel_show top_panel_above sidebar_hide">
@@ -65,13 +65,32 @@
                         <div class="content">
                             <section class="post_featured">
                                 <div class="post_thumb image-view">
-                                    <a class="hover_icon hover_icon_view" href="images/img-600x410.jpg" title="87 Mishaum Point Rd, Dartmouth, MA 02748">
-                                        <img alt="" src="images/img-600x410.jpg"></a>
+                                    <div id="amazingslider-wrapper-1" style="display:block;position:relative;max-width:900px;margin:0px auto 102px;">
+                                        <div id="amazingslider-1" style="display:block;position:relative;margin:0 auto;">
+                                            <ul class="amazingslider-slides" style="display:none;">
+                                                <li><img src="upload/excursion/gallery/image-1-1.jpg" alt=""/>
+                                                </li>
+                                                <li><img src="upload/excursion/gallery/image-2-1.jpg" alt=""/>
+                                                </li>
+                                                <li><img src="upload/excursion/gallery/image-3-1.jpg" alt=""/>
+                                                </li>
+                                                <li><img src="upload/excursion/gallery/thumb/image-3-370x294-tn.jpg" alt=""/>                                                    
+                                                </li>
+                                            </ul>
+                                            <ul class="amazingslider-thumbnails" style="display:none;">
+                                                <li><img src="upload/excursion/gallery/thumb/image-1-1-tn.jpg" alt=""/></li>                                               
+                                                <li><img src="upload/excursion/gallery/thumb/image-2-1-tn.jpg" alt=""/></li>
+                                                <li><img src="upload/excursion/gallery/thumb/image-3-1-tn.jpg" alt=""/></li>
+                                                <li><img src="upload/excursion/gallery/thumb/image-3-370x294-tn.jpg" alt=""/></li>                                               
+                                            </ul>
+
+                                        </div>
+                                    </div>
                                 </div>
                             </section>
                             <section class="post_content">
                                 <h3 class="post_title">Deluxe Double room with ocean view</h3>
-                                
+
                                 <div class="sc_section">
                                     <p class="text-justify">The Moana Residence is situated on the best lot at Kohanaiki and is a 5 bedroom, 5 1/2 bath home of approximately 8,000 interior sq. ft. It features Ipe hardwood flooring on the interior and granite stone flooring on the lanais, granite countertops, vaulted cedar ceilings, clerestory windows for lots of light.</p>
                                     <p class="text-justify">mahogany cabinetry, mahogany trim and pocketing doors throughout. The beautifully landscaped grounds include a large lap pool, spa and separate Pool.</p>
@@ -196,6 +215,8 @@
         <script type='text/javascript' src='http://maps.google.com/maps/api/js?sensor=false'></script>
         <script src="js/custom/_googlemap.js" type="text/javascript"></script>
         <script src="js/vendor/magnific-popup/jquery.magnific-popup.min.js" type="text/javascript"></script>
+        <script src="plugins/sliderengine/amazingslider.js" type="text/javascript"></script>
+        <script src="plugins/sliderengine/initslider-1.js" type="text/javascript"></script>
 
         <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
 
