@@ -292,7 +292,8 @@
         </div>
         <a href="#" class="scroll_to_top icon-up"></a>
 
-        <script data-cfasync="false" src="cdn-cgi/scripts/f2bf09f8/cloudflare-static/email-decode.min.js"></script><script type='text/javascript' src='js/vendor/jquery.js'></script>
+        <script data-cfasync="false" src="cdn-cgi/scripts/f2bf09f8/cloudflare-static/email-decode.min.js"></script>
+        <script type='text/javascript' src='js/vendor/jquery.js'></script>
         <script type='text/javascript' src='js/custom/plugins.js'></script>
         <script type='text/javascript' src='js/custom/messages.js'></script>
         <script type='text/javascript' src='js/vendor/jquery-migrate.min.js'></script>
@@ -312,7 +313,7 @@
         <script type='text/javascript' src='js/vendor/skrollr.min.js'></script>
         <script type='text/javascript' src='js/vendor/swiper/swiper.min.js'></script>
         <script src="js/vendor/isotope.min.js" type="text/javascript"></script>
-        <script type='text/javascript' src='http://maps.google.com/maps/api/js?sensor=false'></script>
+        <!--<script type='text/javascript' src='http://maps.google.com/maps/api/js?sensor=false'></script>-->
         <script src="js/custom/_googlemap.js" type="text/javascript"></script>
         <script src="js/vendor/magnific-popup/jquery.magnific-popup.min.js" type="text/javascript"></script>
 
