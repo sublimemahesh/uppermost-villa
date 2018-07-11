@@ -17,7 +17,7 @@ $visitor_message = '<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//E
                                         <td width="40"></td>
                                         <td width="144">
                                             <a href= "' . $site_link . '" target="_blank"> '
-        . '<img src="' . $site_link . '/booking-form/img/logo.jpg" border="0" alt=""/>
+        . '<img src="' . $site_link . '/booking-form/img/logo.png" border="0" alt=""/>
                                             </a>
                                         </td>
                                         <td width="393">
@@ -140,11 +140,6 @@ $visitor_message = '<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//E
                                                          To : ' . $departure . '
                                                     </font>
                                                 </li>
-                                                <li>
-                                                    <font style="font-family: Verdana, Geneva, sans-serif; color:#68696a; font-size:14px; " >
-                                                         Captchacode : ' . $captchacode . '
-                                                    </font>
-                                                </li>
                                                 
                                             </ul>
                                         </td>
@@ -225,7 +220,7 @@ $visitor_message = '<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//E
                                         <td width="30%" align="right">
                                         <font style="font-family: Verdana, Geneva, sans-serif; color:#1400FF; font-size:9px; " > 
                                         <a href="http://sublime.lk/">
-                                        web solution by: sublime</a>
+                                        web solution by: Sublime Holdings</a>
                                         </font>
                                         </td>
                                         <td width="5%">&nbsp;</td>
@@ -344,12 +339,6 @@ $company_message = '
                                                 <li>
                                                     <font style="font-family: Verdana, Geneva, sans-serif; color:#68696a; font-size:14px; " >
                                                          To : ' . $departure . '
-                                                    </font>
-                                                </li>
-                                                
-                                                <li>
-                                                    <font style="font-family: Verdana, Geneva, sans-serif; color:#68696a; font-size:14px; " >
-                                                         Captchacode : ' . $captchacode . '
                                                     </font>
                                                 </li>
                                             </ul>
