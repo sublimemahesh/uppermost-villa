@@ -6,7 +6,7 @@ $comany_name = "Uppermost-Villa";
 $website_name = "www.uppermostvilla.com";
 $comConNumber = "+94 76 8261423";
 $comEmail = "amalidinushika93@gmail.com";
-$from = 'info@sublime.com';
+$from = 'amalidinushika93@gmail.com';
 
 
 //----------------------CAPTCHACODE---------------------
@@ -41,7 +41,8 @@ date_default_timezone_set('Asia/Colombo');
 
 $todayis = date("l, F j, Y, g:i a");
 
-$site_link = "http://" . $_SERVER['HTTP_HOST'];
+$site_link = "http://" . $_SERVER['HTTP_HOST'].'/uppermost-villa';
+
 
 include("mail-template.php");
 
