@@ -25,7 +25,8 @@
         <link rel='stylesheet' href='css/custom/skin.responsive.css' type='text/css' media='all' />
         <link rel='stylesheet' href='js/vendor/swiper/swiper.css' type='text/css' media='all' />
         <link rel='stylesheet' href='css/custom/_messages.css' type='text/css' media='all' />
-        
+        <link href="contact-us-form/style.css" rel="stylesheet" type="text/css"/>
+        <link href="css/contact-form.css" rel="stylesheet" type="text/css"/>
 
     </head>
     <body class="body_style_wide responsive_menu scheme_original top_panel_show top_panel_above sidebar_hide">
@@ -103,7 +104,70 @@
                                 <div class="column-1_2">
                                     <div class="sc_section margin_top_xlarge margin_bottom_xlarge">
                                         <div class="sc_section_inner">
-                                            <figure class="sc_image"><img src="images/sarah_doe-570x407.jpg" alt="" /></figure>
+                                            <div class="columns_wrap cotact-wrap">
+                                                <div class="clearfix form-contact">
+                                                    <div class="row form-group form-group-bottom">
+                                                        <div class="column-1_2">
+                                                            <label>Your Name</label>
+                                                            <input type="text" name="txtFullName" class="form-control input-validater" id="txtFullName" value="" placeholder="Your Name">
+                                                            <span id="spanFullName"></span>
+                                                        </div>
+                                                        <div class="column-1_2">
+                                                            <label>Your Email</label>
+                                                            <input type="text" name="txtEmail" id="txtEmail" class="form-control input-validater" value="" placeholder="Your Email">
+                                                            <span id="spanEmail"></span>
+                                                        </div>
+                                                    </div>
+                                                    <div class="row form-group form-group-bottom">
+                                                        <div class="column-1_2">
+                                                            <label>Your Country</label>
+                                                            <input type="text" name="txtCountry" class="form-control input-validater" id="txtCountry" value="" placeholder="Your Country">
+                                                            <span id="spanCountry"></span>
+                                                        </div>
+                                                        <div class="column-1_2"> 
+                                                            <label>Your Contact Number</label>
+                                                            <input type="text" name="txtPhone" id="txtPhone" class="form-control input-validater" value="" placeholder="Your Contact Number">
+                                                            <span id="spanPhone"></span>
+                                                        </div>
+                                                    </div>
+                                                    <div class="row form-group form-group-bottom">
+                                                        <div class="column-1_1">
+                                                            <label>Your Message</label>
+                                                            <textarea name="txtMessage" id="txtMessage" class="form-control input-validater" placeholder="Your Message"></textarea>
+                                                            <!--<span id="spanMessage"></span>-->
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                <div class="row form-group form-group-bottom">
+                                                    <div class="column-1_2">
+                                                        <label for="comment" id="form-label">Security Code:</label>
+                                                        <input type="text" name="captchacode" id="captchacode" class="form-control input-validater" placeholder="Enter the security code >> ">
+                                                        <span id="capspan" ></span>
+                                                    </div>
+                                                    <div class="column-1_2"> 
+                                                        <label></label>
+                                                        <span><?php include("./contact-us-form/captchacode-widget.php"); ?></span>
+                                                    </div>
+                                                </div>
+
+                                                <div class="row form-group form-group-bottom">
+                                                    <div class="column-1_2">
+                                                        <label></label>
+                                                        <button type="submit" id="btnSubmit" class="btn btn-primary btn-lg">SEND MESSAGE</button>
+                                                    </div>
+                                                    <div class="column-1_2">
+                                                    <div class="div-check" >
+                                                        <img src="contact-us-form/img/checking.gif" id="checking"/>
+                                                    </div> 
+                                                    </div>
+                                                </div>
+
+                                                <div class="column-1_1">
+                                                    <div id="dismessage" align="center" class="msg-success"></div>
+                                                </div>
+
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
@@ -111,32 +175,11 @@
                         </div>
                     </div>
                 </div>
-                <div class="sc_section bg_color_1">
+                <div class="sc_section bg_color_1-1">
                     <div class="columns_wrap sc_columns">
-                        <div class="column-1_2 sc_column_item">
+                        <div class="column-1_1 sc_column_item">
                             <div id="sc_googlemap_1">
-                                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15871.507608849464!2d80.24559968609076!3d6.0116355803350725!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ae172f162bf926d%3A0xc0444c5e8377446c!2sUnawatuna!5e0!3m2!1sen!2slk!4v1531217301612" width="100%" height="600" frameborder="0" style="border:0" allowfullscreen></iframe>
-                            </div>
-                        </div>
-                        <div class="column-1_2 sc_column_item">
-                            <div class="sc_section custom_box_form ">
-                                <div class="sc_section_inner">
-                                    <h4 class="sc_title margin_top_null margin_bottom_xmedium">Send Message</h4>
-                                    <div class="sc_form_wrap">
-                                        <div class="sc_form">
-                                            <form  data-formtype="form_custom" method="post" action="http://estate-html.axiomthemes.com/includes/sendmail.php">
-                                                <div class="sc_form_info">
-                                                    <div class="sc_form_item sc_form_field"><input id="sc_form_username" type="text" name="username" placeholder="Name *"></div>
-                                                    <div class="sc_form_item sc_form_field"><input id="sc_form_email" type="text" name="email" placeholder="E-mail *"></div>
-                                                    <div class="sc_form_item sc_form_field"><input id="sc_form_subj" type="text" name="subject" placeholder="Subject"></div>
-                                                </div>
-                                                <div class="sc_form_item sc_form_message"><textarea id="sc_form_message" name="message" placeholder="Message"></textarea></div>
-                                                <div class="sc_form_item sc_form_button"><button class="sc_button sc_button_box sc_button_style_style3">Send</button></div>
-                                                <div class="result sc_infobox"></div>
-                                            </form>
-                                        </div>
-                                    </div>
-                                </div>
+                                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15871.507608849442!2d80.24559968609076!3d6.0116355803350725!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ae172f162bf926d%3A0xc0444c5e8377446c!2sUnawatuna!5e0!3m2!1sen!2slk!4v1531378314111" width="2000" height="650" frameborder="0" style="border:0" allowfullscreen></iframe>
                             </div>
                         </div>
                     </div>
@@ -165,6 +208,7 @@
         <script type='text/javascript' src='js/custom/_shortcodes.js'></script>
         <!--<script type='text/javascript' src='http://maps.google.com/maps/api/js?sensor=false'></script>-->
         <script src="js/custom/_googlemap.js" type="text/javascript"></script>
+        <script src="contact-us-form/scripts.js" type="text/javascript"></script>
 
         <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
 
