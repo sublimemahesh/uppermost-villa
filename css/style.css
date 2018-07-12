@@ -7653,3 +7653,15 @@ h4:hover {
     border-radius: 2%;
     margin-right: 0px;
 }
+.sc_property_search .sc_ps_status, .sc_property_search .sc_ps_location, .sc_property_search .sc_ps_type, .sc_property_search .sc_ps_submit {
+    width: 25.624%;
+
+}
+.btn-search {
+    vertical-align: bottom;
+    margin-bottom: 22px;
+    margin-left: 46px;
+}
+.sc_property_search.search-align {
+    padding: 2.143em 0 2.143em;
+}
