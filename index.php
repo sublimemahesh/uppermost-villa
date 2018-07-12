@@ -53,7 +53,7 @@
                     <div class="content_wrap">
                         <div class="sc_section scheme_dark">
                             <div class="sc_section_inner">
-                                <div class="sc_property_search">
+                                <div class="sc_property_search search-align">
                                     <form method="get" action="#">
                                         <div class="sc_ps_status">
                                             <h5>ROOM TYPE</h5>
@@ -72,25 +72,9 @@
                                         </div>
                                         <div class="sc_ps_type">
                                             <h5>DEPARTURE DATE</h5>
-                                            <input type="text" id="datepicker" placeholder="Select date">    
+                                            <input type="text" id="datepicker1" placeholder="Select date">    
                                         </div>
-
-                                        <div class="sc_ps_price">
-                                            <div class="ps_price ps_range_slider sc-price-style">
-                                                <div class="ps_price_info">
-                                                    <div class="ps_price_info_title">Price</div>
-                                                    <div class="ps_price_info_value"></div>
-                                                    <div class="cL"></div>
-                                                </div>
-                                                <div id="slider-range-price"></div>
-                                                <input type="hidden" class="ps_price_min" name="ps_price_min" value="0">
-                                                <input type="hidden" class="ps_price_max" name="ps_price_max" value="10000000">
-                                                <input type="hidden" class="ps_price_big" name="ps_price_big" value="10000000">
-                                            </div>
-                                        </div>
-                                        <div class="sc_ps_submit sc-price-style1">
-                                            <input type="submit" class="sc_button sc_button_box sc_button_style_style2" value="Search">
-                                        </div>
+                                        <a href="booking.php?id=1"><input type="submit" class="sc_button sc_button_box sc_button_style_style2 btn-search" value="Search"></a>
                                     </form>
                                 </div>
                             </div>
@@ -516,6 +500,11 @@
         <script>
             $(function () {
                 $("#datepicker").datepicker();
+            });
+        </script>
+        <script>
+            $(function () {
+                $("#datepicker1").datepicker();
             });
         </script>
         <script>
