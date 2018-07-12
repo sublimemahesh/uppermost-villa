@@ -59,6 +59,12 @@
                     <div class="sc_section overflow_hidden">
                         <div class="content_wrap margin_bottom_xlarge">
                             <div class="columns_wrap">
+                                <div class="bgtext1 bg bgtext1-booking">
+                                    <p>BOOK NOW</p>
+                                </div>
+                                <h2 class="page-topic-black title-booking">
+                                    <span class="sc_title_box">Book Now</span>
+                                </h2>
                                 <div class="clearfix">
                                     <div class="row form-group">
                                         <div class="column-1_2">
