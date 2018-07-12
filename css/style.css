@@ -7597,7 +7597,7 @@ h4:hover {
     font-size: 16px;
     color: #23282a;
     padding-left: 78px;
-    margin-bottom: 5px;
+    margin-bottom: 20px;
     font-weight: 700;
     text-transform: uppercase;
     list-style: none;
@@ -7623,9 +7623,33 @@ h4:hover {
 }
 
 .contact-info li > p {
-    margin-bottom: -15px;
+    margin-bottom: 0px;
 }
 .contact-padding {
     margin-top: -60px;
     margin-bottom: -60px;
+}
+.form-contact{
+    width: 98%;
+}
+.form-group-bottom{
+    margin-bottom: -10px;
+}
+.bg_color_1-1 {
+    background-color: #f0f1f580;
+}
+#dismessage.msg-success{
+    margin-left: 20px;
+    margin-top: -2%;
+    margin-bottom: 6px;
+}
+#sc_googlemap_1 .map-scrren{
+    border: 0px none;
+    width: 1905px;
+    height: 600px;
+}
+.cotact-wrap {
+    border: 1px solid black;
+    border-radius: 2%;
+    margin-right: 0px;
 }
