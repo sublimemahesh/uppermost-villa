@@ -7207,6 +7207,13 @@ h6.margin_bottom_large {
 .bgtext1-feedback{
     padding-left: 380px;
 }
+.bgtext1-booking{
+    padding-left: 365px;
+}
+.title-booking{
+    margin-top: 0px;
+}
+
 .sc-price-style{
     width: 775px;
 }
