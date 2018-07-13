@@ -220,7 +220,7 @@ $excursions = $EXCURSION->all();
                                                     <h3 class="entry-title"><?php echo $room['title']; ?></h3>
                                                     <p class="entry-content"><?php echo $room['short_description'] ?></p>
                                                     <span>
-                                                        <button class="read-more btn-readmore">Read More</button>
+                                                        <a href="view-accommodation.php?id=<?php echo $room["id"];?>"><button class="read-more btn-readmore">Read More</button></a>
                                                     </span>
                                                     <div class="accommo-icons">
                                                         <div class="entry-footer">
