@@ -1,3 +1,11 @@
+<?php
+include_once(dirname(__FILE__) . '/class/include.php');
+
+$PHOTO_ALBUM = new PhotoAlbum(Null);
+$photo_albums = $PHOTO_ALBUM->all();
+?>
+
+
 <!DOCTYPE html>
 <html lang="en-US" class="scheme_original">
 
@@ -58,63 +66,31 @@
                         <div class="content">
                             <div class="sc_property sc_property_style_property-1">
                                 <div class="columns_wrap ">
-                                    <div class="column-1_3 column_padding_bottom">
-                                        <a href="upload/gallery/image-1-1.jpg" data-fancybox="images">
-                                            <img src="upload/gallery/image-1-1.jpg" />
-                                        </a>
-                                    </div>
-                                    <div class="column-1_3 column_padding_bottom">
-                                        <a href="upload/gallery/image-2-1.jpg" data-fancybox="images">
-                                            <img src="upload/gallery/image-2-1.jpg" />
-                                        </a>
-                                    </div>
-                                    <div class="column-1_3 column_padding_bottom">
-                                        <a href="upload/gallery/image-3-1.jpg" data-fancybox="images">
-                                            <img src="upload/gallery/image-3-1.jpg" />
-                                        </a>
-                                    </div>
-                                    <div class="column-1_3 column_padding_bottom">
-                                        <a href="upload/gallery/image-1-1.jpg" data-fancybox="images">
-                                            <img src="upload/gallery/image-1-1.jpg" />
-                                        </a>
-                                    </div>
-                                    <div class="column-1_3 column_padding_bottom">
-                                        <a href="upload/gallery/image-2-1.jpg" data-fancybox="images">
-                                            <img src="upload/gallery/image-2-1.jpg" />
-                                        </a>
-                                    </div>
-                                    <div class="column-1_3 column_padding_bottom">
-                                        <a href="upload/gallery/image-3-1.jpg" data-fancybox="images">
-                                            <img src="upload/gallery/image-3-1.jpg" />
-                                        </a>
-                                    </div>
-                                    <div class="column-1_3 column_padding_bottom">
-                                        <a href="upload/gallery/image-1-1.jpg" data-fancybox="images">
-                                            <img src="upload/gallery/image-1-1.jpg" />
-                                        </a>
-                                    </div>
-                                    <div class="column-1_3 column_padding_bottom">
-                                        <a href="upload/gallery/image-2-1.jpg" data-fancybox="images">
-                                            <img src="upload/gallery/image-2-1.jpg" />
-                                        </a>
-                                    </div>
-                                    <div class="column-1_3 column_padding_bottom">
-                                        <a href="upload/gallery/image-3-1.jpg" data-fancybox="images">
-                                            <img src="upload/gallery/image-3-1.jpg" />
-                                        </a>
-                                    </div>
 
+                                    <?php
+                                    foreach ($photo_albums as $photo_album) {
+                                    ?>
+                                        <div class="column-1_3 column_padding_bottom">
+                                            <a href="upload/photo-album/<?php echo $photo_album['image_name'] ?>" data-fancybox="images">
+                                                <img src="upload/photo-album/<?php echo $photo_album['image_name'] ?>" />
+                                            </a>
+                                        </div>
+                                    
+                                    <?php
+                                    }
+                                    ?>
+
+                                    </div>
                                 </div>
                             </div>
+
                         </div>
+                    </div>              
 
-                    </div>
-                </div>              
-
-                <!-- Footer -->
-                <?php
-                include 'footer.php';
-                ?>
+                    <!-- Footer -->
+                    <?php
+                    include 'footer.php';
+                    ?>
                 <!-- /Footer -->
 
             </div>
