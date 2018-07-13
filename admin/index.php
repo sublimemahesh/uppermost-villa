@@ -3,11 +3,9 @@ include_once(dirname(__FILE__) . '/../class/include.php');
 include_once(dirname(__FILE__) . '/auth.php');
 
 $COUNT_COMMENT = count(Comments::pendingComments());
-$COUNT_ACTIVITY = count(Activities::all());
-$COUNT_ATTRACTION = count(Attraction::all());
+$COUNT_EXCURSION = count(Excursions::all());
 $COUNT_ROOM = count(Room::all());
 $SLIDER_IMAGES = count(Slider::all());
-$COUNT_TOUR = count(TourPackage::all());
 $COUNT_GALLERY = count(AlbumPhoto::getAlbumPhotosById(6));
 ?> 
 <!DOCTYPE html>
@@ -115,68 +113,7 @@ $COUNT_GALLERY = count(AlbumPhoto::getAlbumPhotosById(6));
                             </div>
                         </div>
                     </div>
-
-                    <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
-                        <div class="card">
-                            <div class="header bg-blue-grey">
-                                <h2>
-                                    TOUR PACKAGES <small>   
-
-                                    </small>
-                                </h2>
-                                <ul class="header-dropdown m-r--5">
-                                    <div class="number count-to" data-from="0" data-to=" <?php echo $COUNT_TOUR; ?>" data-speed="1500" data-fresh-interval="1"></div>
-                                </ul>
-                            </div>
-                            <div class="body">
-                                <div class="list-group">
-                                    <a href="create-tour-package.php"><button type="button" class="list-group-item">Add new</button></a>
-                                    <a href="manage-tour-package.php"><button type="button" class="list-group-item">Manage</button></a>
-                                    <a href="arrange-tour-package.php"><button type="button" class="list-group-item">Arrange</button></a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
-                        <div class="card">
-                            <div class="header bg-blue-grey">
-                                <h2>
-                                    ATTRACTIONS
-    <!--                                    <small>  </small>-->
-                                </h2>
-                                <ul class="header-dropdown m-r--5">
-                                    <div class="number count-to" data-from="0" data-to=" <?php echo $COUNT_ATTRACTION; ?>" data-speed="1500" data-fresh-interval="1"></div>
-                                </ul>
-                            </div>
-                            <div class="body">
-                                <div class="list-group">
-                                    <a href="create-attraction.php"><button type="button" class="list-group-item">Add new</button></a>
-                                    <a href="manage-attraction.php"><button type="button" class="list-group-item">Manage</button></a>
-                                    <a href="arrange-attraction.php"><button type="button" class="list-group-item">Arrange</button></a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
-                        <div class="card">
-                            <div class="header bg-blue-grey">
-                                <h2>
-                                    ACTIVITIES
-    <!--                                    <small></small>-->
-                                </h2>
-                                <ul class="header-dropdown m-r--5">
-                                    <div class="number count-to" data-from="0" data-to=" <?php echo $COUNT_ACTIVITY; ?>" data-speed="1500" data-fresh-interval="1"></div>
-                                </ul>
-                            </div>
-                            <div class="body">
-                                <div class="list-group">
-                                    <a href="create-activity.php"><button type="button" class="list-group-item">Add new</button></a>
-                                    <a href="manage-activity.php"><button type="button" class="list-group-item">Manage</button></a>
-                                    <a href="arrange-activity.php"><button type="button" class="list-group-item">Arrange</button></a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+                    
                     <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
                         <div class="card">
                             <div class="header bg-blue-grey">
@@ -197,7 +134,26 @@ $COUNT_GALLERY = count(AlbumPhoto::getAlbumPhotosById(6));
                                 </div>
                             </div>
                         </div>
-
+                    </div>
+                    <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+                        <div class="card">
+                            <div class="header bg-blue-grey">
+                                <h2>
+                                    EXCURSION
+    <!--                                    <small></small>-->
+                                </h2>
+                                <ul class="header-dropdown m-r--5">
+                                    <div class="number count-to" data-from="0" data-to=" <?php echo $COUNT_EXCURSION; ?>" data-speed="1500" data-fresh-interval="1"></div>
+                                </ul>
+                            </div>
+                            <div class="body">
+                                <div class="list-group">
+                                    <a href="create-excursion.php"><button type="button" class="list-group-item">Add new</button></a>
+                                    <a href="manage-excursion.php"><button type="button" class="list-group-item">Manage</button></a>
+                                    <a href="arrange-excursion.php"><button type="button" class="list-group-item">Arrange</button></a>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                     <!-- #END# Widgets -->
                     <!-- CPU Usage -->

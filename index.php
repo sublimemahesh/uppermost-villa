@@ -1,3 +1,11 @@
+<?php
+include_once(dirname(__FILE__) . '/class/include.php');
+
+$ROOM = new Room(Null);
+$rooms = $ROOM->all();
+?>
+
+
 <!DOCTYPE html>
 <html lang="en-US" class="scheme_original">
     <head>
@@ -162,6 +170,77 @@
                             <div class="sc_property_wrap property-wrap-top">
                                 <div class="sc_property sc_property_style_property-1">
                                     <div class="owl-carousel" id="accommodation-carousel">
+                                        <?php
+                                        foreach ($rooms as $room) {
+                                            if (strlen($room['title']) > 35) {
+                                                ?>
+                                                <div class="my-corousel">
+                                                    <div class="sc_columns columns_wrap bg_color_1">
+                                                        <div class="column-1_2 column_padding_bottom accommo-column">
+                                                            <!--<img src="images/img-600x410.jpg" alt=""/>-->
+                                                            <img src="upload/room/<?php echo $room['image_name'] ?>" alt=""/>
+                                                        </div>
+                                                        <div class="column-1_2 column_padding_bottom accommo-column1">
+                                                            <h3 class="entry-title" style="margin-bottom: 5px;"><?php echo $room['title']; ?></h3>
+                                                            <p class="entry-content"><?php echo substr($room['short_description'],0,250) . '...'; ?></p>
+                                                            <span>
+                                                                <button class="read-more btn-readmore">Read More</button>
+                                                            </span>
+                                                            <div class="accommo-icons">
+                                                                <div class="entry-footer">
+                                                                    <span class="icon-bed bed-style"></span>
+                                                                    <span class="icon-bath bath-style"></span>
+                                                                    <span class="icon-warehouse"></span>
+
+                                                                    <div class="property_price_box1">
+                                                                        <span class="property_price_box_sign price-font">$</span>
+                                                                        <span class="property_price_box_price price-font"><?php echo $room['price'] ?></span>
+                                                                        <span class="price-day"> / Day</span>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                <?php
+                                            } else {
+                                                ?>
+                                                <div class="my-corousel">
+                                                    <div class="sc_columns columns_wrap bg_color_1">
+                                                        <div class="column-1_2 column_padding_bottom accommo-column">
+                                                            <!--<img src="images/img-600x410.jpg" alt=""/>-->
+                                                            <img src="upload/room/<?php echo $room['image_name'] ?>" alt=""/>
+                                                        </div>
+                                                        <div class="column-1_2 column_padding_bottom accommo-column1">
+                                                            <h3 class="entry-title"><?php echo $room['title']; ?></h3>
+                                                            <p class="entry-content"><?php echo $room['short_description'] ?></p>
+                                                            <span>
+                                                                <button class="read-more btn-readmore">Read More</button>
+                                                            </span>
+                                                            <div class="accommo-icons">
+                                                                <div class="entry-footer">
+                                                                    <span class="icon-bed bed-style"></span>
+                                                                    <span class="icon-bath bath-style"></span>
+                                                                    <span class="icon-warehouse"></span>
+
+                                                                    <div class="property_price_box1">
+                                                                        <span class="property_price_box_sign price-font">$</span>
+                                                                        <span class="property_price_box_price price-font"><?php echo $room['price'] ?></span>
+                                                                        <span class="price-day"> / Day</span>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                <?php
+                                            }
+                                        }
+                                        ?>
+
+
                                         <div class="my-corousel">
                                             <div class="sc_columns columns_wrap bg_color_1">
                                                 <div class="column-1_2 column_padding_bottom accommo-column">
@@ -169,60 +248,6 @@
                                                 </div>
                                                 <div class="column-1_2 column_padding_bottom accommo-column1">
                                                     <h3 class="entry-title">Deluxe Double room with ocean view</h3>
-                                                    <p class="entry-content">Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage.</p>
-                                                    <span>
-                                                        <button class="read-more btn-readmore">Read More</button>
-                                                    </span>
-                                                    <div class="accommo-icons">
-                                                        <div class="entry-footer">
-                                                            <span class="icon-bed bed-style"></span>
-                                                            <span class="icon-bath bath-style"></span>
-                                                            <span class="icon-warehouse"></span>
-
-                                                            <div class="property_price_box1">
-                                                                <span class="property_price_box_sign price-font">$</span>
-                                                                <span class="property_price_box_price price-font">1,249,000</span>
-                                                                <span class="price-day"> / Day</span>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="my-corousel">
-                                            <div class="sc_columns columns_wrap bg_color_1">
-                                                <div class="column-1_2 column_padding_bottom accommo-column">
-                                                    <img src="images/img-600x410.jpg" alt=""/>
-                                                </div>
-                                                <div class="column-1_2 column_padding_bottom accommo-column1">
-                                                    <h3 class="entry-title">Deluxe Double room with pool view </h3>
-                                                    <p class="entry-content">Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage.</p>
-                                                    <span>
-                                                        <button class="read-more btn-readmore">Read More</button>
-                                                    </span>
-                                                    <div class="accommo-icons">
-                                                        <div class="entry-footer">
-                                                            <span class="icon-bed bed-style"></span>
-                                                            <span class="icon-bath bath-style"></span>
-                                                            <span class="icon-warehouse"></span>
-
-                                                            <div class="property_price_box1">
-                                                                <span class="property_price_box_sign price-font">$</span>
-                                                                <span class="property_price_box_price price-font">1,249,000</span>
-                                                                <span class="price-day"> / Day</span>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="my-corousel">
-                                            <div class="sc_columns columns_wrap bg_color_1">
-                                                <div class="column-1_2 column_padding_bottom accommo-column">
-                                                    <img src="images/img-600x410.jpg" alt=""/>
-                                                </div>
-                                                <div class="column-1_2 column_padding_bottom accommo-column1">
-                                                    <h3 class="entry-title">Deluxe Single room with ocean view </h3>
                                                     <p class="entry-content">Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage.</p>
                                                     <span>
                                                         <button class="read-more btn-readmore">Read More</button>
