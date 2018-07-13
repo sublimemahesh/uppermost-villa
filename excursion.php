@@ -1,3 +1,10 @@
+<?php
+include_once(dirname(__FILE__) . '/class/include.php');
+
+$EXCURSION = new Excursions(Null);
+$excursions = $EXCURSION->all();
+?>
+
 <!DOCTYPE html>
 <html lang="en-US" class="scheme_original">
 
@@ -61,222 +68,42 @@
                         <div class="content">
                             <div class="sc_property sc_property_style_property-1">
                                 <div class="columns_wrap ">
+                                    
+                                    <?php
+                                    foreach($excursions as $excursion){
+                                    ?>
 
                                     <div class="column-1_3 column_padding_bottom">
                                         <div class="sc_property_item">
                                             <div class="sc_property_image">
                                                 <a href="">                                                  
-                                                    <img alt="" src="images/image-7-1-770x460.jpg">
+                                                    <img alt="" src="upload/excursion/<?php echo $excursion['image_name'] ?>">
                                                 </a>
                                             </div>
                                             <div class="sc_property_info">
                                                 <div>
                                                     <div class="sc_property_title">
                                                         <div class="sc_property_title_address_1">
-                                                            <a href="#">87 Mishaum Point Rd</a> 
+                                                            <a href="#"><?php echo $excursion['title']; ?></a> 
                                                         </div>
-                                                        <div class="text-justify accommo-property-content">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa...</div>
+                                                        <div class="text-justify accommo-property-content"><?php echo substr($excursion['short_description'], 0, 150) . '...'; ?></div>
                                                     </div>
                                                     <div class="cL"></div>
                                                 </div>
                                             </div>
                                             <div class="sc_property_info_list">                                          
-                                                <a href="view-excursion.php?id=1"><button class="read-more excursion-readmore">Read More</button></a>
+                                                <a href="view-excursion.php?id=<?php echo $excursion["id"];?>"><button class="read-more excursion-readmore">Read More</button></a>
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="column-1_3 column_padding_bottom">
-                                        <div class="sc_property_item">
-                                            <div class="sc_property_image">
-                                                <a href="">                                                  
-                                                    <img alt="" src="images/image-7-1-770x460.jpg">
-                                                </a>
-                                            </div>
-                                            <div class="sc_property_info">
-                                                <div>
-                                                    <div class="sc_property_title">
-                                                        <div class="sc_property_title_address_1">
-                                                            <a href="#">87 Mishaum Point Rd</a> 
-                                                        </div>
-                                                        <div class="text-justify accommo-property-content">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa...</div>
-                                                    </div>
-                                                    <div class="cL"></div>
-                                                </div>
-                                            </div>
-                                            <div class="sc_property_info_list">                                          
-                                                <a href="view-excursion.php?id=1"><button class="read-more excursion-readmore">Read More</button></a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="column-1_3 column_padding_bottom">
-                                        <div class="sc_property_item">
-                                            <div class="sc_property_image">
-                                                <a href="">                                                  
-                                                    <img alt="" src="images/image-7-1-770x460.jpg">
-                                                </a>
-                                            </div>
-                                            <div class="sc_property_info">
-                                                <div>
-                                                    <div class="sc_property_title">
-                                                        <div class="sc_property_title_address_1">
-                                                            <a href="#">87 Mishaum Point Rd</a> 
-                                                        </div>
-                                                        <div class="text-justify accommo-property-content">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa...</div>
-                                                    </div>
-                                                    <div class="cL"></div>
-                                                </div>
-                                            </div>
-                                            <div class="sc_property_info_list">                                          
-                                                <a href="view-excursion.php?id=1"><button class="read-more excursion-readmore">Read More</button></a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="column-1_3 column_padding_bottom">
-                                        <div class="sc_property_item">
-                                            <div class="sc_property_image">
-                                                <a href="">                                                  
-                                                    <img alt="" src="images/image-7-1-770x460.jpg">
-                                                </a>
-                                            </div>
-                                            <div class="sc_property_info">
-                                                <div>
-                                                    <div class="sc_property_title">
-                                                        <div class="sc_property_title_address_1">
-                                                            <a href="#">87 Mishaum Point Rd</a> 
-                                                        </div>
-                                                        <div class="text-justify accommo-property-content">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa...</div>
-                                                    </div>
-                                                    <div class="cL"></div>
-                                                </div>
-                                            </div>
-                                            <div class="sc_property_info_list">                                          
-                                                <a href="view-excursion.php?id=1"><button class="read-more excursion-readmore">Read More</button></a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="column-1_3 column_padding_bottom">
-                                        <div class="sc_property_item">
-                                            <div class="sc_property_image">
-                                                <a href="">                                                  
-                                                    <img alt="" src="images/image-7-1-770x460.jpg">
-                                                </a>
-                                            </div>
-                                            <div class="sc_property_info">
-                                                <div>
-                                                    <div class="sc_property_title">
-                                                        <div class="sc_property_title_address_1">
-                                                            <a href="#">87 Mishaum Point Rd</a> 
-                                                        </div>
-                                                        <div class="text-justify accommo-property-content">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa...</div>
-                                                    </div>
-                                                    <div class="cL"></div>
-                                                </div>
-                                            </div>
-                                            <div class="sc_property_info_list">                                          
-                                                <a href="view-excursion.php?id=1"><button class="read-more excursion-readmore">Read More</button></a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="column-1_3 column_padding_bottom">
-                                        <div class="sc_property_item">
-                                            <div class="sc_property_image">
-                                                <a href="">                                                  
-                                                    <img alt="" src="images/image-7-1-770x460.jpg">
-                                                </a>
-                                            </div>
-                                            <div class="sc_property_info">
-                                                <div>
-                                                    <div class="sc_property_title">
-                                                        <div class="sc_property_title_address_1">
-                                                            <a href="#">87 Mishaum Point Rd</a> 
-                                                        </div>
-                                                        <div class="text-justify accommo-property-content">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa...</div>
-                                                    </div>
-                                                    <div class="cL"></div>
-                                                </div>
-                                            </div>
-                                            <div class="sc_property_info_list">                                          
-                                                <a href="view-excursion.php?id=1"><button class="read-more excursion-readmore">Read More</button></a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="column-1_3 column_padding_bottom">
-                                        <div class="sc_property_item">
-                                            <div class="sc_property_image">
-                                                <a href="">                                                  
-                                                    <img alt="" src="images/image-7-1-770x460.jpg">
-                                                </a>
-                                            </div>
-                                            <div class="sc_property_info">
-                                                <div>
-                                                    <div class="sc_property_title">
-                                                        <div class="sc_property_title_address_1">
-                                                            <a href="#">87 Mishaum Point Rd</a> 
-                                                        </div>
-                                                        <div class="text-justify accommo-property-content">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa...</div>
-                                                    </div>
-                                                    <div class="cL"></div>
-                                                </div>
-                                            </div>
-                                            <div class="sc_property_info_list">                                          
-                                                <a href="view-excursion.php?id=1"><button class="read-more excursion-readmore">Read More</button></a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="column-1_3 column_padding_bottom">
-                                        <div class="sc_property_item">
-                                            <div class="sc_property_image">
-                                                <a href="">                                                  
-                                                    <img alt="" src="images/image-7-1-770x460.jpg">
-                                                </a>
-                                            </div>
-                                            <div class="sc_property_info">
-                                                <div>
-                                                    <div class="sc_property_title">
-                                                        <div class="sc_property_title_address_1">
-                                                            <a href="#">87 Mishaum Point Rd</a> 
-                                                        </div>
-                                                        <div class="text-justify accommo-property-content">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa...</div>
-                                                    </div>
-                                                    <div class="cL"></div>
-                                                </div>
-                                            </div>
-                                            <div class="sc_property_info_list">                                          
-                                                <a href="view-excursion.php?id=1"><button class="read-more excursion-readmore">Read More</button></a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="column-1_3 column_padding_bottom">
-                                        <div class="sc_property_item">
-                                            <div class="sc_property_image">
-                                                <a href="">                                                  
-                                                    <img alt="" src="images/image-7-1-770x460.jpg">
-                                                </a>
-                                            </div>
-                                            <div class="sc_property_info">
-                                                <div>
-                                                    <div class="sc_property_title">
-                                                        <div class="sc_property_title_address_1">
-                                                            <a href="#">87 Mishaum Point Rd</a> 
-                                                        </div>
-                                                        <div class="text-justify accommo-property-content">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa...</div>
-                                                    </div>
-                                                    <div class="cL"></div>
-                                                </div>
-                                            </div>
-                                            <div class="sc_property_info_list">                                          
-                                                <a href="view-excursion.php?id=1"><button class="read-more excursion-readmore">Read More</button></a>
-                                            </div>
-                                        </div>
-                                    </div>
+                                    
+                                    <?php
+                                    }
+                                    ?>
+
+      
                                 </div>
                             </div>
-                            <nav id="pagination" class="pagination_wrap pagination_pages">
-                                <span class="pager_current active">1</span>
-                                <a href="#" class="">2</a>
-                                <a href="#" class="pager_next"></a>
-                                <a href="#" class="pager_last"></a>
-                            </nav>
                         </div>
 
                     </div>
