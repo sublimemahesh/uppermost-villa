@@ -88,7 +88,7 @@ $rooms = $ROOM->all();
                                                                 <a href="view-accommodation.php?id=<?php echo $room["id"];?>"><button class="read-more btn-readmore1">Read More</button></a>
                                                             </span>
                                                             <span>
-                                                                <button class="read-more btn-readmore1">Book Now</button>
+                                                                <a href="booking.php?id=<?php echo $room["id"];?>1"><button class="read-more btn-readmore1">Book Now</button></a>
                                                             </span>
                                                         </div>                                              
                                                     </div>
@@ -124,7 +124,7 @@ $rooms = $ROOM->all();
                                                                 <a href="view-accommodation.php?id=<?php echo $room["id"];?>"><button class="read-more btn-readmore1">Read More</button></a>
                                                             </span>
                                                             <span>
-                                                                <button class="read-more btn-readmore1">Book Now</button>
+                                                                <a href="booking.php?id=<?php echo $room["id"];?>1"><button class="read-more btn-readmore1">Book Now</button></a>
                                                             </span>
                                                         </div>                                              
                                                     </div>
