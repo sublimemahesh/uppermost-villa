@@ -1,3 +1,10 @@
+<?php
+include_once(dirname(__FILE__) . '/class/include.php');
+
+$ROOM = new Room(Null);
+$rooms = $ROOM->all();
+?>
+
 <!DOCTYPE html>
 <html lang="en-US" class="scheme_original">
 
@@ -56,182 +63,83 @@
                 </div>
                 <!--/breadcrumbs-->
 
-                <div class="page_content_wrap accommo-padding1">
-                    <div class="content_wrap">
-                        <div class="content">
-                            <div class="sc_property sc_property_style_property-1">
-                                <div class="columns_wrap1 ">
-                                    <div class="sc_property_wrap">
-                                        <div class="sc_property sc_property_style_property-1">
+                <?php
+                foreach ($rooms as $room) {
+                    if (strlen($room['title']) > 35) {
+                        ?>
 
-                                            <div class="sc_columns columns_wrap excursion-bg-color col-margin">
-                                                <div class="ribbon"><span>$100</span></div>
-                                                <div class="column-1_4 col-4 padding-col">
-                                                    <img src="images/img-600x410.jpg" alt=""/>
-                                                </div>
-                                                <div class="column-1_2 col-2 entry-box">
-                                                    <h3 class="entry-title-accommo">Deluxe Double room with ocean view</h3>
-                                                    <p class="entry-content-accommo p-margin text-justify">Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical.It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. </p>
+                        <div class="page_content_wrap accommo-padding1">
+                            <div class="content_wrap">
+                                <div class="content">
+                                    <div class="sc_property sc_property_style_property-1">
+                                        <div class="columns_wrap1 ">
+                                            <div class="sc_property_wrap">
+                                                <div class="sc_property sc_property_style_property-1">
 
-                                                    <div class="columns_wrap sc_columns">
-                                                        <div class="column-1_2 sc_column_item entry-ul">
-                                                            <ul class="sc_list sc_list_style_iconed color_1">
-                                                                <li class="sc_list_item">
-                                                                    <span class="sc_list_icon icon-stop color_2"></span>
-                                                                    <p>Quiet Neighbourhood</p>
-                                                                </li>
-                                                                <li class="sc_list_item">
-                                                                    <span class="sc_list_icon icon-stop color_2"></span>
-                                                                    <p>Great Local Community</p>
-                                                                </li>
-                                                            </ul>
+                                                    <div class="sc_columns columns_wrap excursion-bg-color col-margin">
+                                                        <div class="ribbon"><span><?php echo "$", $room['price'] ?></span></div>
+                                                        <div class="column-1_4 col-4 padding-col">
+                                                            <img src="upload/room/<?php echo $room['image_name'] ?>" alt=""/>
                                                         </div>
-                                                        <div class="column-1_2 sc_column_item">
-                                                            <ul class="sc_list sc_list_style_iconed color_1">
-                                                                <li class="sc_list_item">
-                                                                    <span class="sc_list_icon icon-stop color_2"></span>
-                                                                    <p>Fabulous Views</p>
-                                                                </li>
-                                                                <li class="sc_list_item">
-                                                                    <span class="sc_list_icon icon-stop color_2"></span>
-                                                                    <p>Large Play Center In Yard</p>
-                                                                </li>
-                                                            </ul>
-                                                        </div>
+                                                        <div class="column-1_2 col-2 entry-box">
+                                                            <h3 class="entry-title-accommo"><?php echo $room['title']; ?></h3>
+                                                            <p class="entry-content-accommo p-margin text-justify"><?php echo substr($room['short_description'], 0, 350) . '...'; ?></p>                                                        
+                                                            <span>
+                                                                <a href="view-accommodation.php?id=<?php echo $room["id"];?>"><button class="read-more btn-readmore1">Read More</button></a>
+                                                            </span>
+                                                            <span>
+                                                                <button class="read-more btn-readmore1">Book Now</button>
+                                                            </span>
+                                                        </div>                                              
                                                     </div>
-                                                    <span>
-                                                        <a href="view-accommodation.php?id=1"><button class="read-more btn-readmore1">Read More</button></a>
-                                                    </span>
-                                                    <span>
-                                                        <button class="read-more btn-readmore1">Book Now</button>
-                                                    </span>
-                                                </div>                                              
+                                                </div>
                                             </div>
                                         </div>
-                                    </div>
+                                    </div>                          
                                 </div>
-                            </div>                          
+                            </div>
                         </div>
-                    </div>
-                </div>
+
+                        <?php
+                    } else {
+                        ?>
                 
-                <div class="page_content_wrap accommo-padding1">
-                    <div class="content_wrap">
-                        <div class="content">
-                            <div class="sc_property sc_property_style_property-1">
-                                <div class="columns_wrap1 ">
-                                    <div class="sc_property_wrap">
-                                        <div class="sc_property sc_property_style_property-1">
+                        <div class="page_content_wrap accommo-padding1">
+                            <div class="content_wrap">
+                                <div class="content">
+                                    <div class="sc_property sc_property_style_property-1">
+                                        <div class="columns_wrap1 ">
+                                            <div class="sc_property_wrap">
+                                                <div class="sc_property sc_property_style_property-1">
 
-                                            <div class="sc_columns columns_wrap excursion-bg-color col-margin">
-                                                <div class="ribbon"><span>$100</span></div>
-                                                <div class="column-1_4 col-4 padding-col">
-                                                    <img src="images/img-600x410.jpg" alt=""/>
-                                                </div>
-                                                <div class="column-1_2 col-2 entry-box">
-                                                    <h3 class="entry-title-accommo">Deluxe Double room with ocean view</h3>
-                                                    <p class="entry-content-accommo p-margin text-justify">Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical.It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. </p>
-
-                                                    <div class="columns_wrap sc_columns">
-                                                        <div class="column-1_2 sc_column_item entry-ul">
-                                                            <ul class="sc_list sc_list_style_iconed color_1">
-                                                                <li class="sc_list_item">
-                                                                    <span class="sc_list_icon icon-stop color_2"></span>
-                                                                    <p>Quiet Neighbourhood</p>
-                                                                </li>
-                                                                <li class="sc_list_item">
-                                                                    <span class="sc_list_icon icon-stop color_2"></span>
-                                                                    <p>Great Local Community</p>
-                                                                </li>
-                                                            </ul>
+                                                    <div class="sc_columns columns_wrap excursion-bg-color col-margin">
+                                                        <div class="ribbon"><span><?php echo "$", $room['price'] ?></span></div>
+                                                        <div class="column-1_4 col-4 padding-col">
+                                                            <img src="upload/room/<?php echo $room['image_name'] ?>" alt=""/>
                                                         </div>
-                                                        <div class="column-1_2 sc_column_item">
-                                                            <ul class="sc_list sc_list_style_iconed color_1">
-                                                                <li class="sc_list_item">
-                                                                    <span class="sc_list_icon icon-stop color_2"></span>
-                                                                    <p>Fabulous Views</p>
-                                                                </li>
-                                                                <li class="sc_list_item">
-                                                                    <span class="sc_list_icon icon-stop color_2"></span>
-                                                                    <p>Large Play Center In Yard</p>
-                                                                </li>
-                                                            </ul>
-                                                        </div>
+                                                        <div class="column-1_2 col-2 entry-box">
+                                                            <h3 style="margin-top: 40px;" class="entry-title-accommo"><?php echo $room['title']; ?></h3>
+                                                            <p class="entry-content-accommo p-margin text-justify"><?php echo substr($room['short_description'], 0, 350) . '...'; ?></p>
+                                                            <span>
+                                                                <a href="view-accommodation.php?id=<?php echo $room["id"];?>"><button class="read-more btn-readmore1">Read More</button></a>
+                                                            </span>
+                                                            <span>
+                                                                <button class="read-more btn-readmore1">Book Now</button>
+                                                            </span>
+                                                        </div>                                              
                                                     </div>
-                                                    <span>
-                                                        <a href="view-accommodation.php?id=1"><button class="read-more btn-readmore1">Read More</button></a>
-                                                    </span>
-                                                    <span>
-                                                        <button class="read-more btn-readmore1">Book Now</button>
-                                                    </span>
-                                                </div>                                              
+                                                </div>
                                             </div>
                                         </div>
-                                    </div>
+                                    </div>                          
                                 </div>
-                            </div>                          
+                            </div>
                         </div>
-                    </div>
-                </div>
                 
-                <div class="page_content_wrap accommo-padding1">
-                    <div class="content_wrap">
-                        <div class="content">
-                            <div class="sc_property sc_property_style_property-1">
-                                <div class="columns_wrap1 ">
-                                    <div class="sc_property_wrap">
-                                        <div class="sc_property sc_property_style_property-1">
-
-                                            <div class="sc_columns columns_wrap excursion-bg-color col-margin">
-                                                <div class="ribbon"><span>$100</span></div>
-                                                <div class="column-1_4 col-4 padding-col">
-                                                    <img src="images/img-600x410.jpg" alt=""/>
-                                                </div>
-                                                <div class="column-1_2 col-2 entry-box">
-                                                    <h3 class="entry-title-accommo">Deluxe Double room with ocean view</h3>
-                                                    <p class="entry-content-accommo p-margin text-justify">Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical.It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. </p>
-
-                                                    <div class="columns_wrap sc_columns">
-                                                        <div class="column-1_2 sc_column_item entry-ul">
-                                                            <ul class="sc_list sc_list_style_iconed color_1">
-                                                                <li class="sc_list_item">
-                                                                    <span class="sc_list_icon icon-stop color_2"></span>
-                                                                    <p>Quiet Neighbourhood</p>
-                                                                </li>
-                                                                <li class="sc_list_item">
-                                                                    <span class="sc_list_icon icon-stop color_2"></span>
-                                                                    <p>Great Local Community</p>
-                                                                </li>
-                                                            </ul>
-                                                        </div>
-                                                        <div class="column-1_2 sc_column_item">
-                                                            <ul class="sc_list sc_list_style_iconed color_1">
-                                                                <li class="sc_list_item">
-                                                                    <span class="sc_list_icon icon-stop color_2"></span>
-                                                                    <p>Fabulous Views</p>
-                                                                </li>
-                                                                <li class="sc_list_item">
-                                                                    <span class="sc_list_icon icon-stop color_2"></span>
-                                                                    <p>Large Play Center In Yard</p>
-                                                                </li>
-                                                            </ul>
-                                                        </div>
-                                                    </div>
-                                                    <span>
-                                                        <a href="view-accommodation.php?id=1"><button class="read-more btn-readmore1">Read More</button></a>
-                                                    </span>
-                                                    <span>
-                                                        <button class="read-more btn-readmore1">Book Now</button>
-                                                    </span>
-                                                </div>                                              
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>                          
-                        </div>
-                    </div>
-                </div>
+                        <?php
+                    }
+                }
+                ?>
 
                 <!-- Footer -->
                 <?php
