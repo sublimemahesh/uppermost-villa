@@ -45,6 +45,8 @@ $excursions = $EXCURSION->all();
         <link href="css/custom/instagram-widget.css" rel="stylesheet" type="text/css"/>
         <link href="js/vendor/magnific-popup/magnific-popup.css" rel="stylesheet" type="text/css"/>
         <link href="plugins/sliderengine/amazingslider-1.css" rel="stylesheet" type="text/css"/>
+        <link href="plugins/owl-carousel/css/owl.carousel.min.css" rel="stylesheet" type="text/css"/>
+        <link href="plugins/owl-carousel/css/owl.theme.default.min.css" rel="stylesheet" type="text/css"/>
 
     </head>
     <body class="body_style_wide responsive_menu scheme_original top_panel_show top_panel_above sidebar_hide">
@@ -82,17 +84,17 @@ $excursions = $EXCURSION->all();
                                     <div id="amazingslider-wrapper-1" style="display:block;position:relative;max-width:900px;margin:0px auto 102px;">
                                         <div id="amazingslider-1" style="display:block;position:relative;margin:0 auto;">
                                             <ul class="amazingslider-slides" style="display:none;">
-                                                
+
                                                 <?php
                                                 $photos = ExcursionsPhoto::getExcursionsPhotosById($EXCURSION->id);
                                                 foreach ($photos as $photo) {
-                                                ?>
-                                                
-                                                <li>
-                                                    <img src="upload/excursion/gallery/<?php echo $photo['image_name']; ?>" alt=""/>
-                                                </li>
-                                                
-                                                <?php
+                                                    ?>
+
+                                                    <li>
+                                                        <img src="upload/excursion/gallery/<?php echo $photo['image_name']; ?>" alt=""/>
+                                                    </li>
+
+                                                    <?php
                                                 }
                                                 ?>
 
@@ -101,13 +103,13 @@ $excursions = $EXCURSION->all();
                                                 <?php
                                                 $photos = ExcursionsPhoto::getExcursionsPhotosById($EXCURSION->id);
                                                 foreach ($photos as $photo) {
-                                                ?>
-                                                
-                                                <li>
-                                                    <img src="upload/excursion/gallery/thumb/<?php echo $photo['image_name']; ?>" alt=""/>
-                                                </li>
-                                                
-                                                <?php
+                                                    ?>
+
+                                                    <li>
+                                                        <img src="upload/excursion/gallery/thumb/<?php echo $photo['image_name']; ?>" alt=""/>
+                                                    </li>
+
+                                                    <?php
                                                 }
                                                 ?>                                            
                                             </ul>
@@ -121,7 +123,7 @@ $excursions = $EXCURSION->all();
 
                                 <div class="sc_section">
                                     <p class="text-justify"><?php echo $EXCURSION->description; ?></p>
-                                    
+
                                 </div>
                             </section>
                         </div>
@@ -131,43 +133,42 @@ $excursions = $EXCURSION->all();
                     <div class="content_wrap">
                         <h4 class="sc_title">More Excursions</h4>
                         <div class="sc_property_wrap">
-                            <div class="sc_property sc_property_style_property-1 " data-interval="5446" data-slides-per-view="3">
-                                <div class="sc_columns columns_wrap">
-                                    
+                            <div class="sc_property sc_property_style_property-1 " data-interval="5446" data-slides-per-view="3" style="margin-bottom: 40px;">
+                             <div class="owl-carousel sc_columns columns_wrap" id="excurision-carousel">
+
                                     <?php
-                                    foreach($excursions as $key => $excursion){
-                                        if ($key < 3) {
-                                    ?>
-                                    
-                                    <div class="column-1_3 column_padding_bottom">
-                                        <div class="sc_property_item">
-                                            <div class="sc_property_image">
-                                                <a href="">                                                  
-                                                    <img alt="" src="upload/excursion/<?php echo $excursion['image_name'] ?>">
-                                                </a>
-                                            </div>
-                                            <div class="sc_property_info">
-                                                <div>
-                                                    <div class="sc_property_title">
-                                                        <div class="sc_property_title_address_1">
-                                                            <a href="#"><?php echo $excursion['title'] ?></a> 
+                                    foreach ($excursions as $excursion) {
+                                        ?>
+                                        <div class="column_padding_bottom">
+                                            <div class="sc_property_item">
+                                                <div class="sc_property_image">
+                                                    <a href="#">
+
+                                                        <img alt="" src="upload/excursion/<?php echo $excursion['image_name'] ?>">
+                                                    </a>
+                                                </div>
+                                                <div class="sc_property_info">
+                                                    <div class="sc_property_description"></div>
+                                                    <div>
+                                                        <div class="sc_property_title">
+                                                            <div class="sc_property_title_address_1">
+                                                                <a href="#"><?php echo $excursion['title']; ?></a> 
+                                                            </div>
+                                                            <div class="text-justify"><?php echo substr($excursion['short_description'], 0, 150) . '...'; ?></div>
                                                         </div>
-                                                        <div class="text-justify accommo-property-content"><?php echo substr($excursion['short_description'], 0, 150) . '...'; ?></div>
+                                                        <div class="cL"></div>
                                                     </div>
-                                                    <div class="cL"></div>
+                                                </div>
+                                                <div class="sc_property_info_list">
+                                                    <span>
+                                                        <a href="view-excursion.php?id=<?php echo $excursion["id"]; ?>"><button class="read-more excursion-readmore">Read More</button></a>
+                                                    </span>
                                                 </div>
                                             </div>
-                                            <div class="sc_property_info_list">                                          
-                                                <a href="view-excursion.php?id=<?php echo $excursion["id"]; ?>"><button class="read-more excursion-readmore">Read More</button></a>
-                                            </div>
                                         </div>
-                                    </div>
-                                    
-                                    <?php
-                                    }
+                                        <?php
                                     }
                                     ?>
-                                    
                                 </div>
                             </div>
                         </div>
@@ -175,9 +176,9 @@ $excursions = $EXCURSION->all();
                 </div>
 
                 <!-- Footer -->
-                <?php
-                include 'footer.php';
-                ?>
+<?php
+include 'footer.php';
+?>
                 <!-- /Footer -->
 
             </div>
@@ -209,9 +210,35 @@ $excursions = $EXCURSION->all();
         <script src="js/vendor/magnific-popup/jquery.magnific-popup.min.js" type="text/javascript"></script>
         <script src="plugins/sliderengine/amazingslider.js" type="text/javascript"></script>
         <script src="plugins/sliderengine/initslider-1.js" type="text/javascript"></script>
+        <script src="plugins/owl-carousel/js/owl.carousel.min.js" type="text/javascript"></script>
 
         <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
 
+        
+        <script>
+            $(document).ready(function () {
+                $("#excurision-carousel").owlCarousel({
+                    loop: true,
+                    margin: 7,
+                    nav: true,
+                    autoplay: true,
+                    autoplayTimeout: 2000,
+                    autoplayHoverPause: true,
+                    dots: true,
+                    responsive: {
+                        0: {
+                            items: 1
+                        },
+                        600: {
+                            items: 2
+                        },
+                        1000: {
+                            items: 3
+                        }
+                    }
+                });
+            });
+        </script>
     </body>
 
 </html>
