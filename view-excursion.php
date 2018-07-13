@@ -1,3 +1,17 @@
+<?php
+include_once(dirname(__FILE__) . '/class/include.php');
+
+$id = '';
+
+if (isset($_GET['id'])) {
+    $id = $_GET['id'];
+}
+
+$EXCURSION = new Excursions($id);
+
+$excursions = $EXCURSION->all();
+?>
+
 <!DOCTYPE html>
 <html lang="en-US" class="scheme_original">
 
@@ -7,7 +21,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
         <meta name="format-detection" content="telephone=no">
         <link rel="icon" type="image/x-icon" href="images/favicon.png" />
-        <title>Uppermost Villa</title>
+        <title>Uppermost Villa - <?php echo $EXCURSION->title; ?></title>
         <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Droid+Serif%3A400%2C700%7CRaleway%3A100%2C200%2C300%2C400%2C500%2C600%2C700%2C800%2C900%7COpen+Sans%3A300%2C400%2C600%2C700%2C800%7CMontserrat%3A700%2C400&amp;subset=cyrillic%2Ccyrillic-ext%2Clatin%2Cgreek-ext%2Cgreek%2Clatin-ext%2Cvietnamese&amp;ver=1.6.11" type="text/css" media="all">
         <link rel='stylesheet' href='js/vendor/booked/font-awesome.min.css' type='text/css' media='all' />
         <link rel='stylesheet' href='js/vendor/essgrid/tooltipster.css' type='text/css' media='all' />
@@ -47,13 +61,13 @@
                 <div class="top_panel_title heading-banner top_panel_style_1  title_present scheme_original">
                     <div class="top_panel_title_inner top_panel_inner_style_1 breadcrumbs_present_inner">
                         <div class="content_wrap">
-                            <h1 class="page_title banner-title">View Excursion</h1>
+                            <h1 class="page_title banner-title"><?php echo $EXCURSION->title; ?></h1>
                             <div class="breadcrumbs banner-title">
                                 <a class="breadcrumbs_item home" href="./">Home</a>
                                 <span class="breadcrumbs_delimiter"></span>
                                 <a class="breadcrumbs_item home" href="excursion.php">Excursions</a>
                                 <span class="breadcrumbs_delimiter"></span>
-                                <span class="breadcrumbs_item current">View Excursion</span>
+                                <span class="breadcrumbs_item current"><?php echo $EXCURSION->title; ?></span>
                             </div>
                         </div>
                     </div>
@@ -68,20 +82,34 @@
                                     <div id="amazingslider-wrapper-1" style="display:block;position:relative;max-width:900px;margin:0px auto 102px;">
                                         <div id="amazingslider-1" style="display:block;position:relative;margin:0 auto;">
                                             <ul class="amazingslider-slides" style="display:none;">
-                                                <li><img src="upload/excursion/gallery/image-1-1.jpg" alt=""/>
+                                                
+                                                <?php
+                                                $photos = ExcursionsPhoto::getExcursionsPhotosById($EXCURSION->id);
+                                                foreach ($photos as $photo) {
+                                                ?>
+                                                
+                                                <li>
+                                                    <img src="upload/excursion/gallery/<?php echo $photo['image_name']; ?>" alt=""/>
                                                 </li>
-                                                <li><img src="upload/excursion/gallery/image-2-1.jpg" alt=""/>
-                                                </li>
-                                                <li><img src="upload/excursion/gallery/image-3-1.jpg" alt=""/>
-                                                </li>
-                                                <li><img src="upload/excursion/gallery/thumb/image-3-370x294-tn.jpg" alt=""/>                                                    
-                                                </li>
+                                                
+                                                <?php
+                                                }
+                                                ?>
+
                                             </ul>
                                             <ul class="amazingslider-thumbnails" style="display:none;">
-                                                <li><img src="upload/excursion/gallery/thumb/image-1-1-tn.jpg" alt=""/></li>                                               
-                                                <li><img src="upload/excursion/gallery/thumb/image-2-1-tn.jpg" alt=""/></li>
-                                                <li><img src="upload/excursion/gallery/thumb/image-3-1-tn.jpg" alt=""/></li>
-                                                <li><img src="upload/excursion/gallery/thumb/image-3-370x294-tn.jpg" alt=""/></li>                                               
+                                                <?php
+                                                $photos = ExcursionsPhoto::getExcursionsPhotosById($EXCURSION->id);
+                                                foreach ($photos as $photo) {
+                                                ?>
+                                                
+                                                <li>
+                                                    <img src="upload/excursion/gallery/thumb/<?php echo $photo['image_name']; ?>" alt=""/>
+                                                </li>
+                                                
+                                                <?php
+                                                }
+                                                ?>                                            
                                             </ul>
 
                                         </div>
@@ -89,13 +117,11 @@
                                 </div>
                             </section>
                             <section class="post_content">
-                                <h3 class="post_title">Deluxe Double room with ocean view</h3>
+                                <h3 class="post_title"><?php echo $EXCURSION->title; ?></h3>
 
                                 <div class="sc_section">
-                                    <p class="text-justify">The Moana Residence is situated on the best lot at Kohanaiki and is a 5 bedroom, 5 1/2 bath home of approximately 8,000 interior sq. ft. It features Ipe hardwood flooring on the interior and granite stone flooring on the lanais, granite countertops, vaulted cedar ceilings, clerestory windows for lots of light.</p>
-                                    <p class="text-justify">mahogany cabinetry, mahogany trim and pocketing doors throughout. The beautifully landscaped grounds include a large lap pool, spa and separate Pool.</p>
-                                    <p class="text-justify">Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum" (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in section 1.10.32.</p>
-                                    <p class="text-justify text-bottom">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text. All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary, making this the first true generator on the Internet. It uses a dictionary of over 200 Latin words, combined with a handful of model sentence structures, to generate Lorem Ipsum which looks reasonable. The generated Lorem Ipsum is therefore always free from repetition, injected humour, or non-characteristic words etc.</p>                 
+                                    <p class="text-justify"><?php echo $EXCURSION->description; ?></p>
+                                    
                                 </div>
                             </section>
                         </div>
@@ -107,75 +133,41 @@
                         <div class="sc_property_wrap">
                             <div class="sc_property sc_property_style_property-1 " data-interval="5446" data-slides-per-view="3">
                                 <div class="sc_columns columns_wrap">
+                                    
+                                    <?php
+                                    foreach($excursions as $key => $excursion){
+                                        if ($key < 3) {
+                                    ?>
+                                    
                                     <div class="column-1_3 column_padding_bottom">
                                         <div class="sc_property_item">
                                             <div class="sc_property_image">
                                                 <a href="">                                                  
-                                                    <img alt="" src="images/image-7-1-770x460.jpg">
+                                                    <img alt="" src="upload/excursion/<?php echo $excursion['image_name'] ?>">
                                                 </a>
                                             </div>
                                             <div class="sc_property_info">
                                                 <div>
                                                     <div class="sc_property_title">
                                                         <div class="sc_property_title_address_1">
-                                                            <a href="#">87 Mishaum Point Rd</a> 
+                                                            <a href="#"><?php echo $excursion['title'] ?></a> 
                                                         </div>
-                                                        <div class="text-justify accommo-property-content">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa...</div>
+                                                        <div class="text-justify accommo-property-content"><?php echo substr($excursion['short_description'], 0, 150) . '...'; ?></div>
                                                     </div>
                                                     <div class="cL"></div>
                                                 </div>
                                             </div>
                                             <div class="sc_property_info_list">                                          
-                                                <button class="read-more excursion-readmore">Read More</button>
+                                                <a href="view-excursion.php?id=<?php echo $excursion["id"]; ?>"><button class="read-more excursion-readmore">Read More</button></a>
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="column-1_3 column_padding_bottom">
-                                        <div class="sc_property_item">
-                                            <div class="sc_property_image">
-                                                <a href="">                                                  
-                                                    <img alt="" src="images/image-7-1-770x460.jpg">
-                                                </a>
-                                            </div>
-                                            <div class="sc_property_info">
-                                                <div>
-                                                    <div class="sc_property_title">
-                                                        <div class="sc_property_title_address_1">
-                                                            <a href="#">87 Mishaum Point Rd</a> 
-                                                        </div>
-                                                        <div class="text-justify accommo-property-content">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa...</div>
-                                                    </div>
-                                                    <div class="cL"></div>
-                                                </div>
-                                            </div>
-                                            <div class="sc_property_info_list">                                          
-                                                <button class="read-more excursion-readmore">Read More</button>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="column-1_3 column_padding_bottom">
-                                        <div class="sc_property_item">
-                                            <div class="sc_property_image">
-                                                <a href="">                                                  
-                                                    <img alt="" src="images/image-7-1-770x460.jpg">
-                                                </a>
-                                            </div>
-                                            <div class="sc_property_info">
-                                                <div>
-                                                    <div class="sc_property_title">
-                                                        <div class="sc_property_title_address_1">
-                                                            <a href="#">87 Mishaum Point Rd</a> 
-                                                        </div>
-                                                        <div class="text-justify accommo-property-content">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa...</div>
-                                                    </div>
-                                                    <div class="cL"></div>
-                                                </div>
-                                            </div>
-                                            <div class="sc_property_info_list">                                          
-                                                <button class="read-more excursion-readmore">Read More</button>
-                                            </div>
-                                        </div>
-                                    </div>
+                                    
+                                    <?php
+                                    }
+                                    }
+                                    ?>
+                                    
                                 </div>
                             </div>
                         </div>
