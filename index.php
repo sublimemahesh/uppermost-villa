@@ -3,6 +3,10 @@ include_once(dirname(__FILE__) . '/class/include.php');
 
 $ROOM = new Room(Null);
 $rooms = $ROOM->all();
+
+$EXCURSION = new Excursions(Null);
+$excursions = $EXCURSION->all();
+
 ?>
 
 
@@ -172,83 +176,49 @@ $rooms = $ROOM->all();
                                     <div class="owl-carousel" id="accommodation-carousel">
                                         <?php
                                         foreach ($rooms as $room) {
-                                            if (strlen($room['title']) > 35) {
-                                                ?>
-                                                <div class="my-corousel">
-                                                    <div class="sc_columns columns_wrap bg_color_1">
-                                                        <div class="column-1_2 column_padding_bottom accommo-column">
-                                                            <!--<img src="images/img-600x410.jpg" alt=""/>-->
-                                                            <img src="upload/room/<?php echo $room['image_name'] ?>" alt=""/>
-                                                        </div>
-                                                        <div class="column-1_2 column_padding_bottom accommo-column1">
-                                                            <h3 class="entry-title" style="margin-bottom: 5px;"><?php echo $room['title']; ?></h3>
-                                                            <p class="entry-content"><?php echo substr($room['short_description'],0,250) . '...'; ?></p>
-                                                            <span>
-                                                                <button class="read-more btn-readmore">Read More</button>
-                                                            </span>
-                                                            <div class="accommo-icons">
-                                                                <div class="entry-footer">
-                                                                    <span class="icon-bed bed-style"></span>
-                                                                    <span class="icon-bath bath-style"></span>
-                                                                    <span class="icon-warehouse"></span>
-
-                                                                    <div class="property_price_box1">
-                                                                        <span class="property_price_box_sign price-font">$</span>
-                                                                        <span class="property_price_box_price price-font"><?php echo $room['price'] ?></span>
-                                                                        <span class="price-day"> / Day</span>
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-
-                                                <?php
-                                            } else {
-                                                ?>
-                                                <div class="my-corousel">
-                                                    <div class="sc_columns columns_wrap bg_color_1">
-                                                        <div class="column-1_2 column_padding_bottom accommo-column">
-                                                            <!--<img src="images/img-600x410.jpg" alt=""/>-->
-                                                            <img src="upload/room/<?php echo $room['image_name'] ?>" alt=""/>
-                                                        </div>
-                                                        <div class="column-1_2 column_padding_bottom accommo-column1">
-                                                            <h3 class="entry-title"><?php echo $room['title']; ?></h3>
-                                                            <p class="entry-content"><?php echo $room['short_description'] ?></p>
-                                                            <span>
-                                                                <button class="read-more btn-readmore">Read More</button>
-                                                            </span>
-                                                            <div class="accommo-icons">
-                                                                <div class="entry-footer">
-                                                                    <span class="icon-bed bed-style"></span>
-                                                                    <span class="icon-bath bath-style"></span>
-                                                                    <span class="icon-warehouse"></span>
-
-                                                                    <div class="property_price_box1">
-                                                                        <span class="property_price_box_sign price-font">$</span>
-                                                                        <span class="property_price_box_price price-font"><?php echo $room['price'] ?></span>
-                                                                        <span class="price-day"> / Day</span>
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-
-                                                <?php
-                                            }
-                                        }
+                                        if (strlen($room['title']) > 35) {
                                         ?>
-
-
                                         <div class="my-corousel">
                                             <div class="sc_columns columns_wrap bg_color_1">
                                                 <div class="column-1_2 column_padding_bottom accommo-column">
-                                                    <img src="images/img-600x410.jpg" alt=""/>
+                                                    <!--<img src="images/img-600x410.jpg" alt=""/>-->
+                                                    <img src="upload/room/<?php echo $room['image_name'] ?>" alt=""/>
                                                 </div>
                                                 <div class="column-1_2 column_padding_bottom accommo-column1">
-                                                    <h3 class="entry-title">Deluxe Double room with ocean view</h3>
-                                                    <p class="entry-content">Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage.</p>
+                                                    <h3 class="entry-title" style="margin-bottom: 5px;"><?php echo $room['title']; ?></h3>
+                                                    <p class="entry-content"><?php echo substr($room['short_description'], 0, 250) . '...'; ?></p>
+                                                    <span>
+                                                        <a href="view-accommodation.php?id=<?php echo $room["id"];?>"><button class="read-more btn-readmore">Read More</button></a>                                                       
+                                                    </span>
+                                                    <div class="accommo-icons">
+                                                        <div class="entry-footer">
+                                                            <span class="icon-bed bed-style"></span>
+                                                            <span class="icon-bath bath-style"></span>
+                                                            <span class="icon-warehouse"></span>
+
+                                                            <div class="property_price_box1">
+                                                                <span class="property_price_box_sign price-font">$</span>
+                                                                <span class="property_price_box_price price-font"><?php echo $room['price'] ?></span>
+                                                                <span class="price-day"> / Day</span>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <?php
+                                        } else {
+                                        ?>
+                                        <div class="my-corousel">
+                                            <div class="sc_columns columns_wrap bg_color_1">
+                                                <div class="column-1_2 column_padding_bottom accommo-column">
+                                                    <!--<img src="images/img-600x410.jpg" alt=""/>-->
+                                                    <img src="upload/room/<?php echo $room['image_name'] ?>" alt=""/>
+                                                </div>
+                                                <div class="column-1_2 column_padding_bottom accommo-column1">
+                                                    <h3 class="entry-title"><?php echo $room['title']; ?></h3>
+                                                    <p class="entry-content"><?php echo $room['short_description'] ?></p>
                                                     <span>
                                                         <button class="read-more btn-readmore">Read More</button>
                                                     </span>
@@ -260,7 +230,7 @@ $rooms = $ROOM->all();
 
                                                             <div class="property_price_box1">
                                                                 <span class="property_price_box_sign price-font">$</span>
-                                                                <span class="property_price_box_price price-font">1,249,000</span>
+                                                                <span class="property_price_box_price price-font"><?php echo $room['price'] ?></span>
                                                                 <span class="price-day"> / Day</span>
                                                             </div>
                                                         </div>
@@ -268,6 +238,12 @@ $rooms = $ROOM->all();
                                                 </div>
                                             </div>
                                         </div>
+
+                                        <?php
+                                            }
+                                        }
+                                        ?>
+
                                     </div>
                                 </div>
                             </div>
@@ -283,12 +259,16 @@ $rooms = $ROOM->all();
                             <div class="sc_property_wrap">
                                 <div class="sc_property sc_property_style_property-1">
                                     <div class="owl-carousel sc_columns columns_wrap" id="excurision-carousel">
+                                        
+                                        <?php
+                                        foreach($excursions as $excursion){
+                                            ?>
                                         <div class="column_padding_bottom">
                                             <div class="sc_property_item">
                                                 <div class="sc_property_image">
                                                     <a href="#">
 
-                                                        <img alt="" src="images/image-7-1-770x460.jpg">
+                                                        <img alt="" src="upload/excursion/<?php echo $excursion['image_name'] ?>">
                                                     </a>
                                                 </div>
                                                 <div class="sc_property_info">
@@ -296,9 +276,9 @@ $rooms = $ROOM->all();
                                                     <div>
                                                         <div class="sc_property_title">
                                                             <div class="sc_property_title_address_1">
-                                                                <a href="#">87 Mishaum Point Rd</a> 
+                                                                <a href="#"><?php echo $excursion['title']; ?></a> 
                                                             </div>
-                                                            <div class="text-justify">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa...</div>
+                                                            <div class="text-justify"><?php echo substr($excursion['short_description'], 0, 150) . '...'; ?></div>
                                                         </div>
                                                         <div class="cL"></div>
                                                     </div>
@@ -308,75 +288,16 @@ $rooms = $ROOM->all();
                                                     <span class="icon-bath">3</span>
                                                     <span class="icon-warehouse">2</span>-->
                                                     <span>
-                                                        <button class="read-more">Read More</button>
+                                                        <a href="view-excursion.php?id=<?php echo $excursion["id"];?>"><button class="read-more">Read More</button></a>
                                                     </span>
                                                 </div>
                                             </div>
                                         </div>
-                                        <div class="column_padding_bottom">
-                                            <div class="sc_property_item">
-                                                <div class="sc_property_image">
-                                                    <a href="#">
-                                                        <img alt="" src="images/image-12-1-770x460.jpg">
-                                                    </a>
-                                                </div>
-                                                <div class="sc_property_info">
-                                                    <div class="sc_property_description"></div>
-                                                    <div>
-                                                        <div class="sc_property_title">
-                                                            <div class="sc_property_title_address_1">
-                                                                <a href="#">9615 Shore Rd APT BA</a> 
-                                                            </div>
-                                                            <div class="text-justify">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa...</div>
-                                                        </div>
-                                                        <div class="cL"></div>
-                                                    </div>
-                                                </div>
-                                                <div class="sc_property_info_list">
-<!--                                                    <span class="icon-bed">2</span>
-                                                    <span class="icon-bath">3</span>
-                                                    <span class="icon-warehouse">3</span>-->
-                                                    <span><button  class="read-more">Read More</button></span>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="column_padding_bottom">
-                                            <div class="sc_property_item">
-                                                <div class="sc_property_image">
-                                                    <a href="#">
-                                                        <img alt="" src="images/image-11-1-770x460.jpg">
-                                                    </a>
-                                                </div>
-                                                <div class="sc_property_info">
-                                                    <div class="sc_property_description"></div>
-                                                    <div>
-                                                        <div class="sc_property_title">
-                                                            <div class="sc_property_title_address_1">
-                                                                <a href="#">80646 Via Pessaro</a> 
-                                                            </div>
-                                                            <div class="sc_property_title_address_2">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa...</div>
-                                                        </div>
-                                                        <div class="cL"></div>
-                                                    </div>
-                                                </div>
-                                                <div class="sc_property_info_list">
-<!--                                                    <span class="icon-bed">2</span>
-                                                    <span class="icon-bath">3</span>
-                                                    <span class="icon-warehouse">2</span>-->
-                                                    <span><button  class="read-more">Read More</button></span>
-                                                </div>
-                                                <!--                                                <div class="owl-controls">
-                                                                                                    <div class="owl-next">
-                                                                                                        <div class="owl-prev" style="">
-                                                                                                            <span class="fa fa-angle-left"></span>
-                                                                                                        </div>
-                                                                                                        <div class="owl-next" style="">
-                                                                                                            <span class="fa fa-angle-right"></span>
-                                                                                                        </div>
-                                                                                                    </div>
-                                                                                                </div>-->
-                                            </div>
-                                        </div>
+                                        <?php
+                                                                                
+                                        }
+                                       
+                                        ?>
                                     </div>
                                 </div>
                             </div>
