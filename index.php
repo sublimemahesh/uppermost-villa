@@ -157,7 +157,7 @@ $excursions = $EXCURSION->all();
                             </div>
                         </div>
                     </div>
-                    <div class="accommo-section" style="background-image: url(images/image-9-1.jpg);padding-bottom: 45px;">                  
+                    <div class="accommo-section" style="background-image: url(images/image-new/parallex-01.jpg);padding-bottom: 45px;">                  
                         <div class="content_wrap title_margin_top2 margin_bottom_medium">
                             <div class="bgtext1 bgtext1-accommo">
                                 <p>ACCOMMODATIONS</p>
@@ -295,7 +295,7 @@ $excursions = $EXCURSION->all();
                             </div>
                         </div>
                     </div>
-                    <div class="sc_parallax" data-vc-parallax="1.5" data-vc-parallax-image="images/img_map.jpg">
+                    <div class="accommo-section" style="background-image: url(images/image-new/parallex-02.jpg);padding-bottom: 45px;">
 
                         <div class="content_wrap title_margin_top3 margin_bottom_medium">
                             <div class="bgtext1 bgtext1-facilities">
