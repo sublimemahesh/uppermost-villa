@@ -10,7 +10,7 @@
                 <div class="top_panel_contacts">
                     <div class="top_panel_contacts_left">
                         <div class="contact_phone">121 King Street, NY, USA</div>
-                        <div class="contact_email"><a href="cdn-cgi/l/email-protection.html" class="__cf_email__" data-cfemail="ff9c90918b9e9c8bbf86908a8d8c968b9ad19c9092">[email&#160;protected]</a></div>
+                        <div class="contact_email"><a href="cdn-cgi/l/email-protection.html" class="__cf_email__" data-cfemail="ff9c90918b9e9c8bbf86908a8d8c968b9ad19c9092">info@uppermostvilla.com</a></div>
                     </div>
                     <div class="top_panel_contacts_right">call us: <strong><i>800</i> 123 45 67</strong></div>
                     <div class="cL"></div>
