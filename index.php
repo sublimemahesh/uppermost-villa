@@ -309,9 +309,9 @@ $excursions = $EXCURSION->all();
                                             <div class="sc_columns columns_wrap">
                                                 <div class="column-1_4 column_padding_bottom">
                                                     <div class="sc_services_item">
-                                                        <a href="single-service.html"><span class="sc_icon icon-house263"></span></a>
+                                                        <a href=""><span class="sc_icon icon-swiming_pool"></span></a>
                                                         <div class="sc_services_item_content">
-                                                            <h4 class="sc_services_item_title"><a href="single-service.html">Best property lists</a></h4>
+                                                            <h4 class="sc_services_item_title"><a href="">Swimming Pool</a></h4>
                                                             <div class="sc_services_item_description">
                                                                 <p>We provide consumers with a content-rich listings in a handy format.</p>
                                                             </div>
@@ -320,9 +320,9 @@ $excursions = $EXCURSION->all();
                                                 </div>
                                                 <div class="column-1_4 column_padding_bottom">
                                                     <div class="sc_services_item">
-                                                        <a href="single-service.html"><span class="sc_icon icon-thumbs4"></span></a>
+                                                        <a href=""><span class="sc_icon fa fa-car"></span></a>
                                                         <div class="sc_services_item_content">
-                                                            <h4 class="sc_services_item_title"><a href="single-service.html">Best price in market</a></h4>
+                                                            <h4 class="sc_services_item_title"><a href="">Car Park</a></h4>
                                                             <div class="sc_services_item_description">
                                                                 <p>Price estimates and sales histories for property, updating information.</p>
                                                             </div>
@@ -331,9 +331,9 @@ $excursions = $EXCURSION->all();
                                                 </div>
                                                 <div class="column-1_4 column_padding_bottom">
                                                     <div class="sc_services_item">
-                                                        <a href="single-service.html"><span class="sc_icon icon-badges3"></span></a>
+                                                        <a href=""><span class="sc_icon icon-badges3"></span></a>
                                                         <div class="sc_services_item_content">
-                                                            <h4 class="sc_services_item_title"><a href="single-service.html">Guaranteed services</a></h4>
+                                                            <h4 class="sc_services_item_title"><a href="">Guaranteed services</a></h4>
                                                             <div class="sc_services_item_description">
                                                                 <p>Our managers will keep you informed and you can act with certainty.</p>
                                                             </div>
@@ -342,9 +342,9 @@ $excursions = $EXCURSION->all();
                                                 </div>
                                                 <div class="column-1_4 column_padding_bottom">
                                                     <div class="sc_services_item">
-                                                        <a href="single-service.html"><span class="sc_icon icon-line-graphic6"></span></a>
+                                                        <a href=""><span class="sc_icon fa fa-wifi"></span></a>
                                                         <div class="sc_services_item_content">
-                                                            <h4 class="sc_services_item_title"><a href="single-service.html">Marketing research</a></h4>
+                                                            <h4 class="sc_services_item_title"><a href="">Other</a></h4>
                                                             <div class="sc_services_item_description">
                                                                 <p>All our marketing researchers today have a tough job multitasking.</p>
                                                             </div>
