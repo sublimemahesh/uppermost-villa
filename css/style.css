@@ -7176,7 +7176,7 @@ h6.margin_bottom_large {
     margin-top: 50px;
 }
 .excursion-bottom{
-    padding-bottom: 0px;
+    padding-bottom: 60px;
 }
 .icon-padding{
     padding-left: 20px;
@@ -7347,10 +7347,15 @@ h4:hover {
     margin-top: 100px;
 }
 .title_margin_top1 {
-    margin-top: 44px;
+    margin-top: 80px;
 }
 .title_margin_top2 {
-    margin-top: 92px;
+    margin-top: 125px;
+    padding-bottom: 15px;
+}
+.title_margin_top3 {
+    margin-top: 135px;
+    padding-bottom: 30px;
 }
 .home-facilities-section .sc_services_style_services-1 {
     padding: 50px 0 0px;
@@ -7701,4 +7706,10 @@ h4:hover {
 
 .index-welcome{
     z-index: 1;
+}
+.para-feed{
+    text-align: center;
+    padding-left: 100px;
+    padding-right: 100px;
+    margin-bottom: -5px;
 }
