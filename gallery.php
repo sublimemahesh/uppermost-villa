@@ -31,7 +31,7 @@ $photo_albums = $PHOTO_ALBUM->all();
         <!--<link rel='stylesheet' href='js/vendor/swiper/swiper.css' type='text/css' media='all' />-->
         <link rel='stylesheet' href='css/custom/_messages.css' type='text/css' media='all' />
         <!--<link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">-->
-
+        <link rel='stylesheet' href='js/vendor/revslider/settings.css' type='text/css' media='all' />
         <link href="plugins/fancybox-master/css/jquery.fancybox.min.css" rel="stylesheet" type="text/css"/>
 
 
@@ -69,28 +69,32 @@ $photo_albums = $PHOTO_ALBUM->all();
 
                                     <?php
                                     foreach ($photo_albums as $photo_album) {
-                                    ?>
-                                        <div class="column-1_3 column_padding_bottom">
-                                            <a href="upload/photo-album/<?php echo $photo_album['image_name'] ?>" data-fancybox="images">
+                                        ?>
+                                        <div class="column-1_3 column_padding_bottom img-hover">
+                                            <a href="upload/photo-album/<?php echo $photo_album['image_name'] ?>" data-fancybox="images">    
+                                                 <div class="middle">
+                                                    <i class="eg-icon-search"></i>
+                                                </div>
                                                 <img src="upload/photo-album/<?php echo $photo_album['image_name'] ?>" />
+                                               
                                             </a>
                                         </div>
-                                    
-                                    <?php
+
+                                        <?php
                                     }
                                     ?>
 
-                                    </div>
                                 </div>
                             </div>
-
                         </div>
-                    </div>              
 
-                    <!-- Footer -->
-                    <?php
-                    include 'footer.php';
-                    ?>
+                    </div>
+                </div>              
+
+                <!-- Footer -->
+                <?php
+                include 'footer.php';
+                ?>
                 <!-- /Footer -->
 
             </div>
