@@ -66,27 +66,25 @@ $excursions = $EXCURSION->all();
                         <div class="sc_section scheme_dark">
                             <div class="sc_section_inner">
                                 <div class="sc_property_search search-align">
-                                    <form method="get" action="#">
+                                    <form method="get" action="booking.php">
                                         <div class="sc_ps_status">
                                             <h5>ROOM TYPE</h5>
-                                            <select name="ps_status">
-                                                <option value="">Apartment with sea View</option>
-                                                <option value="">Deluxe Double room with Balcony and Mountain View</option>
-                                                <option value="">Deluxe Double room with ocean view</option>
-                                                <option value="">Deluxe Double room with pool view</option>
-                                                <option value="">Deluxe Double room with sea view</option>
-                                                <option value="">Deluxe Single room with ocean view</option>
+                                            <select name="room_type">
+                                                <option value="0">Select Room Type</option>
+                                                <option value="1">Deluxe Double Room with Mountain View</option>
+                                                <option value="2">Deluxe Family Room  with  mountain view</option>
+                                                <option value="3">Deluxe Double  Room</option>                                                
                                             </select>
                                         </div>
                                         <div class="sc_ps_location">
                                             <h5>ARRIVAL DATE</h5>
-                                            <input type="text" id="datepicker" placeholder="Select date">                                  
+                                            <input type="text" id="datepicker" placeholder="Select date" name="arrival">                                  
                                         </div>
                                         <div class="sc_ps_type">
                                             <h5>DEPARTURE DATE</h5>
-                                            <input type="text" id="datepicker1" placeholder="Select date">    
+                                            <input type="text" id="datepicker1" placeholder="Select date" name="departure">    
                                         </div>
-                                        <a href="booking.php?id=1"><input type="submit" class="sc_button sc_button_box sc_button_style_style2 btn-search" value="Search"></a>
+                                        <input type="submit" class="sc_button sc_button_box sc_button_style_style2 btn-search" value="Search">
                                     </form>
                                 </div>
                             </div>
@@ -101,7 +99,7 @@ $excursions = $EXCURSION->all();
                                     <div class="bgtext1 bg bgtext1-welcome">
                                         <p>WELCOME</p>
                                     </div>
-                                    <h2 class="sc_title sc_title_iconed ind2 margin_top_null margin_bottom_xmedium">
+                                    <h2 class="sc_title sc_title_iconed ind2 margin_top_null margin_bottom_xmedium index-welcome">
                                         <span class="sc_title_box welcome-title">
                                             <h2 class="page-topic-black text-welcome">Welcome</h2>
                                             <span class="sc_title_subtitle">Dartmouth, MA 02748</span>

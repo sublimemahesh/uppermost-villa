@@ -7698,3 +7698,7 @@ h4:hover {
 .img-hover:hover .middle {
     opacity: 1;
 }
+
+.index-welcome{
+    z-index: 1;
+}
