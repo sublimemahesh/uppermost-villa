@@ -163,7 +163,7 @@ $excursions = $EXCURSION->all();
                             </div>
                         </div>
                     </div>
-                    <div class="accommo-section" style="background-image: url(images/image-9-1.jpg);padding-bottom: 36px;">                  
+                    <div class="accommo-section" style="background-image: url(images/image-9-1.jpg);padding-bottom: 45px;">                  
                         <div class="content_wrap title_margin_top2 margin_bottom_medium">
                             <div class="bgtext1 bgtext1-accommo">
                                 <p>ACCOMMODATIONS</p>
@@ -303,7 +303,7 @@ $excursions = $EXCURSION->all();
                     </div>
                     <div class="sc_parallax" data-vc-parallax="1.5" data-vc-parallax-image="images/img_map.jpg">
 
-                        <div class="content_wrap title_margin_top margin_bottom_medium">
+                        <div class="content_wrap title_margin_top3 margin_bottom_medium">
                             <div class="bgtext1 bgtext1-facilities">
                                 <p>FACILITIES</p>
                             </div>
@@ -377,7 +377,7 @@ $excursions = $EXCURSION->all();
                                         <div class="my-corousel">
                                             <img alt="" src="images/img-img.jpg" class="img-circle center-block">
                                             <h4 class="feed-name"><center>Emma Watson</center></h4>
-                                            <p>
+                                            <p class="para-feed">
                                                 Fugiat enim eram quae cillum dolore dolor amet nulla culpa multos export minim fugiat minim velit minim dolor enim duis veniam ipsum anim magna sunt elit fore quem dolore labore illum veniam.
                                                 Fugiat enim eram quae cillum dolore dolor amet nulla culpa multos export minim fugiat minim velit minim dolor enim duis veniam ipsum anim magna sunt elit fore quem dolore labore illum veniam.....
                                             </p>
@@ -385,7 +385,7 @@ $excursions = $EXCURSION->all();
                                         <div class="">
                                             <img alt="" src="images/img-img.jpg" class="img-circle center-block">
                                             <h4 class="feed-name"><center>Emma Watson1</center></h4>
-                                            <p>
+                                            <p class="para-feed">
                                                 Fugiat enim eram quae cillum dolore dolor amet nulla culpa multos export minim fugiat minim velit minim dolor enim duis veniam ipsum anim magna sunt elit fore quem dolore labore illum veniam.
                                                 Fugiat enim eram quae cillum dolore dolor amet nulla culpa multos export minim fugiat minim velit minim dolor enim duis veniam ipsum anim magna sunt elit fore quem dolore labore illum veniam.....
                                             </p>
@@ -393,7 +393,7 @@ $excursions = $EXCURSION->all();
                                         <div class="">
                                             <img alt="" src="images/img-img.jpg" class="img-circle center-block">
                                             <h4 class="feed-name"><center>Emma Watson2</center></h4>
-                                            <p>
+                                            <p class="para-feed">
                                                 Fugiat enim eram quae cillum dolore dolor amet nulla culpa multos export minim fugiat minim velit minim dolor enim duis veniam ipsum anim magna sunt elit fore quem dolore labore illum veniam.
                                                 Fugiat enim eram quae cillum dolore dolor amet nulla culpa multos export minim fugiat minim velit minim dolor enim duis veniam ipsum anim magna sunt elit fore quem dolore labore illum veniam.....
                                             </p>
