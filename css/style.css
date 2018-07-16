@@ -7672,3 +7672,29 @@ h4:hover {
 .sc_property_search.search-align {
     padding: 2.143em 0 2.143em;
 }
+
+/*---Gallery-Hover----*/
+.img-hover:hover { 
+    opacity: 0.3;
+    color: #fff;
+}
+.img-hover {
+    position: relative;
+}
+
+.middle {
+    transition: .5s ease;
+    opacity: 0;
+    position: absolute;
+    top: 44%;
+    left: 46%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    text-align: center;
+    font-size: 32px;
+    color: #000;
+}
+
+.img-hover:hover .middle {
+    opacity: 1;
+}
