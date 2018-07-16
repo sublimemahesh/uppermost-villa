@@ -102,7 +102,7 @@ $excursions = $EXCURSION->all();
                                     <h2 class="sc_title sc_title_iconed ind2 margin_top_null margin_bottom_xmedium index-welcome">
                                         <span class="sc_title_box welcome-title">
                                             <h2 class="page-topic-black text-welcome">Welcome</h2>
-                                            <span class="sc_title_subtitle">Dartmouth, MA 02748</span>
+                                            <span class="sc_title_subtitle">Uppermost Villa</span>
                                         </span>
                                     </h2>
                                     <div class="sc_section margin_bottom_xmedium section_style_1">
@@ -140,15 +140,9 @@ $excursions = $EXCURSION->all();
                                         <div class="sc_property sc_property_style_property-2">
                                             <div class="sc_property_item">
                                                 <div class="ps_single_info">
-                                                    <div class="property_price_box">
-                                                        <span class="property_price_box_sign">$</span><span class="property_price_box_price">1,249,000</span>
-                                                    </div>
-                                                    <div class="sc_property_info_list">
-                                                        <span class="icon-area_2">1,286 sqft</span>
-                                                        <span class="icon-bed">2</span>
-                                                        <span class="icon-bath">3</span>
-                                                        <span class="icon-warehouse">2</span>
-                                                    </div>
+                                                    <div class="">
+                                                        <a href="about.php?id=<?php echo $room["id"];?>"><button class="read-more btn-readmore-welcome">Read More</button></a>
+                                                    </div>                                                    
                                                     <div class="cL"></div>
                                                 </div>
                                             </div>
@@ -157,7 +151,7 @@ $excursions = $EXCURSION->all();
                                 </div>
                                 <div class="column-1_2">
                                     <figure class="sc_image ">
-                                        <a href="#"><img src="images/image-7-1-570x414.jpg" alt="" /></a>
+                                        <a href="#"><img src="images/image-new/image-welcome.jpg" alt="" /></a>
                                     </figure>
                                 </div>
                             </div>
