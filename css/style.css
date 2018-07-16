@@ -7716,3 +7716,5 @@ h4:hover {
     padding-right: 100px;
     margin-bottom: -5px;
 }
+.icon-car:before { content: '\f1b9'; } /* '' */
+.icon-wifi:before { content: '\f1eb'; } /* '' */
