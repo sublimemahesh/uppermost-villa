@@ -32,6 +32,9 @@
                                 <a href="gallery.php">Gallery</a>
                             </li>
                             <li class="menu-item">
+                                <a href="facilities.php">Facilities</a>
+                            </li>
+                            <li class="menu-item">
                                 <a href="excursion.php">Excursion</a>
                             </li>
                             <li class="menu-item">
