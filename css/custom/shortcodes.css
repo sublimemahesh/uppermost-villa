@@ -5596,8 +5596,8 @@ body.sidebar_hide .sc_recent_news_style_news-announce .post_size_small { height:
 	font-weight: 100;
 	letter-spacing: 0 ;
 	color: #37353d;
-	padding-top: 0.654em;
-	padding-bottom: 0.654em;
+	padding-top: 5px;
+	padding-bottom: 5px;
 	background: #fff;
 }
 .sc_property.sc_property_style_property-6 .sc_pr_f12 span {
