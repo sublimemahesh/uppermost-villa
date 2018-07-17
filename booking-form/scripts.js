@@ -25,6 +25,10 @@ jQuery(document).ready(function () {
     jQuery("#datepicker1").blur(function () {
         validateEmpty("datepicker1", "spanDeparture");
     });
+    
+    jQuery("#room_type").blur(function () {
+        validateEmpty("room_type", "spanType");
+    });
 
 
     jQuery("#captchacode").blur(function () {
@@ -64,6 +68,7 @@ function validate() {
             validateEmpty("txtPhone", "spanPhone") &
             validateEmpty("datepicker", "spanArrival") &
             validateEmpty("datepicker1", "spanDeparture") &
+            validateEmpty("room_type", "spanType") &
             validateEmpty("captchacode", "capspan")
 
             )
@@ -92,7 +97,8 @@ function sendForm() {
             country: jQuery('#txtCountry').val(),
             phone: jQuery('#txtPhone').val(),            
             arrival: jQuery('#datepicker').val(),
-            departure: jQuery('#datepicker1').val(),                                   
+            departure: jQuery('#datepicker1').val(), 
+            type: jQuery('#room_type').val(), 
             message: jQuery('#txtMessage').val(),
             captchacode: jQuery('#captchacode').val()
 
@@ -118,6 +124,7 @@ function sendForm() {
                 jQuery('#txtPhone').val("");
                 jQuery('#datepicker').val("");
                 jQuery('#datepicker1').val("");
+                jQuery('#room_type').val("");
                 jQuery('#txtMessage').val("");
                 jQuery('#captchacode').val("");
 

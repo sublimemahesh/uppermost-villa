@@ -30,6 +30,7 @@ $country = $_POST['country'];
 $phone = $_POST['phone'];
 $arrival = $_POST['arrival'];
 $departure = $_POST['departure'];
+$room_type = $_POST['type'];
 $message = $_POST['message'];
 $captchacode = $_POST['captchacode'];
 

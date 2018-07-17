@@ -1,3 +1,23 @@
+<?php
+include_once(dirname(__FILE__) . '/class/include.php');
+
+$type = '';
+$arrival = '';
+$departure = '';
+
+if(isset($_GET['room_type'])){
+    $type = $_GET['room_type'];
+}
+if(isset($_GET['arrival'])){
+    $arrival = $_GET['arrival'];
+}
+if(isset($_GET['departure'])){
+    $departure = $_GET['departure'];
+}
+
+?>
+
+
 <!DOCTYPE html>
 <html lang="en-US" class="scheme_original">
 
@@ -93,13 +113,25 @@
                                     <div class="row form-group">
                                         <div class="column-1_2">
                                             <label>Arrival Date</label>
-                                            <input type="text" name="txtArrival" id="datepicker" placeholder="Select date">
+                                            <input type="text" name="txtArrival" id="datepicker" placeholder="Select date" value="<?php echo $arrival; ?>">
                                             <span id="spanArrival"></span>
                                         </div>
                                         <div class="column-1_2">
                                             <label>Departure Date</label>
-                                            <input type="text" name="txtDeparture" id="datepicker1" placeholder="Select date"> 
+                                            <input type="text" name="txtDeparture" id="datepicker1" placeholder="Select date" value="<?php echo $departure; ?>"> 
                                             <span id="spanDeparture"></span>
+                                        </div>
+                                    </div>
+                                    <div class="row form-group">
+                                        <div class="column-1_1">
+                                            <label>Room Type</label>
+                                            <select name="room_type" id="room_type">
+                                                <option value="">Select Room Type</option>
+                                                <option value="Deluxe Double Room with Mountain View">Deluxe Double Room with Mountain View</option>
+                                                <option value="Deluxe Family Room  with  mountain view">Deluxe Family Room  with  mountain view</option>
+                                                <option value="Deluxe Double  Room">Deluxe Double  Room</option>                                                
+                                            </select>
+                                            <span id="spanType"></span>
                                         </div>
                                     </div>
                                     <div class="row form-group">
