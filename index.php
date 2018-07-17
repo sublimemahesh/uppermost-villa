@@ -9,7 +9,6 @@ $excursions = $EXCURSION->all();
 
 $COMMENT = new Comments(Null);
 $comments = $COMMENT->all();
-
 ?>
 
 
@@ -45,6 +44,8 @@ $comments = $COMMENT->all();
         <link href="plugins/owl-carousel/css/owl.carousel.min.css" rel="stylesheet" type="text/css"/>
         <link href="plugins/owl-carousel/css/owl.theme.default.min.css" rel="stylesheet" type="text/css"/>
         <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+
+       
 
     </head>
     <body class="body_style_wide responsive_menu scheme_original top_panel_show top_panel_over sidebar_hide">
@@ -336,23 +337,23 @@ $comments = $COMMENT->all();
                             <div class="sc_property_wrap">
                                 <div class="sc_property sc_property_style_property-1">
                                     <div class="owl-carousel" id="feedback-carousel">
-                                        
+
                                         <?php
                                         foreach ($comments as $comment) {
-                                        ?>
-                                        
-                                        <div class="my-corousel">
-                                            <img alt="" src="upload/comments/<?php echo $comment['image_name'] ?>" class="img-circle center-block">
-                                            <h4 class="feed-name"><center><?php echo $comment['name']; ?></center></h4>
-                                            <h5 class=""><center><?php echo $comment['title']; ?></center></h5>
-                                            <span class="para-feed"><?php echo $comment['comment']; ?></span>
-                                        </div>
-                                        
+                                            ?>
+
+                                            <div class="my-corousel">
+                                                <img alt="" src="upload/comments/<?php echo $comment['image_name'] ?>" class="img-circle center-block">
+                                                <h4 class="feed-name"><center><?php echo $comment['name']; ?></center></h4>
+                                                <h5 class=""><center><?php echo $comment['title']; ?></center></h5>
+                                                <span class="para-feed"><?php echo $comment['comment']; ?></span>
+                                            </div>
+
                                             <?php
                                         }
                                         ?>
-                                        
-                                        
+
+
                                     </div>
                                 </div>
                             </div>

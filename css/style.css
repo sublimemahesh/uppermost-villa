@@ -7720,3 +7720,15 @@ h4:hover {
 .icon-car:before { content: '\f1b9'; } /* '' */
 .icon-wifi:before { content: '\f1eb'; } /* '' */
 .icon-television:before { content: '\f270'; } /* '' */
+
+.slider-h2{
+    color: #fff;
+    font-size: 25px;
+}
+.sc_pr_h2 {
+    padding: 41px 88px 0px;
+}
+
+
+
+
