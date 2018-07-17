@@ -140,6 +140,11 @@ $visitor_message = '<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//E
                                                          To : ' . $departure . '
                                                     </font>
                                                 </li>
+                                                <li>
+                                                    <font style="font-family: Verdana, Geneva, sans-serif; color:#68696a; font-size:14px; " >
+                                                         Type : ' . $room_type . '
+                                                    </font>
+                                                </li>
                                                 
                                             </ul>
                                         </td>
@@ -233,6 +238,7 @@ $visitor_message = '<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//E
         </table>
     </body>
 </html>';
+echo $visitor_message;
 
 $company_message = ' 
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
@@ -339,6 +345,11 @@ $company_message = '
                                                 <li>
                                                     <font style="font-family: Verdana, Geneva, sans-serif; color:#68696a; font-size:14px; " >
                                                          To : ' . $departure . '
+                                                    </font>
+                                                </li>
+                                                <li>
+                                                    <font style="font-family: Verdana, Geneva, sans-serif; color:#68696a; font-size:14px; " >
+                                                         Type : ' . $room_type . '
                                                     </font>
                                                 </li>
                                             </ul>
