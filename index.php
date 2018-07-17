@@ -7,7 +7,11 @@ $rooms = $ROOM->all();
 $EXCURSION = new Excursions(Null);
 $excursions = $EXCURSION->all();
 
+$COMMENT = new Comments(Null);
+$comments = $COMMENT->all();
+
 ?>
+
 
 
 <!DOCTYPE html>
@@ -141,7 +145,7 @@ $excursions = $EXCURSION->all();
                                             <div class="sc_property_item">
                                                 <div class="ps_single_info">
                                                     <div class="">
-                                                        <a href="about.php?id=<?php echo $room["id"];?>"><button class="read-more btn-readmore-welcome">Read More</button></a>
+                                                        <a href="about.php?id=<?php echo $room["id"]; ?>"><button class="read-more btn-readmore-welcome">Read More</button></a>
                                                     </div>                                                    
                                                     <div class="cL"></div>
                                                 </div>
@@ -168,71 +172,37 @@ $excursions = $EXCURSION->all();
                                     <div class="owl-carousel" id="accommodation-carousel">
                                         <?php
                                         foreach ($rooms as $room) {
-                                        if (strlen($room['title']) > 35) {
-                                        ?>
-                                        <div class="my-corousel">
-                                            <div class="sc_columns columns_wrap bg_color_1">
-                                                <div class="column-1_2 column_padding_bottom accommo-column">
-                                                    <!--<img src="images/img-600x410.jpg" alt=""/>-->
-                                                    <img src="upload/room/<?php echo $room['image_name'] ?>" alt=""/>
-                                                </div>
-                                                <div class="column-1_2 column_padding_bottom accommo-column1">
-                                                    <h3 class="entry-title" style="margin-bottom: 5px;"><?php echo $room['title']; ?></h3>
-                                                    <p class="entry-content"><?php echo substr($room['short_description'], 0, 250) . '...'; ?></p>
-                                                    <span>
-                                                        <a href="view-accommodation.php?id=<?php echo $room["id"];?>"><button class="read-more btn-readmore">Read More</button></a>                                                       
-                                                    </span>
-                                                    <div class="accommo-icons">
-                                                        <div class="entry-footer">
-                                                            <span class="icon-bed bed-style"></span>
-                                                            <span class="icon-bath bath-style"></span>
-                                                            <span class="icon-warehouse"></span>
+                                            ?>
+                                            <div class="my-corousel">
+                                                <div class="sc_columns columns_wrap bg_color_1">
+                                                    <div class="column-1_2 column_padding_bottom accommo-column">
+                                                        <!--<img src="images/img-600x410.jpg" alt=""/>-->
+                                                        <img src="upload/room/<?php echo $room['image_name'] ?>" alt=""/>
+                                                    </div>
+                                                    <div class="column-1_2 column_padding_bottom accommo-column1">
+                                                        <h3 class="entry-title"><?php echo $room['title']; ?></h3>
+                                                        <p class="entry-content"><?php echo $room['short_description'] ?></p>
+                                                        <span>
+                                                            <a href="view-accommodation.php?id=<?php echo $room["id"]; ?>"><button class="read-more btn-readmore">Read More</button></a>
+                                                        </span>
+                                                        <div class="accommo-icons">
+                                                            <div class="entry-footer">
+                                                                <span class="icon-bed bed-style"></span>
+                                                                <span class="icon-bath bath-style"></span>
+                                                                <span class="icon-warehouse"></span>
 
-                                                            <div class="property_price_box1">
-                                                                <span class="property_price_box_sign price-font">$</span>
-                                                                <span class="property_price_box_price price-font"><?php echo $room['price'] ?></span>
-                                                                <span class="price-day"> / Day</span>
+                                                                <div class="property_price_box1">
+                                                                    <span class="property_price_box_sign price-font">$</span>
+                                                                    <span class="property_price_box_price price-font"><?php echo $room['price'] ?></span>
+                                                                    <span class="price-day"> / Day</span>
+                                                                </div>
                                                             </div>
                                                         </div>
                                                     </div>
                                                 </div>
                                             </div>
-                                        </div>
 
-                                        <?php
-                                        } else {
-                                        ?>
-                                        <div class="my-corousel">
-                                            <div class="sc_columns columns_wrap bg_color_1">
-                                                <div class="column-1_2 column_padding_bottom accommo-column">
-                                                    <!--<img src="images/img-600x410.jpg" alt=""/>-->
-                                                    <img src="upload/room/<?php echo $room['image_name'] ?>" alt=""/>
-                                                </div>
-                                                <div class="column-1_2 column_padding_bottom accommo-column1">
-                                                    <h3 class="entry-title"><?php echo $room['title']; ?></h3>
-                                                    <p class="entry-content"><?php echo $room['short_description'] ?></p>
-                                                    <span>
-                                                        <a href="view-accommodation.php?id=<?php echo $room["id"];?>"><button class="read-more btn-readmore">Read More</button></a>
-                                                    </span>
-                                                    <div class="accommo-icons">
-                                                        <div class="entry-footer">
-                                                            <span class="icon-bed bed-style"></span>
-                                                            <span class="icon-bath bath-style"></span>
-                                                            <span class="icon-warehouse"></span>
-
-                                                            <div class="property_price_box1">
-                                                                <span class="property_price_box_sign price-font">$</span>
-                                                                <span class="property_price_box_price price-font"><?php echo $room['price'] ?></span>
-                                                                <span class="price-day"> / Day</span>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-
-                                        <?php
-                                            }
+                                            <?php
                                         }
                                         ?>
 
@@ -251,44 +221,42 @@ $excursions = $EXCURSION->all();
                             <div class="sc_property_wrap">
                                 <div class="sc_property sc_property_style_property-1">
                                     <div class="owl-carousel sc_columns columns_wrap" id="excurision-carousel">
-                                        
-                                        <?php
-                                        foreach($excursions as $excursion){
-                                            ?>
-                                        <div class="column_padding_bottom">
-                                            <div class="sc_property_item">
-                                                <div class="sc_property_image">
-                                                    <a href="#">
 
-                                                        <img alt="" src="upload/excursion/<?php echo $excursion['image_name'] ?>">
-                                                    </a>
-                                                </div>
-                                                <div class="sc_property_info">
-                                                    <div class="sc_property_description"></div>
-                                                    <div>
-                                                        <div class="sc_property_title">
-                                                            <div class="sc_property_title_address_1">
-                                                                <a href="#"><?php echo $excursion['title']; ?></a> 
+                                        <?php
+                                        foreach ($excursions as $excursion) {
+                                            ?>
+                                            <div class="column_padding_bottom">
+                                                <div class="sc_property_item">
+                                                    <div class="sc_property_image">
+                                                        <a href="#">
+
+                                                            <img alt="" src="upload/excursion/<?php echo $excursion['image_name'] ?>">
+                                                        </a>
+                                                    </div>
+                                                    <div class="sc_property_info">
+                                                        <div class="sc_property_description"></div>
+                                                        <div>
+                                                            <div class="sc_property_title">
+                                                                <div class="sc_property_title_address_1">
+                                                                    <a href="#"><?php echo $excursion['title']; ?></a> 
+                                                                </div>
+                                                                <div class="text-justify"><?php echo substr($excursion['short_description'], 0, 150) . '...'; ?></div>
                                                             </div>
-                                                            <div class="text-justify"><?php echo substr($excursion['short_description'], 0, 150) . '...'; ?></div>
+                                                            <div class="cL"></div>
                                                         </div>
-                                                        <div class="cL"></div>
+                                                    </div>
+                                                    <div class="sc_property_info_list">
+    <!--                                                    <span class="icon-bed">2</span>
+                                                        <span class="icon-bath">3</span>
+                                                        <span class="icon-warehouse">2</span>-->
+                                                        <span>
+                                                            <a href="view-excursion.php?id=<?php echo $excursion["id"]; ?>"><button class="read-more excursion-readmore">Read More</button></a>
+                                                        </span>
                                                     </div>
                                                 </div>
-                                                <div class="sc_property_info_list">
-<!--                                                    <span class="icon-bed">2</span>
-                                                    <span class="icon-bath">3</span>
-                                                    <span class="icon-warehouse">2</span>-->
-                                                    <span>
-                                                        <a href="view-excursion.php?id=<?php echo $excursion["id"];?>"><button class="read-more">Read More</button></a>
-                                                    </span>
-                                                </div>
                                             </div>
-                                        </div>
-                                        <?php
-                                                                                
+                                            <?php
                                         }
-                                       
                                         ?>
                                     </div>
                                 </div>
@@ -359,7 +327,7 @@ $excursions = $EXCURSION->all();
 
                         </div>
                     </div>
-                    <div class="sc_section overflow_hidden bg_color_1 excursion-bottom">
+                    <div class="sc_section overflow_hidden bg_color_1">
                         <div class="content_wrap title_margin_top1 margin_bottom_medium excursion-top">
                             <div class="bgtext1 bgtext1-feedback">
                                 <p>FEEDBACK</p>
@@ -368,30 +336,23 @@ $excursions = $EXCURSION->all();
                             <div class="sc_property_wrap">
                                 <div class="sc_property sc_property_style_property-1">
                                     <div class="owl-carousel" id="feedback-carousel">
+                                        
+                                        <?php
+                                        foreach ($comments as $comment) {
+                                        ?>
+                                        
                                         <div class="my-corousel">
-                                            <img alt="" src="images/img-img.jpg" class="img-circle center-block">
-                                            <h4 class="feed-name"><center>Emma Watson</center></h4>
-                                            <p class="para-feed">
-                                                Fugiat enim eram quae cillum dolore dolor amet nulla culpa multos export minim fugiat minim velit minim dolor enim duis veniam ipsum anim magna sunt elit fore quem dolore labore illum veniam.
-                                                Fugiat enim eram quae cillum dolore dolor amet nulla culpa multos export minim fugiat minim velit minim dolor enim duis veniam ipsum anim magna sunt elit fore quem dolore labore illum veniam.....
-                                            </p>
+                                            <img alt="" src="upload/comments/<?php echo $comment['image_name'] ?>" class="img-circle center-block">
+                                            <h4 class="feed-name"><center><?php echo $comment['name']; ?></center></h4>
+                                            <h5 class=""><center><?php echo $comment['title']; ?></center></h5>
+                                            <span class="para-feed"><?php echo $comment['comment']; ?></span>
                                         </div>
-                                        <div class="">
-                                            <img alt="" src="images/img-img.jpg" class="img-circle center-block">
-                                            <h4 class="feed-name"><center>Emma Watson1</center></h4>
-                                            <p class="para-feed">
-                                                Fugiat enim eram quae cillum dolore dolor amet nulla culpa multos export minim fugiat minim velit minim dolor enim duis veniam ipsum anim magna sunt elit fore quem dolore labore illum veniam.
-                                                Fugiat enim eram quae cillum dolore dolor amet nulla culpa multos export minim fugiat minim velit minim dolor enim duis veniam ipsum anim magna sunt elit fore quem dolore labore illum veniam.....
-                                            </p>
-                                        </div>
-                                        <div class="">
-                                            <img alt="" src="images/img-img.jpg" class="img-circle center-block">
-                                            <h4 class="feed-name"><center>Emma Watson2</center></h4>
-                                            <p class="para-feed">
-                                                Fugiat enim eram quae cillum dolore dolor amet nulla culpa multos export minim fugiat minim velit minim dolor enim duis veniam ipsum anim magna sunt elit fore quem dolore labore illum veniam.
-                                                Fugiat enim eram quae cillum dolore dolor amet nulla culpa multos export minim fugiat minim velit minim dolor enim duis veniam ipsum anim magna sunt elit fore quem dolore labore illum veniam.....
-                                            </p>
-                                        </div>
+                                        
+                                            <?php
+                                        }
+                                        ?>
+                                        
+                                        
                                     </div>
                                 </div>
                             </div>
