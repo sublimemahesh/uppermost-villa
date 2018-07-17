@@ -7184,7 +7184,7 @@ h6.margin_bottom_large {
 .read-more {
     padding-left: 15px;
     padding-right: 15px;
-    margin: -7px 0px 4px 207px;
+    margin: -7px 0px 3px 207px;
 }
 .sc_services_style_services-1 {
     padding: 50px 0 8.000em;
@@ -7233,6 +7233,7 @@ h6.margin_bottom_large {
 .feed-name{
     color: red;
     font-size: 25px;
+    margin-bottom: 0px;
 }
 .img-circle{
     border-radius: 200px;
@@ -7718,3 +7719,4 @@ h4:hover {
 }
 .icon-car:before { content: '\f1b9'; } /* '' */
 .icon-wifi:before { content: '\f1eb'; } /* '' */
+.icon-television:before { content: '\f270'; } /* '' */

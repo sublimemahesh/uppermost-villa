@@ -129,8 +129,8 @@ $rooms = $ROOM->all();
                                     <div class="sc_property_info_list">
                                         <span class="icon-bed"></span>
                                         <span class="icon-bath"></span>
-                                        <span class="icon-warehouse"></span>
-                                        <span class="icon-crane"></span> 
+                                        <span class="fa fa-wifi"></span>
+                                        <span class="fa fa-tv"></span> 
                                     </div>
                                     <div class="cL"></div>
                                 </div>
@@ -181,9 +181,9 @@ $rooms = $ROOM->all();
                                                         </div>
                                                     </div>
                                                     <div class="sc_property_info_list">
-                                                        <span class="icon-bed">2</span>
-                                                        <span class="icon-bath">3</span>
-                                                        <span class="icon-warehouse">2</span>
+                                                        <span class="icon-bed"></span>
+                                                        <span class="icon-bath"></span>
+                                                        <span class="fa fa-wifi"></span>
 
                                                         <a href="view-accommodation.php?id=<?php echo $room["id"]; ?>"><button class="read-more accommo-readmore">Read More</button></a>
 

@@ -60,7 +60,7 @@ include_once(dirname(__FILE__) . '/auth.php');
                                         <div class="form-group form-float">
                                             <div class="form-line">
                                                 <input type="text" id="title" class="form-control"  autocomplete="off" name="title" required="true">
-                                                <label class="form-label">Title</label>
+                                                <label class="form-label">Country</label>
                                             </div>
                                         </div>
                                     </div>
