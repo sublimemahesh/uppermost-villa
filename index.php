@@ -240,7 +240,7 @@ $comments = $COMMENT->all();
                                                                 <div class="sc_property_title_address_1">
                                                                     <a href="#"><?php echo $excursion['title']; ?></a> 
                                                                 </div>
-                                                                <div class="text-justify"><?php echo substr($excursion['short_description'], 0, 150) . '...'; ?></div>
+                                                                <div class="text-justify"><?php echo substr($excursion['short_description'], 0, 200) . '...'; ?></div>
                                                             </div>
                                                             <div class="cL"></div>
                                                         </div>
