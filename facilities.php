@@ -1,3 +1,9 @@
+<?php
+include_once(dirname(__FILE__) . '/class/include.php');
+
+$FACILITIES = new Facilities(Null);
+$Facilities = $FACILITIES->all();
+?>
 
 <!DOCTYPE html>
 <html lang="en-US" class="scheme_original">
@@ -62,74 +68,37 @@
                         <div class="content">
                             <div class="sc_property sc_property_style_property-1">
                                 <div class="columns_wrap ">
-                                    <div class="column-1_3 column_padding_bottom">
-                                        <div class="sc_property_item">
-                                            <div class="sc_property_image">
-                                                <a href="">                                                  
-                                                    <img alt="" src="images/image-new/image 01.jpg">
-                                                </a>
-                                            </div>
-                                            <div class="sc_property_info">
-                                                <div>
-                                                    <div class="sc_property_title">
-                                                        <div class="sc_property_title_address_1">
-                                                            <a href="#">Swimming Pool</a> 
-                                                        </div>
-                                                        <div class="text-justify accommo-property-content">
-                                                            Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. 
-                                                        </div>
-                                                    </div>
-                                                    <div class="cL"></div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
 
-                                    <div class="column-1_3 column_padding_bottom">
-                                        <div class="sc_property_item">
-                                            <div class="sc_property_image">
-                                                <a href="">                                                  
-                                                    <img alt="" src="images/image-new/image 01.jpg">
-                                                </a>
-                                            </div>
-                                            <div class="sc_property_info">
-                                                <div>
-                                                    <div class="sc_property_title">
-                                                        <div class="sc_property_title_address_1">
-                                                            <a href="#">Swimming Pool</a> 
-                                                        </div>
-                                                        <div class="text-justify accommo-property-content">
-                                                            Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. 
-                                                        </div>
-                                                    </div>
-                                                    <div class="cL"></div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
 
-                                    <div class="column-1_3 column_padding_bottom">
-                                        <div class="sc_property_item">
-                                            <div class="sc_property_image">
-                                                <a href="">                                                  
-                                                    <img alt="" src="images/image-new/image 01.jpg">
-                                                </a>
-                                            </div>
-                                            <div class="sc_property_info">
-                                                <div>
-                                                    <div class="sc_property_title">
-                                                        <div class="sc_property_title_address_1">
-                                                            <a href="#">Swimming Pool</a> 
-                                                        </div>
-                                                        <div class="text-justify accommo-property-content">
-                                                            Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. 
-                                                        </div>
-                                                    </div>
-                                                    <div class="cL"></div>
+                                    <?php
+                                    foreach ($Facilities as $facilities) {
+                                        ?>                                        
+                                        <div class="column-1_3 column_padding_bottom">                                   
+                                            <div class="sc_property_item">
+                                                <div class="sc_property_image">
+                                                    <a href="">                                                  
+                                                        <img alt="" src="upload/facilities/<?php echo $facilities['image_name'] ?>">
+                                                    </a>
                                                 </div>
-                                            </div>
+                                                <div class="sc_property_info" style="height: 290px;">
+                                                    <div>
+                                                        <div class="sc_property_title">
+                                                            <div class="sc_property_title_address_1">
+                                                                <a href="#"><?php echo $facilities['title'] ?></a> 
+                                                            </div>
+                                                            <div class="text-justify accommo-property-content">
+                                                                <?php echo $facilities['description'] ?>
+                                                            </div>
+                                                        </div>
+                                                        <div class="cL"></div>
+                                                    </div>
+                                                </div>
+                                            </div>                                                                          
+
                                         </div>
-                                    </div>
+                                        <?php
+                                    }
+                                    ?>
 
                                 </div>
                             </div>

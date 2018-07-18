@@ -33,11 +33,11 @@ include_once(dirname(__FILE__) . '/auth.php');
                         <div class="card">
                             <div class="header">
                                 <h2>
-                                    Manage Services
+                                    Manage Facilities
                                 </h2>
                                 <ul class="header-dropdown">
                                     <li>
-                                        <a href="create-service.php">
+                                        <a href="create-facility.php">
                                             <i class="material-icons">add</i> 
                                         </a>
                                     </li>
@@ -49,21 +49,20 @@ include_once(dirname(__FILE__) . '/auth.php');
                           
                                     <div class="row clearfix">
                                         <?php
-                                        $SERVICE = Service::all();
-                                        if (count($SERVICE) > 0) {
-                                            foreach ($SERVICE as $key => $service) {
+                                        $FACILITIES = Facilities::all();
+                                        if (count($FACILITIES) > 0) {
+                                            foreach ($FACILITIES as $key => $facilities) {
                                                 ?>
-                                                <div class="col-md-3"  id="div<?php echo $service['id']; ?>">
+                                                <div class="col-md-3"  id="div<?php echo $facilities['id']; ?>">
                                                     <div class="photo-img-container">
-                                                        <img src="../upload/service/<?php echo $service['image_name']; ?>" class="img-responsive ">
+                                                        <img src="../upload/facilities/<?php echo $facilities['image_name']; ?>" class="img-responsive ">
                                                     </div>
                                                     <div class="img-caption">
-                                                        <p class="maxlinetitle"><?php echo $service['title']; ?></p>
+                                                        <p class="maxlinetitle"><?php echo $facilities['title']; ?></p>
                                                         <div class="d">
-                                                            <a href="#"  class="delete-service" data-id="<?php echo $service['id']; ?>"> <button class="glyphicon glyphicon-trash delete-btn"></button></a>
-                                                            <a href="edit-service.php?id=<?php echo $service['id']; ?>"> <button class="glyphicon glyphicon-pencil edit-btn"></button></a>
-                                                            <a href="arrange-services.php?id=<?php echo $service['id']; ?>">  <button class="glyphicon glyphicon-random arrange-btn"></button></a>
-                                                            <a href="view-service-photos.php?id=<?php echo $service['id']; ?>">  <button class="glyphicon glyphicon-picture arrange-btn"></button></a>
+                                                            <a href="#"  class="delete-facilities" data-id="<?php echo $facilities['id']; ?>"> <button class="glyphicon glyphicon-trash delete-btn"></button></a>
+                                                            <a href="edit-facility.php?id=<?php echo $facilities['id']; ?>"> <button class="glyphicon glyphicon-pencil edit-btn"></button></a>
+                                                            <a href="arrange-facility.php?id=<?php echo $facilities['id']; ?>">  <button class="glyphicon glyphicon-random arrange-btn"></button></a>                                                            
                                                         </div>
                                                     </div>
                                                 </div>
@@ -71,7 +70,7 @@ include_once(dirname(__FILE__) . '/auth.php');
                                             }
                                         } else {
                                             ?> 
-                                            <b style="padding-left: 15px;">No Services in the database.</b> 
+                                            <b style="padding-left: 15px;">No Facilities in the database.</b> 
                                         <?php } ?> 
 
                                     </div>
@@ -109,7 +108,7 @@ include_once(dirname(__FILE__) . '/auth.php');
         <script src="plugins/bootstrap-notify/bootstrap-notify.js"></script>
         <script src="js/pages/ui/dialogs.js"></script>
         <script src="js/demo.js"></script>
-        <script src="delete/js/service.js" type="text/javascript"></script>
+        <script src="delete/js/facilities.js" type="text/javascript"></script>
 
 
     </body>

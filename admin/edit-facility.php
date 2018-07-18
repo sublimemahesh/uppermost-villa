@@ -6,7 +6,7 @@ $id = '';
 if (isset($_GET['id'])) {
     $id = $_GET['id'];
 }
-$SERVICE = new Service($id);
+$FACILITIES = new Facilities($id);
 ?> 
 
 <!DOCTYPE html>
@@ -44,16 +44,16 @@ $SERVICE = new Service($id);
                         <div class="card">
                             <div class="header">
                                 <h2>
-                                    Edit Service
+                                    Edit Facility
                                 </h2>
 
                             </div>
                             <div class="body">
-                                <form class="form-horizontal" method="post" action="post-and-get/service.php" enctype="multipart/form-data"> 
+                                <form class="form-horizontal" method="post" action="post-and-get/facilities.php" enctype="multipart/form-data"> 
                                     <div class="col-md-12">
                                         <div class="form-group form-float">
                                             <div class="form-line">
-                                                <input type="text" id="title" class="form-control"  value="<?php echo $SERVICE->title; ?>"  name="title"  required="TRUE">
+                                                <input type="text" id="title" class="form-control"  value="<?php echo $FACILITIES->title; ?>"  name="title"  required="TRUE">
                                                 <label class="form-label">Title</label>
                                             </div>
                                         </div>
@@ -61,8 +61,8 @@ $SERVICE = new Service($id);
                                     <div class="col-md-12">                                       
                                         <div class="form-group form-float">
                                             <div class="form-line">
-                                                <input type="file" id="image" class="form-control" value="<?php echo $SERVICE->image_name; ?>"  name="image">
-                                                <img src="../upload/service/<?php echo $SERVICE->image_name; ?>" id="image" class="view-edit-img img img-responsive img-thumbnail" name="image" alt="old image">
+                                                <input type="file" id="image" class="form-control" value="<?php echo $FACILITIES->image_name; ?>"  name="image">
+                                                <img src="../upload/facilities/<?php echo $FACILITIES->image_name; ?>" id="image" class="view-edit-img img img-responsive img-thumbnail" name="image" alt="old image">
                                             </div>
                                         </div>
                                     </div>
@@ -71,7 +71,7 @@ $SERVICE = new Service($id);
                                     <div class="col-sm-12">
                                         <div class="form-group form-float">
                                             <div class="form-line">
-                                                <input type="text" id="short_description" class="form-control" value="<?php echo $SERVICE->short_description; ?>"  name="short_description">
+                                                <input type="text" id="short_description" class="form-control" value="<?php echo $FACILITIES->short_description; ?>"  name="short_description">
                                                 <label class="form-label">Short Description</label>
                                             </div>
                                         </div>
@@ -79,12 +79,12 @@ $SERVICE = new Service($id);
                                     <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
                                         <label for="description">Description</label>
                                         <div class="form-line">
-                                            <textarea id="description" name="description" class="form-control" rows="5"><?php echo $SERVICE->description; ?></textarea> 
+                                            <textarea id="description" name="description" class="form-control" rows="5"><?php echo $FACILITIES->description; ?></textarea> 
                                         </div>
                                     </div>
                                     <div class="col-md-12">
-                                        <input type="hidden" id="oldImageName" value="<?php echo $SERVICE->image_name; ?>" name="oldImageName"/>
-                                        <input type="hidden" id="id" value="<?php echo $SERVICE->id; ?>" name="id"/>
+                                        <input type="hidden" id="oldImageName" value="<?php echo $FACILITIES->image_name; ?>" name="oldImageName"/>
+                                        <input type="hidden" id="id" value="<?php echo $FACILITIES->id; ?>" name="id"/>
 <!--                                            <input type="hidden" id="authToken" value="<?php echo $_SESSION["authToken"]; ?>" name="authToken"/>-->
                                         <button type="submit" class="btn btn-primary m-t-15 waves-effect" name="update" value="update">Save Changes</button>
                                     </div>

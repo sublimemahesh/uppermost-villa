@@ -7,31 +7,33 @@
  */
 
 /**
- * Description of Service_photo
+ * Description of facilities
  *
  * @author Suharshana DsW
  */
-class ServicePhoto {
+class Facilities {
 
     public $id;
-    public $service;
+    public $title;
     public $image_name;
-    public $caption;
+    public $short_description;
+    public $description;
     public $queue;
 
     public function __construct($id) {
         if ($id) {
 
-            $query = "SELECT `id`,`service`,`image_name`,`caption`,`queue` FROM `service_photo` WHERE `id`=" . $id;
+            $query = "SELECT `id`,`title`,`image_name`,`short_description`,`description`,`queue` FROM `facilities` WHERE `id`=" . $id;
 
             $db = new Database();
 
             $result = mysql_fetch_array($db->readQuery($query));
 
             $this->id = $result['id'];
-            $this->service = $result['service'];
+            $this->title = $result['title'];
             $this->image_name = $result['image_name'];
-            $this->caption = $result['caption'];
+            $this->short_description = $result['short_description'];
+            $this->description = $result['description'];
             $this->queue = $result['queue'];
 
             return $this;
@@ -40,10 +42,11 @@ class ServicePhoto {
 
     public function create() {
 
-        $query = "INSERT INTO `service_photo` (`service`,`image_name`,`caption`,`queue`) VALUES  ('"
-                . $this->service . "','"
+        $query = "INSERT INTO `facilities` (`title`,`image_name`,`short_description`,`description`,`queue`) VALUES  ('"
+                . $this->title . "','"
                 . $this->image_name . "', '"
-                . $this->caption . "', '"
+                . $this->short_description . "', '"
+                . $this->description . "', '"
                 . $this->queue . "')";
 
         $db = new Database();
@@ -61,7 +64,7 @@ class ServicePhoto {
 
     public function all() {
 
-        $query = "SELECT * FROM `service_photo` ORDER BY queue ASC";
+        $query = "SELECT * FROM `facilities` ORDER BY queue ASC";
         $db = new Database();
         $result = $db->readQuery($query);
         $array_res = array();
@@ -75,10 +78,11 @@ class ServicePhoto {
 
     public function update() {
 
-        $query = "UPDATE  `service_photo` SET "
-                . "`service` ='" . $this->service . "', "
+        $query = "UPDATE  `facilities` SET "
+                . "`title` ='" . $this->title . "', "
                 . "`image_name` ='" . $this->image_name . "', "
-                . "`caption` ='" . $this->caption . "', "
+                . "`short_description` ='" . $this->short_description . "', "
+                . "`description` ='" . $this->description . "', "
                 . "`queue` ='" . $this->queue . "' "
                 . "WHERE `id` = '" . $this->id . "'";
 
@@ -95,32 +99,39 @@ class ServicePhoto {
 
     public function delete() {
 
-        $query = 'DELETE FROM `service_photo` WHERE id="' . $this->id . '"';
+        $this->deletePhotos();
+
+        unlink(Helper::getSitePath() . "upload/facilities/" . $this->image_name);
+
+        $query = 'DELETE FROM `facilities` WHERE id="' . $this->id . '"';
 
         $db = new Database();
 
         return $db->readQuery($query);
     }
 
-    public function getServicePhotosById($service) {
+    public function deletePhotos() {
 
-        $query = "SELECT * FROM `service_photo` WHERE `service`= $service ORDER BY queue ASC";
+        $SERVICE_PHOTO = new FacilitiesPhoto(NULL);
 
-        $db = new Database();
+        $allPhotos = $SERVICE_PHOTO->getFacilitiesPhotosById($this->id);
 
-        $result = $db->readQuery($query);
-        $array_res = array();
+        foreach ($allPhotos as $photo) {
 
-        while ($row = mysql_fetch_array($result)) {
-            array_push($array_res, $row);
+            $IMG = $SERVICE_PHOTO->image_name = $photo["image_name"];
+            unlink(Helper::getSitePath() . "upload/facilities/gallery/" . $IMG);
+            unlink(Helper::getSitePath() . "upload/facilities/gallery/thumb/" . $IMG);
+
+            $SERVICE_PHOTO->id = $photo["id"];
+            $SERVICE_PHOTO->delete();
         }
-        return $array_res;
     }
 
     public function arrange($key, $img) {
-        $query = "UPDATE `service_photo` SET `queue` = '" . $key . "'  WHERE id = '" . $img . "'";
+        $query = "UPDATE `facilities` SET `queue` = '" . $key . "'  WHERE id = '" . $img . "'";
         $db = new Database();
         $result = $db->readQuery($query);
         return $result;
     }
+
 }

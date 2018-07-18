@@ -339,23 +339,23 @@
                 <li>
                     <a href="javascript:void(0);" class="menu-toggle">
                         <i class="material-icons">chevron_right</i>
-                        <span>Service</span>
+                        <span>Facilities</span>
                     </a>
                     <ul class="ml-menu">
                         <li>
-                            <a href="create-service.php">
+                            <a href="create-facility.php">
                                 <i class="material-icons">add</i>
                                 <span>Add New</span>
                             </a>
                         </li>
                         <li>
-                            <a href="manage-service.php">
+                            <a href="manage-facilities.php">
                                 <i class="material-icons">list</i>
                                 <span>Manage</span>
                             </a>
                         </li>
                         <li>
-                            <a href="arrange-services.php">
+                            <a href="arrange-facility.php">
                                 <i class="material-icons">compare_arrows</i>
                                 <span>Arrange</span>
                             </a>

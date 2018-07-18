@@ -4,15 +4,14 @@ include_once(dirname(__FILE__) . '/../../class/include.php');
 
 if (isset($_POST['create'])) {
 
-    $TOUR_PACKAGE = new TourPackage(NULL);
+    $FACILITIES = new Facilities(NULL);
     $VALID = new Validator();
 
-    $TOUR_PACKAGE->title = mysql_real_escape_string($_POST['title']);
-    $TOUR_PACKAGE->price = mysql_real_escape_string($_POST['price']);
-    $TOUR_PACKAGE->short_description = mysql_real_escape_string($_POST['short_description']);
-    $TOUR_PACKAGE->description = mysql_real_escape_string($_POST['description']);
+    $FACILITIES->title = mysql_real_escape_string($_POST['title']);
+    $FACILITIES->short_description = mysql_real_escape_string($_POST['short_description']);
+    $FACILITIES->description = mysql_real_escape_string($_POST['description']);
 
-    $dir_dest = '../../upload/tour-package/';
+    $dir_dest = '../../upload/facilities/';
 
     $handle = new Upload($_FILES['image']);
 
@@ -34,11 +33,10 @@ if (isset($_POST['create'])) {
         }
     }
 
-    $TOUR_PACKAGE->image_name = $imgName;
+    $FACILITIES->image_name = $imgName;
 
-    $VALID->check($TOUR_PACKAGE, [
+    $VALID->check($FACILITIES, [
         'title' => ['required' => TRUE],
-        'price' => ['required' => TRUE],
         'short_description' => ['required' => TRUE],
         'description' => ['required' => TRUE],
         'image_name' => ['required' => TRUE],
@@ -46,15 +44,15 @@ if (isset($_POST['create'])) {
 
 
     if ($VALID->passed()) {
-        $TOUR_PACKAGE->create();
+        $FACILITIES->create();
 
         if (!isset($_SESSION)) {
             session_start();
         }
         $VALID->addError("Your data was saved successfully", 'success');
         $_SESSION['ERRORS'] = $VALID->errors();
-//        header('Location: ' . $_SERVER['HTTP_REFERER']);
-       header("location: ../view-tour-photos-normal.php?id=" . $TOUR_PACKAGE->id);
+
+        header('Location: ' . $_SERVER['HTTP_REFERER']);
     } else {
 
         if (!isset($_SESSION)) {
@@ -65,10 +63,16 @@ if (isset($_POST['create'])) {
 
         header('Location: ' . $_SERVER['HTTP_REFERER']);
     }
+//    $result = $FACILITIES->create();
+//      if ($result) {
+//        header("location: ../create-facilities.php?id=" . $FACILITIES->id."&&message=10");
+//    } else {
+//        
+//    }
 }
 
 if (isset($_POST['update'])) {
-    $dir_dest = '../../upload/tour-package/';
+    $dir_dest = '../../upload/facilities/';
 
     $handle = new Upload($_FILES['image']);
 
@@ -92,20 +96,17 @@ if (isset($_POST['update'])) {
         }
     }
 
-    $TOUR_PACKAGE = new TourPackage($_POST['id']);
+    $FACILITIES = new Facilities($_POST['id']);
 
-    $TOUR_PACKAGE->image_name = $_POST['oldImageName'];
-    $TOUR_PACKAGE->title = mysql_real_escape_string($_POST['title']);
-    $TOUR_PACKAGE->price = mysql_real_escape_string($_POST['price']);
-    $TOUR_PACKAGE->short_description = mysql_real_escape_string($_POST['short_description']);
-    $TOUR_PACKAGE->description = mysql_real_escape_string($_POST['description']);
-
+    $FACILITIES->image_name = $_POST['oldImageName'];
+    $FACILITIES->title = mysql_real_escape_string($_POST['title']);
+    $FACILITIES->short_description = mysql_real_escape_string($_POST['short_description']);
+    $FACILITIES->description = mysql_real_escape_string($_POST['description']);
 
     $VALID = new Validator();
 
-    $VALID->check($TOUR_PACKAGE, [
+    $VALID->check($FACILITIES, [
         'title' => ['required' => TRUE],
-        'price' => ['required' => TRUE],
         'short_description' => ['required' => TRUE],
         'description' => ['required' => TRUE],
         'image_name' => ['required' => TRUE],
@@ -113,7 +114,7 @@ if (isset($_POST['update'])) {
 
 
     if ($VALID->passed()) {
-        $TOUR_PACKAGE->update();
+        $FACILITIES->update();
 
         if (!isset($_SESSION)) {
             session_start();
@@ -138,9 +139,9 @@ if (isset($_POST['save-data'])) {
 
     foreach ($_POST['sort'] as $key => $img) {
         $key = $key + 1;
-        
-        $TOUR_PACKAGE = TourPackage::arrange($key, $img);
-        
+
+        $FACILITIES = Facilities::arrange($key, $img);
+
         header('Location: ' . $_SERVER['HTTP_REFERER']);
     }
 }
