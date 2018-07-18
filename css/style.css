@@ -7247,6 +7247,10 @@ h6.margin_bottom_large {
 .text-welcome{
     text-align: left;
 }
+.content-welcome{
+    text-align: justify;
+    font-size: 17px;
+}
 .owl-nav {
     position: inherit;
     margin: -150px -30px 174px -30px;
@@ -7303,6 +7307,7 @@ h4:hover {
 }
 .btn-readmore-welcome{
     margin-left: 0px;
+    padding-top: 11px;
 }
 .bed-style{
     padding-right: 33px;
@@ -7382,6 +7387,10 @@ h4:hover {
 .para-about{
     text-align: justify;
 }
+.para-about1{
+    text-align: center;
+}
+
 .image-about{
     padding-left: 15px;
     float: right;
@@ -7725,4 +7734,7 @@ h4:hover {
     color: #fff;
     font-size: 25px;
 }
-.
+.about-subtitle{
+    margin-top: 15px;
+}
+
