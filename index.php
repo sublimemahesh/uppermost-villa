@@ -45,7 +45,7 @@ $comments = $COMMENT->all();
         <link href="plugins/owl-carousel/css/owl.theme.default.min.css" rel="stylesheet" type="text/css"/>
         <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
 
-       
+
 
     </head>
     <body class="body_style_wide responsive_menu scheme_original top_panel_show top_panel_over sidebar_hide">
@@ -112,35 +112,11 @@ $comments = $COMMENT->all();
                                     </h2>
                                     <div class="sc_section margin_bottom_xmedium section_style_1">
                                         <div class="sc_section_inner">
-                                            <p>On the best lot at Phuket is situated the Kailua Residence. It features Ipe hardwood flooring on the interior and granite stone flooring on the lanais, high vaulted cedar ceilings.</p>
+                                            <p>Uppermost Villa truly an amazing place located on top of the mountain. Naturally made surroundings will be brought perfect ambiance blended of tranquility. Uppermost villa specially design for having great relaxation with tranquility. Uppermost Villa  serving unique, ultimate, superb service which located near Unawatuna stunning beach and offers amenities with services beyond your expectation. 
+                                            </p>
                                         </div>
                                     </div>
-                                    <div class="columns_wrap sc_columns margin_bottom_medium">
-                                        <div class="column-1_2 sc_column_item">
-                                            <ul class="sc_list sc_list_style_iconed color_1">
-                                                <li class="sc_list_item">
-                                                    <span class="sc_list_icon icon-stop color_2"></span>
-                                                    <p>Quiet Neighbourhood</p>
-                                                </li>
-                                                <li class="sc_list_item">
-                                                    <span class="sc_list_icon icon-stop color_2"></span>
-                                                    <p>Great Local Community</p>
-                                                </li>
-                                            </ul>
-                                        </div>
-                                        <div class="column-1_2 sc_column_item">
-                                            <ul class="sc_list sc_list_style_iconed color_1">
-                                                <li class="sc_list_item">
-                                                    <span class="sc_list_icon icon-stop color_2"></span>
-                                                    <p>Fabulous Views</p>
-                                                </li>
-                                                <li class="sc_list_item">
-                                                    <span class="sc_list_icon icon-stop color_2"></span>
-                                                    <p>Large Play Center In Yard</p>
-                                                </li>
-                                            </ul>
-                                        </div>
-                                    </div>
+                                    
                                     <div class="sc_property_wrap">
                                         <div class="sc_property sc_property_style_property-2">
                                             <div class="sc_property_item">
