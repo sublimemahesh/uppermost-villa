@@ -111,8 +111,8 @@ $comments = $COMMENT->all();
                                         </span>
                                     </h2>
                                     <div class="sc_section margin_bottom_xmedium section_style_1">
-                                        <div class="sc_section_inner">
-                                            <p>Uppermost Villa truly an amazing place located on top of the mountain. Naturally made surroundings will be brought perfect ambiance blended of tranquility. Uppermost villa specially design for having great relaxation with tranquility. Uppermost Villa  serving unique, ultimate, superb service which located near Unawatuna stunning beach and offers amenities with services beyond your expectation. 
+                                        <div class="sc_section_inner content-welcome">
+                                            <p>Uppermost Villa truly an amazing place located on top of the mountain. Naturally made surroundings will be brought perfect ambiance blended of tranquility. Uppermost villa specially design for having great relaxation with tranquility. Uppermost Villa  serving unique, ultimate, superb service which located near Unawatuna and offers amenities with services beyond your expectation. 
                                             </p>
                                         </div>
                                     </div>
@@ -121,7 +121,7 @@ $comments = $COMMENT->all();
                                         <div class="sc_property sc_property_style_property-2">
                                             <div class="sc_property_item">
                                                 <div class="ps_single_info">
-                                                    <div class="">
+                                                    <div class="btn-readmore-welcome">
                                                         <a href="about.php?id=<?php echo $room["id"]; ?>"><button class="read-more btn-readmore-welcome">Read More</button></a>
                                                     </div>                                                    
                                                     <div class="cL"></div>

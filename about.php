@@ -59,20 +59,20 @@
                             <div class="columns_wrap">
                                 <div class="column-1_2">
                                     <div class="bgtext1 bg bgtext1-welcome">
-                                        <p>WELCOME !</p>
+                                        <p>ABOUT US</p>
                                     </div>
                                     <h2 class="sc_title sc_title_iconed margin_bottom_xmedium">
-                                        <span class="sc_title_box">About Uppermost Villa<span class="sc_title_subtitle">Who We Are & What We Do</span></span>
+                                        <span class="sc_title_box">About Uppermost Villa<span class="sc_title_subtitle about-subtitle">Who We Are & What We Do</span></span>
                                     </h2>
                                     <div class="sc_section margin_bottom_xmedium section_style_1">
-                                        <div class="sc_section_inner">
-                                            <p class="para-about">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text. All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary, making this the first true generator on the Internet. It uses a dictionary of over 200 Latin words, combined with a handful of model sentence structures, to generate Lorem Ipsum which looks reasonable. The generated Lorem Ipsum is therefore always free from repetition, injected humour, or non-characteristic words etc.</p>
+                                        <div class="sc_section_inner content-welcome">
+                                            <p class="para-about">Uppermost Villa truly an amazing place located on top of the mountain. Naturally made surroundings will be brought perfect ambiance blended of tranquility. Uppermost villa specially design for having great relaxation with tranquility. Uppermost Villa  serving unique, ultimate, superb service which located near Unawatuna and offers amenities with services beyond your expectation.</p>
                                         </div>
                                     </div>
 
                                 </div>
                                 <div class="column-1_2">
-                                    <img src="images/img/Floral.jpg" alt="" class="image-about img-thumbnail"/>                             
+                                    <img src="images/image-new/image-welcome.jpg" alt="" class="image-about img-thumbnail"/>                             
                                 </div>
                             </div>
                         </div>
@@ -90,13 +90,12 @@
                                     <div class="column-1_2 sc_column_item text-center">
                                         <i class="fa fa-eye" style="font-size: 50px;color: #ef595a; padding-left: 260px;"></i>
                                         <h4 class="topics-about">VISION</i></h4>
-                                        <p class="para-about">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin et aliquet dui. Sed nec massa commodo, bibendum mi et, tempus dolor. Vestibulum feugiat ultrices vehicula. Proin sed odio dui. Donec ligula nunc, molestie id nulla feugiat, faucibus bibendum odio.</p>
+                                        <p class="para-about1">Become the first choice for guests by proceeding superb with unique warmth hospitality in Uppermost Villa</p>
                                     </div>
                                     <div class="column-1_2 sc_column_item">
                                         <i class="fa fa-send-o" style="font-size: 50px;color: #ef595a; padding-left: 260px;"></i>
                                         <h4 class="topics-about">MISSION</h4>
-                                        <p class="para-about">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin et aliquet dui. Sed nec massa commodo, bibendum mi et, tempus dolor. Vestibulum feugiat ultrices vehicula. Proin sed odio dui. Donec ligula nunc, molestie id nulla feugiat, faucibus bibendum odio.</p>
-                                    </div>
+                                        <p class="para-about1">Provide perfect & superb service to our customers by proceeding high elegant, customer satisfied in wide range and upon on customer requirement. </div> 
                                 </div>
                                 
                             </div>
