@@ -43,10 +43,22 @@ $excursions = $EXCURSION->all();
         <link href="js/vendor/magnific-popup/magnific-popup.css" rel="stylesheet" type="text/css"/>
         <link href="js/vendor/booked/booked.css" rel="stylesheet" type="text/css"/>
         <link href="css/custom/instagram-widget.css" rel="stylesheet" type="text/css"/>
-        <link href="js/vendor/magnific-popup/magnific-popup.css" rel="stylesheet" type="text/css"/>
-        <link href="plugins/sliderengine/amazingslider-1.css" rel="stylesheet" type="text/css"/>
+        <link href="js/vendor/magnific-popup/magnific-popup.css" rel="stylesheet" type="text/css"/>        
         <link href="plugins/owl-carousel/css/owl.carousel.min.css" rel="stylesheet" type="text/css"/>
         <link href="plugins/owl-carousel/css/owl.theme.default.min.css" rel="stylesheet" type="text/css"/>
+        <link href="plugins/galleria/themes/classic/galleria.classic.css" rel="stylesheet" type="text/css"/>
+
+        <style>
+            .galleria-slider {
+                border: solid 1px #AFAFAF;
+                box-shadow: 0px 0px 4px #6F6F6F;
+                margin-bottom: 20px;
+            }
+            .galleria-slider .galleria-stage {
+                background: #000 !important;
+            }
+        </style>
+
 
     </head>
     <body class="body_style_wide responsive_menu scheme_original top_panel_show top_panel_above sidebar_hide">
@@ -81,41 +93,22 @@ $excursions = $EXCURSION->all();
                         <div class="content">
                             <section class="post_featured">
                                 <div class="post_thumb image-view">
-                                    <div id="amazingslider-wrapper-1" style="display:block;position:relative;max-width:900px;margin:0px auto 102px;">
-                                        <div id="amazingslider-1" style="display:block;position:relative;margin:0 auto;">
-                                            <ul class="amazingslider-slides" style="display:none;">
+                                    <div id="excursion_photos" class="galleria-slider  ">
 
-                                                <?php
-                                                $photos = ExcursionsPhoto::getExcursionsPhotosById($EXCURSION->id);
-                                                foreach ($photos as $photo) {
-                                                    ?>
+                                        <?php
+                                        $photos = ExcursionsPhoto::getExcursionsPhotosById($EXCURSION->id);
+                                        foreach ($photos as $photo) {
+                                            ?>
 
-                                                    <li>
-                                                        <img src="upload/excursion/gallery/<?php echo $photo['image_name']; ?>" alt=""/>
-                                                    </li>
+                                            <a href="upload/excursion/gallery/<?php echo $photo['image_name']; ?>">
+                                                <img src="upload/excursion/gallery/thumb/<?php echo $photo['image_name']; ?>" data-title="" >
+                                            </a>
 
-                                                    <?php
-                                                }
-                                                ?>
-
-                                            </ul>
-                                            <ul class="amazingslider-thumbnails" style="display:none;">
-                                                <?php
-                                                $photos = ExcursionsPhoto::getExcursionsPhotosById($EXCURSION->id);
-                                                foreach ($photos as $photo) {
-                                                    ?>
-
-                                                    <li>
-                                                        <img src="upload/excursion/gallery/thumb/<?php echo $photo['image_name']; ?>" alt=""/>
-                                                    </li>
-
-                                                    <?php
-                                                }
-                                                ?>                                            
-                                            </ul>
-
-                                        </div>
+                                            <?php
+                                        }
+                                        ?>
                                     </div>
+
                                 </div>
                             </section>
                             <section class="post_content">
@@ -134,7 +127,7 @@ $excursions = $EXCURSION->all();
                         <h4 class="sc_title">More Excursions</h4>
                         <div class="sc_property_wrap">
                             <div class="sc_property sc_property_style_property-1 " data-interval="5446" data-slides-per-view="3" style="margin-bottom: 40px;">
-                             <div class="owl-carousel sc_columns columns_wrap" id="excurision-carousel">
+                                <div class="owl-carousel sc_columns columns_wrap" id="excurision-carousel">
 
                                     <?php
                                     foreach ($excursions as $excursion) {
@@ -176,16 +169,17 @@ $excursions = $EXCURSION->all();
                 </div>
 
                 <!-- Footer -->
-<?php
-include 'footer.php';
-?>
+                <?php
+                include 'footer.php';
+                ?>
                 <!-- /Footer -->
 
             </div>
         </div>
         <a href="#" class="scroll_to_top icon-up"></a>
-
-        <script data-cfasync="false" src="cdn-cgi/scripts/f2bf09f8/cloudflare-static/email-decode.min.js"></script><script type='text/javascript' src='js/vendor/jquery.js'></script>
+        <script src="plugins/galleria/jquery.1.12.4.min.js" type="text/javascript"></script>
+        <script data-cfasync="false" src="cdn-cgi/scripts/f2bf09f8/cloudflare-static/email-decode.min.js"></script>
+        <!--<script type='text/javascript' src='js/vendor/jquery.js'></script>-->
         <script type='text/javascript' src='js/custom/plugins.js'></script>
         <script type='text/javascript' src='js/custom/messages.js'></script>
         <script type='text/javascript' src='js/vendor/jquery-migrate.min.js'></script>
@@ -207,14 +201,15 @@ include 'footer.php';
         <script src="js/vendor/isotope.min.js" type="text/javascript"></script>
         <script type='text/javascript' src='http://maps.google.com/maps/api/js?sensor=false'></script>
         <script src="js/custom/_googlemap.js" type="text/javascript"></script>
-        <script src="js/vendor/magnific-popup/jquery.magnific-popup.min.js" type="text/javascript"></script>
-        <script src="plugins/sliderengine/amazingslider.js" type="text/javascript"></script>
-        <script src="plugins/sliderengine/initslider-1.js" type="text/javascript"></script>
+        <script src="js/vendor/magnific-popup/jquery.magnific-popup.min.js" type="text/javascript"></script>        
         <script src="plugins/owl-carousel/js/owl.carousel.min.js" type="text/javascript"></script>
 
+        <script src="plugins/galleria/galleria.js" type="text/javascript"></script>
+        <script src="plugins/galleria/galleria.classic.min.js" type="text/javascript"></script>
+        
         <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
 
-        
+
         <script>
             $(document).ready(function () {
                 $("#excurision-carousel").owlCarousel({
@@ -237,6 +232,18 @@ include 'footer.php';
                         }
                     }
                 });
+            });
+        </script>
+
+        <script type="text/javascript">
+            $('#excursion_photos').galleria({
+                responsive: true,
+                height: 500,
+                autoplay: 7000,
+                lightbox: true,
+                showInfo: true,
+
+                //                imageCrop: true,
             });
         </script>
     </body>

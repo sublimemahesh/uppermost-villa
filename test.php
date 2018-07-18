@@ -65,6 +65,7 @@
                     </div>
                 </div>
                 <!--/breadcrumbs-->
+                
 
                 <div class="galleria">
                     <img src="upload/photo-album/-77935953_191125204953_1531740675_n.jpg" alt=""/>
