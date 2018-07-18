@@ -44,13 +44,20 @@ $rooms = $ROOM->all();
         <link href="js/vendor/booked/booked.css" rel="stylesheet" type="text/css"/>
         <link href="css/custom/instagram-widget.css" rel="stylesheet" type="text/css"/>
         <link href="js/vendor/magnific-popup/magnific-popup.css" rel="stylesheet" type="text/css"/>
-        <link href="plugins/sliderengine/amazingslider-1.css" rel="stylesheet" type="text/css"/>
+        <link href="plugins/galleria/themes/classic/galleria.classic.css" rel="stylesheet" type="text/css"/>
 
         <style>
-            .amazingslider-box-1 a {
-                display:none;
+            .galleria-slider {
+                border: solid 1px #AFAFAF;
+                box-shadow: 0px 0px 4px #6F6F6F;
+                margin-bottom: 20px;
+            }
+            .galleria-slider .galleria-stage {
+                background: #000 !important;
             }
         </style>
+
+
 
 
     </head>
@@ -86,37 +93,21 @@ $rooms = $ROOM->all();
                         <div class="content">
                             <section class="post_featured">
                                 <div class="post_thumb image-view">
-                                    <div id="amazingslider-wrapper-1" style="display:block;position:relative;max-width:900px;margin:0px auto 102px;">
-                                        <div id="amazingslider-1" style="display:block;position:relative;margin:0 auto;">
-                                            <ul class="amazingslider-slides" style="display:none;">
+                                    <div id="room_photos" class="galleria-slider  ">
 
-                                                <?php
-                                                $photos = RoomPhoto::getRoomPhotosById($ROOM->id);
-                                                foreach ($photos as $photo) {
-                                                    ?>
-                                                    <li>
-                                                        <img src="upload/room/gallery/<?php echo $photo['image_name']; ?>" alt=""/>
-                                                    </li>
-                                                    <?php
-                                                }
-                                                ?>
-                                            </ul>
-                                            <div>
-                                                <ul class="amazingslider-thumbnails" style="display:none;">
-                                                    <?php
-                                                    $photos = RoomPhoto::getRoomPhotosById($ROOM->id);
-                                                    foreach ($photos as $photo) {
-                                                        ?>
-                                                        <li>
-                                                            <img src="upload/room/gallery/thumb/<?php echo $photo['image_name']; ?>" alt=""/>
-                                                        </li>
-                                                        <?php
-                                                    }
-                                                    ?>                                         
-                                                </ul>
-                                            </div>
-                                        </div>
-                                    </div>
+                                        <?php
+                                        $photos = RoomPhoto::getRoomPhotosById($ROOM->id);
+                                        foreach ($photos as $photo) {
+                                            
+                                            ?>
+                                            <a href="upload/room/gallery/<?php echo $photo['image_name']; ?>">
+                                                <img src="upload/room/gallery/thumb/<?php echo $photo['image_name']; ?>" data-title="" >
+                                            </a>
+                                            <?php
+                                        }
+                                        ?>
+
+                                    </div> 
                                 </div>
                             </section>
                             <section class="post_content">
@@ -211,8 +202,9 @@ $rooms = $ROOM->all();
             </div>
         </div>
         <a href="#" class="scroll_to_top icon-up"></a>
-
-        <script data-cfasync="false" src="cdn-cgi/scripts/f2bf09f8/cloudflare-static/email-decode.min.js"></script><script type='text/javascript' src='js/vendor/jquery.js'></script>
+        <script src="plugins/galleria/jquery.1.12.4.min.js" type="text/javascript"></script>
+        <script data-cfasync="false" src="cdn-cgi/scripts/f2bf09f8/cloudflare-static/email-decode.min.js"></script>
+        <!--<script type='text/javascript' src='js/vendor/jquery.js'></script>-->
         <script type='text/javascript' src='js/custom/plugins.js'></script>
         <script type='text/javascript' src='js/custom/messages.js'></script>
         <script type='text/javascript' src='js/vendor/jquery-migrate.min.js'></script>
@@ -236,12 +228,26 @@ $rooms = $ROOM->all();
         <script src="js/custom/_googlemap.js" type="text/javascript"></script>
         <script src="js/vendor/magnific-popup/jquery.magnific-popup.min.js" type="text/javascript"></script>
         <script src="js/vendor/magnific-popup/jquery.magnific-popup.min.js" type="text/javascript"></script>
-        <script src="plugins/sliderengine/amazingslider.js" type="text/javascript"></script>
-        <script src="plugins/sliderengine/initslider-1.js" type="text/javascript"></script>
+<!--        <script src="plugins/sliderengine/amazingslider.js" type="text/javascript"></script>
+        <script src="plugins/sliderengine/initslider-1.js" type="text/javascript"></script>-->
+
+        <script src="plugins/galleria/galleria.js" type="text/javascript"></script>
+        <script src="plugins/galleria/galleria.classic.min.js" type="text/javascript"></script>
 
 
         <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
 
+        <script type="text/javascript">
+            $('#room_photos').galleria({
+                responsive: true,
+                height: 500,
+                autoplay: 7000,
+                lightbox: true,
+                showInfo: true,
+
+                //                imageCrop: true,
+            });
+        </script>
     </body>
 
 </html>

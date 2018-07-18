@@ -5,8 +5,8 @@ $type = '';
 $arrival = '';
 $departure = '';
 
-if(isset($_GET['room_type'])){
-    $type = $_GET['room_type'];
+if(isset($_GET['type'])){
+    $type = $_GET['type'];
 }
 if(isset($_GET['arrival'])){
     $arrival = $_GET['arrival'];
@@ -14,6 +14,7 @@ if(isset($_GET['arrival'])){
 if(isset($_GET['departure'])){
     $departure = $_GET['departure'];
 }
+
 
 ?>
 
@@ -127,9 +128,9 @@ if(isset($_GET['departure'])){
                                             <label>Room Type</label>
                                             <select name="room_type" id="room_type">
                                                 <option value="">Select Room Type</option>
-                                                <option value="Deluxe Double Room with Mountain View">Deluxe Double Room with Mountain View</option>
-                                                <option value="Deluxe Family Room  with  mountain view">Deluxe Family Room  with  mountain view</option>
-                                                <option value="Deluxe Double  Room">Deluxe Double  Room</option>                                                
+                                                <option value="Deluxe Double Room with Mountain View" <?php if($type == 1) {echo 'selected="TRUE"'; } ?>>Deluxe Double Room with Mountain View</option>
+                                                <option value="Deluxe Family Room  with  mountain view" <?php if($type == 2) {echo 'selected="TRUE"'; } ?>>Deluxe Family Room  with  mountain view</option>
+                                                <option value="Deluxe Double  Room" <?php if($type == 3) {echo 'selected="TRUE"'; } ?>>Deluxe Double  Room</option>                                                
                                             </select>
                                             <span id="spanType"></span>
                                         </div>
