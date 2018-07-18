@@ -74,7 +74,7 @@ $comments = $COMMENT->all();
                                     <form method="get" action="booking.php">
                                         <div class="sc_ps_status">
                                             <h5>ROOM TYPE</h5>
-                                            <select name="room_type">
+                                            <select name="type">
                                                 <option value="0">Select Room Type</option>
                                                 <option value="1">Deluxe Double Room with Mountain View</option>
                                                 <option value="2">Deluxe Family Room  with  mountain view</option>
