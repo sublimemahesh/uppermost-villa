@@ -132,7 +132,7 @@ $comments = $COMMENT->all();
                                 </div>
                                 <div class="column-1_2">
                                     <figure class="sc_image ">
-                                        <a href="#"><img src="images/image-new/image-welcome.jpg" alt="" /></a>
+                                        <a href="#"><img src="images/image-new/1.png" alt="" /></a>
                                     </figure>
                                 </div>
                             </div>
