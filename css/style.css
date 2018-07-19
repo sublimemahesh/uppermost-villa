@@ -5438,7 +5438,7 @@ li.comment .comment_author_avatar + .comment_content {
 /* Contacts */
 
 .contacts_wrap_inner {
-    padding: 3.286em 0 0em;
+    padding: 2.186em 0 0em;
     text-align: center;
 }
 .contacts_wrap .logo {
@@ -7737,4 +7737,10 @@ h4:hover {
 .about-subtitle{
     margin-top: 15px;
 }
-
+.content-footer{
+    text-align: justify;
+}
+.content-footer1{
+    text-align: justify;
+    margin-bottom: -20px;
+}
