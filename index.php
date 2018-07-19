@@ -9,6 +9,8 @@ $excursions = $EXCURSION->all();
 
 $COMMENT = new Comments(Null);
 $comments = $COMMENT->all();
+
+$sliders = Slider::all();
 ?>
 
 

@@ -73,7 +73,7 @@ $photo_albums = $PHOTO_ALBUM->all();
                                         <div class="column-1_3 column_padding_bottom img-hover">
                                             <a href="upload/photo-album/<?php echo $photo_album['image_name'] ?>" data-fancybox="images">    
                                                  <div class="middle">
-                                                    <i class="eg-icon-search"></i>
+                                                    <i class="eg-icon-search text"></i>
                                                 </div>
                                                 <img src="upload/photo-album/<?php echo $photo_album['image_name'] ?>" />
                                                

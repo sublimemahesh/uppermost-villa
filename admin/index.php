@@ -6,7 +6,7 @@ $COUNT_COMMENT = count(Comments::pendingComments());
 $COUNT_EXCURSION = count(Excursions::all());
 $COUNT_ROOM = count(Room::all());
 $SLIDER_IMAGES = count(Slider::all());
-$COUNT_GALLERY = count(AlbumPhoto::getAlbumPhotosById(6));
+$COUNT_GALLERY = count(PhotoAlbum::all());
 ?> 
 <!DOCTYPE html>
 <html> 
