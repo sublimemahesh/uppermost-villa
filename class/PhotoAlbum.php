@@ -123,6 +123,7 @@ class PhotoAlbum {
         }
     }
     
+    
      public function arrange($key, $img) {
         $query = "UPDATE `photo_album` SET `queue` = '" . $key . "'  WHERE id = '" . $img . "'";
         $db = new Database();
