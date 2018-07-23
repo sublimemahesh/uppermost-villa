@@ -160,7 +160,7 @@ $sliders = Slider::all();
                                                     </div>
                                                     <div class="column-1_2 column_padding_bottom accommo-column1">
                                                         <h3 class="entry-title"><?php echo $room['title']; ?></h3>
-                                                        <p class="entry-content"><?php echo $room['short_description'] ?></p>
+                                                        <p class="entry-content"><?php echo substr($room['short_description'], 0, 400) . '...'; ?></p>
                                                         <span>
                                                             <a href="view-accommodation.php?id=<?php echo $room["id"]; ?>"><button class="read-more btn-readmore">Read More</button></a>
                                                         </span>

@@ -82,8 +82,8 @@ $rooms = $ROOM->all();
                                                             <img src="upload/room/<?php echo $room['image_name'] ?>" alt=""/>
                                                         </div>
                                                         <div class="column-1_2 col-2 entry-box">
-                                                            <h3 class="entry-title-accommo"><?php echo $room['title']; ?></h3>
-                                                            <p class="entry-content-accommo p-margin text-justify"><?php echo substr($room['short_description'], 0, 350) . '...'; ?></p>                                                        
+                                                            <h3 style="margin-top: 25px;" class="entry-title-accommo"><?php echo $room['title']; ?></h3>
+                                                            <p class="entry-content-accommo p-margin text-justify"><?php echo substr($room['short_description'], 0, 400) . '...'; ?></p>                                                        
                                                             <span>
                                                                 <a href="view-accommodation.php?id=<?php echo $room["id"];?>"><button class="read-more btn-readmore1">Read More</button></a>
                                                             </span>
@@ -118,8 +118,8 @@ $rooms = $ROOM->all();
                                                             <img src="upload/room/<?php echo $room['image_name'] ?>" alt=""/>
                                                         </div>
                                                         <div class="column-1_2 col-2 entry-box">
-                                                            <h3 style="margin-top: 40px;" class="entry-title-accommo"><?php echo $room['title']; ?></h3>
-                                                            <p class="entry-content-accommo p-margin text-justify"><?php echo substr($room['short_description'], 0, 350) . '...'; ?></p>
+                                                            <h3 style="margin-top: 25px;" class="entry-title-accommo"><?php echo $room['title']; ?></h3>
+                                                            <p class="entry-content-accommo p-margin text-justify"><?php echo substr($room['short_description'], 0, 420) . '...'; ?></p>
                                                             <span>
                                                                 <a href="view-accommodation.php?id=<?php echo $room["id"];?>"><button class="read-more btn-readmore1">Read More</button></a>
                                                             </span>

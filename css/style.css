@@ -7471,6 +7471,7 @@ h4:hover {
 .btn-readmore1 {
     margin-left: 150px;
     font-size: 12px;
+    margin-top: 10px;
 }
 .entry-title-accommo {
     font-size: 26px;
@@ -7483,6 +7484,7 @@ h4:hover {
 }
 .p-margin{
     margin-bottom: 0px;
+    margin-top: -5px;
 }
 .row, .columns_wrap.col-margin {
     margin-left: 0px;
