@@ -168,7 +168,9 @@ $sliders = Slider::all();
                                                             <div class="entry-footer">
                                                                 <span class="icon-bed bed-style"></span>
                                                                 <span class="icon-bath bath-style"></span>
-                                                                <span class="icon-warehouse"></span>
+                                                                <span class="icon-warehouse bath-style"></span>
+                                                                <span class="fa fa-wifi"></span>
+                                                                
 
                                                                 <div class="property_price_box1">
                                                                     <span class="property_price_box_sign price-font">$</span>
@@ -242,7 +244,7 @@ $sliders = Slider::all();
                             </div>
                         </div>
                     </div>
-                    <div class="accommo-section" style="background-image: url(images/image-new/parallex-02.jpg);padding-bottom: 45px;">
+                    <div class="accommo-section" style="background-image: url(images/image-new/parallex-02.jpg);padding-bottom: 10px;">
 
                         <div class="content_wrap title_margin_top3 margin_bottom_medium">
                             <div class="bgtext1 bgtext1-facilities">
@@ -256,44 +258,44 @@ $sliders = Slider::all();
                                             <div class="sc_columns columns_wrap">
                                                 <div class="column-1_4 column_padding_bottom">
                                                     <div class="sc_services_item">
-                                                        <a href=""><span class="sc_icon icon-swiming_pool"></span></a>
+                                                        <a href="facilities.php"><span class="sc_icon icon-swiming_pool"></span></a>
                                                         <div class="sc_services_item_content">
-                                                            <h4 class="sc_services_item_title"><a href="">Swimming Pool</a></h4>
+                                                            <h4 class="sc_services_item_title"><a href="facilities.php">Swimming Pool</a></h4>
                                                             <div class="sc_services_item_description">
-                                                                <p>We provide consumers with a content-rich listings in a handy format.</p>
+                                                                <p>Uppermost Villa Unawatuna features one swimming pool laying in front of the villa, the pool sits by the perfectly groomed gardens of the villa.</p>
                                                             </div>
                                                         </div>
                                                     </div>
                                                 </div>
                                                 <div class="column-1_4 column_padding_bottom">
                                                     <div class="sc_services_item">
-                                                        <a href=""><span class="sc_icon fa fa-car"></span></a>
+                                                        <a href="facilities.php"><span class="sc_icon"><i class="fa fa-plane"></i></span></a>
                                                         <div class="sc_services_item_content">
-                                                            <h4 class="sc_services_item_title"><a href="">Car Park</a></h4>
+                                                            <h4 class="sc_services_item_title"><a href="facilities.php">Airport Transfers</a></h4>
                                                             <div class="sc_services_item_description">
-                                                                <p>Price estimates and sales histories for property, updating information.</p>
+                                                                <p>Uppermost Villa serves Airport pickup or drops taxi service for your convenient. Our drivers will ensure you reach the airport safely & on time. </p>
                                                             </div>
                                                         </div>
                                                     </div>
                                                 </div>
                                                 <div class="column-1_4 column_padding_bottom">
                                                     <div class="sc_services_item">
-                                                        <a href=""><span class="sc_icon icon-badges3"></span></a>
+                                                        <a href="facilities.php"><span class="sc_icon"><i class="fa fa-birthday-cake"></i></span></a>
                                                         <div class="sc_services_item_content">
-                                                            <h4 class="sc_services_item_title"><a href="">Guaranteed services</a></h4>
+                                                            <h4 class="sc_services_item_title"><a href="facilities.php">Arrange Parties</a></h4>
                                                             <div class="sc_services_item_description">
-                                                                <p>Our managers will keep you informed and you can act with certainty.</p>
+                                                                <p>Uppermost Villa we offer the perfect setting for your birthday, anniversary or get together parties. </p>
                                                             </div>
                                                         </div>
                                                     </div>
                                                 </div>
                                                 <div class="column-1_4 column_padding_bottom">
                                                     <div class="sc_services_item">
-                                                        <a href=""><span class="sc_icon fa fa-wifi"></span></a>
+                                                        <a href="facilities.php"><span class="sc_icon"><i class="fa fa-wifi"></i></span></a>
                                                         <div class="sc_services_item_content">
-                                                            <h4 class="sc_services_item_title"><a href="">Other</a></h4>
+                                                            <h4 class="sc_services_item_title"><a href="facilities.php">Other</a></h4>
                                                             <div class="sc_services_item_description">
-                                                                <p>All our marketing researchers today have a tough job multitasking.</p>
+                                                                <p>Complimentary Wi-Fi is provided throughout the public areas as we know how important it is to stay in touch on your travels.</p>
                                                             </div>
                                                         </div>
                                                     </div>

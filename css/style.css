@@ -7255,7 +7255,7 @@ h6.margin_bottom_large {
     position: inherit;
     margin: -150px -30px 174px -30px;
     font-size: 60px;
-    color: #ef595a;
+    color: #000;
 }
 .owl-next {
     float: right;
@@ -7688,7 +7688,7 @@ h4:hover {
     margin-left: 46px;
 }
 .sc_property_search.search-align {
-    padding: 2.143em 0 2.143em;
+    padding: 0.43em 0 1em;
 }
 
 /*---Gallery-Hover----*/
@@ -7729,6 +7729,9 @@ h4:hover {
 .icon-car:before { content: '\f1b9'; } /* '' */
 .icon-wifi:before { content: '\f1eb'; } /* '' */
 .icon-television:before { content: '\f270'; } /* '' */
+.icon-plane:before { content: '\f072'; } /* '' */
+.icon-birthday-cake:before { content: '\f1fd'; } /* '' */
+
 
 .slider-h2{
     color: #fff;
@@ -7743,4 +7746,11 @@ h4:hover {
 .content-footer1{
     text-align: justify;
     margin-bottom: -20px;
+}
+.scheme_dark .sc_services_style_services-1 .sc_services_item > a > span i{
+    transform: rotate(315deg);
+    font-size: 42px;
+    margin-right: 22px;
+    margin-top: 22px;
+    margin-left: 22px;
 }
