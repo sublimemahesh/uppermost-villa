@@ -9,7 +9,7 @@
                 </div>
                 <div class="column-1_4">
                     <h5>about us</h5>
-                    <P class="content-footer">Uppermost Villa truly an amazing place located on top of the mountain. Naturally made surroundings will be brought perfect ambiance blended of tranquility. Uppermost villa specially design for having great relaxation with tranquility. </p>
+                    <P class="content-footer">Uppermost Villa truly an amazing place located on top of the mountain. Naturally made surroundings will be brought perfect ambiance blended of tranquility.</p>
                 </div>
                 <div class="column-1_4 widget widget_text">
                     <h5 class="widget_title">contacts</h5>
@@ -20,7 +20,7 @@
                             <br>
                             <span class="accent1h margin_right_tiny icon-tablet"></span> +800 1234 56 78
                             <br>
-                            <span class="accent1h margin_right_tiny icon-mail"></span> <a href="cdn-cgi/l/email-protection.html" class="__cf_email__" data-cfemail="84e7ebeaf0e5e7f0c4fdebf1f6f7edf0e1aae7ebe9">nfo@uppermostvilla.com</a>
+                            <span class="accent1h margin_right_tiny icon-mail"></span>info@uppermostvilla.com
                         </div>
                     </div>
                 </div>                

@@ -15,7 +15,6 @@ include_once(dirname(__FILE__) . '/ExcursionsPhoto.php');
 include_once(dirname(__FILE__) . '/Offer.php');
 include_once(dirname(__FILE__) . '/OfferPhoto.php');
 include_once(dirname(__FILE__) . '/PhotoAlbum.php');
-include_once(dirname(__FILE__) . '/AlbumPhoto.php');
 include_once(dirname(__FILE__) . '/Comments.php');
 include_once(dirname(__FILE__) . '/Slider.php');
 include_once(dirname(__FILE__) . '/Page.php');
