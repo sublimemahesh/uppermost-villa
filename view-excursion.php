@@ -115,7 +115,7 @@ $excursions = $EXCURSION->all();
                                 <h3 class="post_title"><?php echo $EXCURSION->title; ?></h3>
 
                                 <div class="sc_section">
-                                    <p class="text-justify"><?php echo $EXCURSION->description; ?></p>
+                                    <span class="text-justify"><?php echo $EXCURSION->description; ?></span>
 
                                 </div>
                             </section>
