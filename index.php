@@ -168,9 +168,7 @@ $sliders = Slider::all();
                                                             <div class="entry-footer">
                                                                 <span class="icon-bed bed-style"></span>
                                                                 <span class="icon-bath bath-style"></span>
-                                                                <span class="icon-warehouse bath-style"></span>
                                                                 <span class="fa fa-wifi"></span>
-                                                                
 
                                                                 <div class="property_price_box1">
                                                                     <span class="property_price_box_sign price-font">$</span>

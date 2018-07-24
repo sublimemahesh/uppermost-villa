@@ -114,7 +114,7 @@ $rooms = $ROOM->all();
                                 <h3 class="post_title"><?php echo $ROOM->title; ?></h3>
                                 <div class="ps_single_info">                                   
                                     <div class="property_price_box property-price-box1">
-                                        <span class="property_price_box_sign">$</span>
+                                        <span class="">$</span>
                                         <span class="property_price_box_price"><?php echo $ROOM->price; ?></span>
                                         <span class="price-day"> / Day</span></div>
                                     <div class="sc_property_info_list">
@@ -126,7 +126,7 @@ $rooms = $ROOM->all();
                                     <div class="cL"></div>
                                 </div>
                                 <div class="sc_section">
-                                    <p class="text-justify text-bottom"><?php echo $ROOM->description; ?></p>                 
+                                    <span class="text-justify text-bottom"><?php echo $ROOM->description; ?></span>                 
                                 </div>
                             </section>
                         </div>
