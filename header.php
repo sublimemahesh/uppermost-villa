@@ -9,14 +9,14 @@
                 </div>
                 <div class="top_panel_contacts">
                     <div class="top_panel_contacts_left">
-                        <div class="contact_phone">121 King Street, NY, USA</div>
-                        <div class="contact_email">info@uppermostvilla.com</div>
+                        <div class="contact_phone hidden-sm hidden-xs">121 King Street, NY, USA</div>
+                        <div class="contact_email hidden-sm hidden-xs">info@uppermostvilla.com</div>
                     </div>
-                    <div class="top_panel_contacts_right">call us: <strong><i>800</i> 123 45 67</strong></div>
+                    <div class="top_panel_contacts_right hidden-sm hidden-xs">call us: <strong><i>800</i> 123 45 67</strong></div>
                     <div class="cL"></div>
                 </div>
                 <div class="top_panel_menu">
-                    <a href="#" class="menu_main_responsive_button icon-down">Select menu item</a>
+                    <a href="#" class="menu_main_responsive_button fa fa-list-ul"><span class="hidden-sm hidden-xs">Select menu item</span></a>
                     <nav class="menu_main_nav_area">
                         <ul id="menu_main" class="menu_main_nav">
                             <li class="menu-item">

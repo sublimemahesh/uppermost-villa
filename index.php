@@ -38,14 +38,17 @@ $sliders = Slider::all();
         <link rel='stylesheet' href='css/custom/skin.css' type='text/css' media='all' />
         <link rel='stylesheet' href='css/custom/custom-style.css' type='text/css' media='all' />
         <link rel='stylesheet' href='css/custom/colors.css' type='text/css' media='all' />
+        <link href="css/responsive.css" rel="stylesheet" type="text/css"/>
         <link rel='stylesheet' href='css/custom/responsive.css' type='text/css' media='all' />
         <link rel='stylesheet' href='css/custom/skin.responsive.css' type='text/css' media='all' />
+        
         <link rel='stylesheet' href='js/vendor/swiper/swiper.css' type='text/css' media='all' />
         <link rel='stylesheet' href='css/custom/_messages.css' type='text/css' media='all' />
         <link href="css/custom/_portfolio.css" rel="stylesheet" type="text/css"/>
         <link href="plugins/owl-carousel/css/owl.carousel.min.css" rel="stylesheet" type="text/css"/>
         <link href="plugins/owl-carousel/css/owl.theme.default.min.css" rel="stylesheet" type="text/css"/>
         <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+        
 
 
 
@@ -103,7 +106,7 @@ $sliders = Slider::all();
                         <div class="content_wrap title_margin_top1 margin_bottom_medium">
                             <div class="columns_wrap margin_top_xlarge margin_bottom_xmedium">
                                 <div class="column-1_2">
-                                    <div class="bgtext1 bg bgtext1-welcome">
+                                    <div class="bgtext1 bg bgtext1-welcome hidden-sm hidden-xs">
                                         <p>WELCOME</p>
                                     </div>
                                     <h2 class="sc_title sc_title_iconed ind2 margin_top_null margin_bottom_xmedium index-welcome">
@@ -124,7 +127,7 @@ $sliders = Slider::all();
                                             <div class="sc_property_item">
                                                 <div class="ps_single_info">
                                                     <div class="btn-readmore-welcome">
-                                                        <a href="about.php?id=<?php echo $room["id"]; ?>"><button class="read-more btn-readmore-welcome">Read More</button></a>
+                                                        <a href="about.php"><button class="read-more btn-readmore-welcome">Read More</button></a>
                                                     </div>                                                    
                                                     <div class="cL"></div>
                                                 </div>
@@ -142,7 +145,7 @@ $sliders = Slider::all();
                     </div>
                     <div class="accommo-section" style="background-image: url(images/image-new/parallex-01.jpg);padding-bottom: 45px;">                  
                         <div class="content_wrap title_margin_top2 margin_bottom_medium">
-                            <div class="bgtext1 bgtext1-accommo">
+                            <div class="bgtext1 bgtext1-accommo hidden-sm hidden-xs">
                                 <p>ACCOMMODATIONS</p>
                             </div>
                             <h2 class="sec-title-one h2 accommo-text page-topic-white">Accommodations</h2>
@@ -193,7 +196,7 @@ $sliders = Slider::all();
 
                     <div class="sc_section overflow_hidden bg_color_1 excursion-bottom">
                         <div class="content_wrap title_margin_top1 margin_bottom_medium excursion-top">
-                            <div class="bgtext1 bgtext1-excursions">
+                            <div class="bgtext1 bgtext1-excursions hidden-sm hidden-xs">
                                 <p>EXCURSIONS</p>
                             </div>
                             <h2 class="sc_title margin_top_null margin_bottom_medium page-topic-black">Excursions</h2>
@@ -245,7 +248,7 @@ $sliders = Slider::all();
                     <div class="accommo-section" style="background-image: url(images/image-new/parallex-02.jpg);padding-bottom: 10px;">
 
                         <div class="content_wrap title_margin_top3 margin_bottom_medium">
-                            <div class="bgtext1 bgtext1-facilities">
+                            <div class="bgtext1 bgtext1-facilities hidden-sm hidden-xs">
                                 <p>FACILITIES</p>
                             </div>
                             <h2 class="sec-title-one h2 accommo-text page-topic-white">Facilities</h2>
@@ -308,7 +311,7 @@ $sliders = Slider::all();
                     </div>
                     <div class="sc_section overflow_hidden bg_color_1">
                         <div class="content_wrap title_margin_top1 margin_bottom_medium excursion-top">
-                            <div class="bgtext1 bgtext1-feedback">
+                            <div class="bgtext1 bgtext1-feedback hidden-sm hidden-xs">
                                 <p>FEEDBACK</p>
                             </div>
                             <h2 class="sc_title margin_top_null margin_bottom_medium page-topic-black">Feedback</h2>

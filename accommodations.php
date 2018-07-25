@@ -84,10 +84,10 @@ $rooms = $ROOM->all();
                                                         <div class="column-1_2 col-2 entry-box">
                                                             <h3 style="margin-top: 25px;" class="entry-title-accommo"><?php echo $room['title']; ?></h3>
                                                             <p class="entry-content-accommo p-margin text-justify"><?php echo substr($room['short_description'], 0, 400) . '...'; ?></p>                                                        
-                                                            <span>
+                                                            <span class="accommo-span1">
                                                                 <a href="view-accommodation.php?id=<?php echo $room["id"];?>"><button class="read-more btn-readmore1">Read More</button></a>
                                                             </span>
-                                                            <span>
+                                                            <span class="accommo-span2">
                                                                 <a href="booking.php?type=<?php echo $room["id"];?>"><button class="read-more btn-readmore1">Book Now</button></a>
                                                             </span>
                                                         </div>                                              
@@ -120,10 +120,10 @@ $rooms = $ROOM->all();
                                                         <div class="column-1_2 col-2 entry-box">
                                                             <h3 style="margin-top: 25px;" class="entry-title-accommo"><?php echo $room['title']; ?></h3>
                                                             <p class="entry-content-accommo p-margin text-justify"><?php echo substr($room['short_description'], 0, 420) . '...'; ?></p>
-                                                            <span>
+                                                            <span class="accommo-span1">
                                                                 <a href="view-accommodation.php?id=<?php echo $room["id"];?>"><button class="read-more btn-readmore1">Read More</button></a>
                                                             </span>
-                                                            <span>
+                                                            <span class="accommo-span2">
                                                                 <a href="booking.php?type=<?php echo $room["id"];?>"><button class="read-more btn-readmore1">Book Now</button></a>
                                                             </span>
                                                         </div>                                              

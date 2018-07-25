@@ -80,7 +80,7 @@ $Facilities = $FACILITIES->all();
                                                         <img alt="" src="upload/facilities/<?php echo $facilities['image_name'] ?>">
                                                     </a>
                                                 </div>
-                                                <div class="sc_property_info" style="height: 290px;">
+                                                <div class="sc_property_info property-info-facility">
                                                     <div>
                                                         <div class="sc_property_title">
                                                             <div class="sc_property_title_address_1">
