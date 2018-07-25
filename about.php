@@ -58,7 +58,7 @@
                         <div class="content_wrap margin_bottom_xlarge">
                             <div class="columns_wrap">
                                 <div class="column-1_2">
-                                    <div class="bgtext1 bg bgtext1-welcome">
+                                    <div class="bgtext1 bg bgtext1-welcome hidden-sm hidden-xs">
                                         <p>ABOUT US</p>
                                     </div>
                                     <h2 class="sc_title sc_title_iconed margin_bottom_xmedium">
@@ -88,12 +88,12 @@
                                 </div>
                                 <div class="columns_wrap sc_columns">
                                     <div class="column-1_2 sc_column_item text-center">
-                                        <i class="fa fa-eye" style="font-size: 50px;color: #ef595a; padding-left: 260px;"></i>
+                                        <i class="fa fa-eye about-icons" style="font-size: 50px;color: #ef595a;"></i>
                                         <h4 class="topics-about">VISION</i></h4>
                                         <p class="para-about1">Become the first choice for guests by proceeding superb with unique warmth hospitality in Uppermost Villa</p>
                                     </div>
-                                    <div class="column-1_2 sc_column_item">
-                                        <i class="fa fa-send-o" style="font-size: 50px;color: #ef595a; padding-left: 260px;"></i>
+                                    <div class="column-1_2 sc_column_item text-center">
+                                        <i class="fa fa-send-o about-icons" style="font-size: 50px;color: #ef595a;"></i>
                                         <h4 class="topics-about">MISSION</h4>
                                         <p class="para-about1">Provide perfect & superb service to our customers by proceeding high elegant, customer satisfied in wide range and upon on customer requirement. </div> 
                                 </div>

@@ -7756,3 +7756,192 @@ h4:hover {
     margin-top: 22px;
     margin-left: 22px;
 }
+.text-center {
+    text-align:center;
+}
+.property-info-facility{
+    height: 290px;
+}
+@media (max-width: 767px) {
+    .hidden-xs {
+        display: none !important;
+    }
+    .visible-xs {
+        display: block !important;
+    }
+    .top_panel_style_1 .logo {
+        text-align: left;
+    }
+    .top_panel_menu {
+        margin-top: -64px;
+    }
+    .top_panel_wrap .logo_main {
+        max-height: 50px;
+    }
+    .top_panel_contacts {
+        min-height: 0px;
+    }
+    .header-bg {
+        background-color: rgba(32, 36, 43, 0);
+        height: 169px;
+    }
+    .page-topic-white {
+        font-size: 32px;
+    }
+    .page-topic-black {
+        font-size: 32px;
+    }
+    .btn-readmore {
+        margin-left: 92px;
+    }
+    .property_price_box1 {
+        padding: 0.636em 0.5em;
+        height: 18px;
+    }
+    .bed-style {
+        padding-right: 15px;
+        margin-left: 15px;
+    }
+    .bath-style {
+        padding-right: 15px;
+    }
+    .entry-footer {
+        font-size: 18px;
+    }
+    .excursion-readmore {
+        width: 47%;
+        margin: -7px 0px 10px 65px;
+    }
+    .accommo-text {
+        margin-top: -100px;
+    }
+    .excursion-bottom {
+        padding-bottom: 40px; 
+    }
+    .title_margin_top1 {
+        margin-top: 40px;
+    }
+    .sc_services_style_services-1 .sc_services_item .sc_icon::before {
+        font-size: 35px;
+    }
+    .scheme_dark .sc_services_style_services-1 .sc_services_item > a > span i {
+        margin-right: 1px;
+        margin-top: 9px;
+        margin-left: 18px;
+        padding-bottom: 25px;
+    }
+    .home-facilities-section .sc_services_style_services-1 {
+        padding: 0px 0 0px;
+    }
+    .box-width{
+        width: 80%;
+    }
+    .top_panel_title.title_present:not(.navi_present) .breadcrumbs.banner-title {
+        margin-top: -40px;
+    }
+    .h2 {
+        font-size: 2.245em;
+    }
+    .heading-banner.top_panel_style_1 {
+
+        background-image: url("../images/image-new/banner-5.jpg");
+        margin-top: -97px;
+        position: relative;
+        height: 330px;
+    }
+    .top_panel_title .page_title {
+        padding: 55px 0 0.75em !important;
+    }
+    .top_panel_title.title_present:not(.navi_present) .breadcrumbs.banner-title {
+        margin-top: -30px;
+    }
+    .top_panel_title_inner .page_title {
+        font-size: 32px;
+    }
+    .entry-box {
+        height: 400px;
+    }
+    .accommo-span1 {
+        margin-left: -120px;
+    }
+    .accommo-span2 {
+        margin-left: -150px;
+    }
+    .entry-title-accommo {
+        font-size: 22px;
+    }
+    .top_panel_title_inner .page_title {
+        margin-top: 55px;
+        font-size: 25px;
+    }
+    .top_panel_title.title_present:not(.navi_present) .breadcrumbs.banner-title {
+        margin-top: -18px;
+    }
+    .accommo-readmore {
+        width: 47%;
+    }
+    .property-info-facility {
+        height: 230px;
+    }
+    .sc_section {
+        padding-left: 8px;
+    }
+    .cotact-wrap {
+        border: none;
+    }
+    .row > [class*="column-"], .columns_wrap > [class*="column-"].entry-ul {
+        padding-left: 0px;
+    }
+    #sc_googlemap_1 {
+        height: 180px;
+    }
+    .div-check {
+        margin-bottom: -72px;
+    }
+    .excursion-bg-color {
+        height: 606px;
+    }
+    .entry-box {
+        height: 379px;
+    }
+    .accommo-readmore {
+        top: -16px;
+        margin: -7px 0px 4px 118px;
+    }
+    .form-contact {
+        width: 105%;
+    }
+    .owl-nav {
+        margin: -225px -10px 174px -15px;
+    }
+    .welcome-title {
+        margin-top: -11px;
+    }
+    iframe, video, embed {
+        height: 155px;
+    }
+    
+}
+@media (min-width: 768px) and (max-width: 991px) {
+    .hidden-sm {
+        display: none !important;
+    }
+    .visible-sm{
+        display: block !important;
+    }
+}
+@media (min-width: 992px) and (max-width: 1199px) {
+    .hidden-md {
+        display: none !important;
+    }
+}
+@media (min-width: 1200px) {
+    .hidden-lg {
+        display: none !important;
+    }
+}
+@media (min-width: 320px) {
+    .owl-nav {
+        margin: -225px -10px 174px -15px;
+    }
+}

@@ -61,8 +61,8 @@
                                     <div class="column-1_2">
                                         <div class="sc_section margin_top_xlarge margin_bottom_xlarge">
                                             <div class="sc_section_inner">
-                                                <div class="bgtext1 bg bgtext1-welcome">
-                                                    <p>CONTACT</p>
+                                                <div class="bgtext1 bgtext1-welcome">
+                                                    <p style="display: none;">CONTACT</p>
                                                 </div>
                                                 <h2 class="page-topic-black text-welcome">Contact Us</h2>                                          
                                                 <div class="default-title">
