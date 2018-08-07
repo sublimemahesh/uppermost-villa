@@ -98,7 +98,6 @@ $rooms = $ROOM->all();
                                         <?php
                                         $photos = RoomPhoto::getRoomPhotosById($ROOM->id);
                                         foreach ($photos as $photo) {
-                                            
                                             ?>
                                             <a href="upload/room/gallery/<?php echo $photo['image_name']; ?>">
                                                 <img src="upload/room/gallery/thumb/<?php echo $photo['image_name']; ?>" data-title="" >
@@ -114,9 +113,9 @@ $rooms = $ROOM->all();
                                 <h3 class="post_title"><?php echo $ROOM->title; ?></h3>
                                 <div class="ps_single_info">                                   
                                     <div class="property_price_box property-price-box1">
-                                        <span class="">$</span>
-                                        <span class="property_price_box_price"><?php echo $ROOM->price; ?></span>
-                                        <span class="price-day"> / Day</span></div>
+                                        <span class="">US$</span>
+                                        <span class="property_price_box_price"><?php echo number_format($ROOM->price); ?></span>
+                                        <span class="price-day"> / Night</span></div>
                                     <div class="sc_property_info_list">
                                         <span class="icon-bed"></span>
                                         <span class="icon-bath"></span>
@@ -128,6 +127,10 @@ $rooms = $ROOM->all();
                                 <div class="sc_section">
                                     <span class="text-justify text-bottom"><?php echo $ROOM->description; ?></span>                 
                                 </div>
+
+                                <span class="accommo-span2">
+                                    <a href="booking.php?type=<?php echo $ROOM->id; ?>"><button class="read-more btn-readmore1 btn-readmore2">Book Now</button></a>
+                                </span>
                             </section>
                         </div>
                     </div>
@@ -149,7 +152,7 @@ $rooms = $ROOM->all();
                                                     <div class="sc_property_image">
                                                         <a href="">
                                                             <div class="property_price_box">
-                                                                <span class="property_price_box_price"><?php echo "$", $room['price'] ?></span>
+                                                                <span class="property_price_box_price"><?php echo "US$ ", number_format($room['price']); ?></span>
                                                             </div>
                                                             <img alt="" src="upload/room/<?php echo $room['image_name'] ?>">
                                                         </a>
@@ -159,12 +162,12 @@ $rooms = $ROOM->all();
                                                             <div class="sc_property_title">
                                                                 <div class="sc_property_title_address_1">
                                                                     <a href="#"><?php
-                                                                        if (strlen($room['title']) > 25) {
-                                                                            echo substr($room['title'], 0, 23) . '...';
-                                                                        } else {
-                                                                            echo $room['title'];
-                                                                        }
-                                                                        ?></a> 
+                                    if (strlen($room['title']) > 25) {
+                                        echo substr($room['title'], 0, 23) . '...';
+                                    } else {
+                                        echo $room['title'];
+                                    }
+                                            ?></a> 
                                                                 </div>
                                                                 <div class="text-justify accommo-property-content"><?php echo substr($room['short_description'], 0, 150) . '...'; ?></div>
                                                             </div>

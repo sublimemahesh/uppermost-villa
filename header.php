@@ -4,15 +4,15 @@
             <div class="content_wrap clearfix">
                 <div class="top_panel_logo">
                     <div class="logo">
-                        <a href="#"><img src="images/logo-header1.jpg" class="logo_main" alt=""></a>
+                        <a href="./"><img src="images/logo/logo1.png" class="logo_main" alt=""></a>
                     </div>
                 </div>
                 <div class="top_panel_contacts">
                     <div class="top_panel_contacts_left">
-                        <div class="contact_phone hidden-sm hidden-xs">121 King Street, NY, USA</div>
+                        <div class="contact_phone hidden-sm hidden-xs">Kalahe, Wanchawala, Galle</div>
                         <div class="contact_email hidden-sm hidden-xs">info@uppermostvilla.com</div>
                     </div>
-                    <div class="top_panel_contacts_right hidden-sm hidden-xs">call us: <strong><i>800</i> 123 45 67</strong></div>
+                    <div class="top_panel_contacts_right hidden-sm hidden-xs"><span class="sp-phone"><i class="fa fa-phone"></i></span><strong>+94 91 792 4959 | +94 77 192 6015   </strong></div>
                     <div class="cL"></div>
                 </div>
                 <div class="top_panel_menu">

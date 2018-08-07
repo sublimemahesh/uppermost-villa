@@ -4,7 +4,7 @@
             <div class="columns_wrap">
                 <div class="column-1_4 show_logo_footer">
                     <div class="logo">
-                        <a href="index-2.html"><img src="images/logo-footer.jpg" alt=""></a>
+                        <a href="./"><img src="images/logo/logo1.png" alt=""></a>
                     </div>
                 </div>
                 <div class="column-1_4">
@@ -16,9 +16,9 @@
                     <div class="textwidget">
 
                         <div class="footer-widget-contacts">
-                            <span class="accent1h margin_right_tiny icon-location"></span> 121 King Street, NY, USA
+                            <span class="accent1h margin_right_tiny icon-location"></span> Uppermost Villa, Galgamuwa Kanda, Kalahe, Wanchawala, Galle, Sri Lanka
                             <br>
-                            <span class="accent1h margin_right_tiny icon-tablet"></span> +800 1234 56 78
+                            <span class="accent1h margin_right_tiny icon-tablet"></span> +94 91 792 4959 / +94 77 192 6015 <br/> +94 76 711 2035
                             <br>
                             <span class="accent1h margin_right_tiny icon-mail"></span>info@uppermostvilla.com
                         </div>

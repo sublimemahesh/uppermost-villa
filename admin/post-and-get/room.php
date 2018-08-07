@@ -7,12 +7,12 @@ if (isset($_POST['create'])) {
     $ROOM = new Room(NULL);
     $VALID = new Validator();
 
-    $ROOM->title = mysql_real_escape_string($_POST['title']);
-    $ROOM->short_description = mysql_real_escape_string($_POST['short_description']);
-    $ROOM->description = mysql_real_escape_string($_POST['description']);
-    $ROOM->no_of_rooms = mysql_real_escape_string($_POST['no_of_rooms']);
-    $ROOM->price = mysql_real_escape_string($_POST['price']);
-
+    $ROOM->title = $_POST['title'];
+    $ROOM->short_description = $_POST['short_description'];
+    $ROOM->description = $_POST['description'];
+    $ROOM->no_of_rooms = $_POST['no_of_rooms'];
+    $ROOM->price = $_POST['price'];
+    
     $dir_dest = '../../upload/room/';
 
     $handle = new Upload($_FILES['image']);
