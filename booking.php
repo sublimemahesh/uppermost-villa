@@ -68,7 +68,7 @@ if(isset($_GET['departure'])){
                         <div class="content_wrap">
                             <h1 class="page_title banner-title">Booking</h1>
                             <div class="breadcrumbs banner-title">
-                                <a class="breadcrumbs_item home" href="index.php">Home</a>
+                                <a class="breadcrumbs_item home" href="./">Home</a>
                                 <span class="breadcrumbs_delimiter"></span>
                                 <span class="breadcrumbs_item current">Booking</span>
                             </div>
@@ -128,9 +128,10 @@ if(isset($_GET['departure'])){
                                             <label>Room Type</label>
                                             <select name="room_type" id="room_type">
                                                 <option value="">Select Room Type</option>
-                                                <option value="Deluxe Double Room with Mountain View" <?php if($type == 1) {echo 'selected="TRUE"'; } ?>>Deluxe Double Room with Mountain View</option>
-                                                <option value="Deluxe Family Room  with  mountain view" <?php if($type == 2) {echo 'selected="TRUE"'; } ?>>Deluxe Family Room  with  mountain view</option>
-                                                <option value="Deluxe Double  Room" <?php if($type == 3) {echo 'selected="TRUE"'; } ?>>Deluxe Double  Room</option>                                                
+                                                <option value="Double Room with Mountain View" <?php if($type == 1) {echo 'selected="TRUE"'; } ?>>Double Room with Mountain View</option>
+                                                <option value="Double Room with Pool View" <?php if($type == 2) {echo 'selected="TRUE"'; } ?>> Double Room with Pool View </option>
+                                                <option value="Double  Room" <?php if($type == 3) {echo 'selected="TRUE"'; } ?>>Double  Room</option>
+                                                <option value="Deluxe Double  Room" <?php if($type == 4) {echo 'selected="TRUE"'; } ?>>Deluxe Double  Room</option>                                                
                                             </select>
                                             <span id="spanType"></span>
                                         </div>

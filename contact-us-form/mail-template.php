@@ -17,7 +17,7 @@ $visitor_message = '<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//E
                                         <td width="40"></td>
                                         <td width="144">
                                             <a href= "' . $site_link . '" target="_blank"> '
-        . '<img src="' . $site_link . '/booking-form/img/logo.png" border="0" alt=""/>
+        . '<img src="' . $site_link . '/contact-us-form/img/logo1.png" border="0" alt=""/>
                                             </a>
                                         </td>
                                         <td width="393">
@@ -39,7 +39,7 @@ $visitor_message = '<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//E
                                                     </td>
                                                 </tr>
                                                 <tr>
-                                                    <td height="30"><img src="' . $site_link . '/booking-form/img/PROMO-GREEN2_01_04.jpg" width="393" height="30" border="0" alt=""/></td>
+                                                    <td height="30"><img src="' . $site_link . '/contact-us-form/img/PROMO-GREEN2_01_04.jpg" width="393" height="30" border="0" alt=""/></td>
                                                 </tr>
                                             </table>
                                         </td>
@@ -48,7 +48,7 @@ $visitor_message = '<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//E
                         </tr>
                         <tr>
                             <td align="center">
-                                <img src="' . $site_link . '/booking-form/img/PROMO-GREEN2_02.jpg" alt="" width="598" height="323" border="0"/>
+                                <img src="' . $site_link . '/contact-us-form/img/PROMO-GREEN2_02.jpg" alt="" width="598" height="323" border="0"/>
                             </td>
                         </tr>
                         <tr>
@@ -107,7 +107,7 @@ $visitor_message = '<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//E
                                         <td width="96%" style="border-top:1px solid #000000" >
                                             
                                             <font style="font-family: Verdana, Geneva, sans-serif; color:#1400FF; font-size:14px; " >
-                                                   <h4>&nbsp;&nbsp;&nbsp;Inquiry Detail</h4>
+                                                   <h4>&nbsp;&nbsp;&nbsp;Enquiry Detail</h4>
                                             </font>
                                             <ul>
                                              <li>
@@ -160,7 +160,7 @@ $visitor_message = '<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//E
                             <td>&nbsp;</td>
                         </tr>
                         <tr>
-                            <td><img src="' . $site_link . '/booking-form/img/PROMO-GREEN2_07.jpg" width="598" height="7" style="display:block" border="0" alt=""/></td>
+                            <td><img src="' . $site_link . '/contact-us-form/img/PROMO-GREEN2_07.jpg" width="598" height="7" style="display:block" border="0" alt=""/></td>
                         </tr>
                         <tr>
                             <td>&nbsp;</td>
@@ -293,7 +293,7 @@ $company_message = '
                                         <td width="96%" style="border-top:1px solid #000000" >
                                             
                                             <font style="font-family: Verdana, Geneva, sans-serif; color:#1400FF; font-size:14px; " >
-                                                   <h4>&nbsp;&nbsp;&nbsp;Inquiry Detail</h4>
+                                                   <h4>&nbsp;&nbsp;&nbsp;Enquiry Detail</h4>
                                             </font>
                                             <ul>
                                               <li>
@@ -347,7 +347,7 @@ $company_message = '
                             <td>&nbsp;</td>
                         </tr>
                         <tr>
-                            <td><img src="' . $site_link . '/booking-form/img/PROMO-GREEN2_07.jpg" width="598" height="7" style="display:block" border="0" alt=""/></td>
+                            <td><img src="' . $site_link . '/contact-us-form/img/PROMO-GREEN2_07.jpg" width="598" height="7" style="display:block" border="0" alt=""/></td>
                         </tr>
                         <tr>
                             <td>&nbsp;</td>
@@ -358,4 +358,5 @@ $company_message = '
         </table>
     </body>
 </html>';
+
 ?>

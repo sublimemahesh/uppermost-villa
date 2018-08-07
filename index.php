@@ -81,9 +81,10 @@ $sliders = Slider::all();
                                             <h5>ROOM TYPE</h5>
                                             <select name="type">
                                                 <option value="0">Select Room Type</option>
-                                                <option value="1">Deluxe Double Room with Mountain View</option>
-                                                <option value="2">Deluxe Family Room  with  mountain view</option>
-                                                <option value="3">Deluxe Double  Room</option>                                                
+                                                <option value="1">Double Room with Mountain View</option>
+                                                <option value="2">Double Room with Pool View </option>
+                                                <option value="3">Double Room  </option>
+                                                <option value="4">Deluxe Double  Room</option>                                                
                                             </select>
                                         </div>
                                         <div class="sc_ps_location">
@@ -137,7 +138,7 @@ $sliders = Slider::all();
                                 </div>
                                 <div class="column-1_2">
                                     <figure class="sc_image ">
-                                        <a href="#"><img src="images/image-new/1.png" alt="" /></a>
+                                        <a href="#"><img src="images/image-new/1.jpg" alt="" /></a>
                                     </figure>
                                 </div>
                             </div>
@@ -174,9 +175,9 @@ $sliders = Slider::all();
                                                                 <span class="fa fa-wifi"></span>
 
                                                                 <div class="property_price_box1">
-                                                                    <span class="property_price_box_sign price-font">$</span>
-                                                                    <span class="property_price_box_price price-font"><?php echo $room['price'] ?></span>
-                                                                    <span class="price-day"> / Day</span>
+                                                                    <span class="property_price_box_sign price-font">US$</span>
+                                                                    <span class="property_price_box_price price-font"><?php echo number_format($room['price']) ?></span>
+                                                                    <span class="price-day"> / Night</span>
                                                                 </div>
                                                             </div>
                                                         </div>

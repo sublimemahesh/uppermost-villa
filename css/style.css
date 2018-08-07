@@ -243,7 +243,8 @@ dd {
 }
 b,
 strong {
-    font-weight: bold;
+    font-weight: normal;
+    font-size: 12px;
 }
 dfn,
 cite,
@@ -1842,7 +1843,7 @@ select {
 .top_panel_contacts_right {
     float: right;
     font-family: Montserrat;
-    font-size: 1.143em;
+    font-size: 0.857emem;
     text-transform: uppercase;
     color: #c3c6cb;
 }
@@ -1851,7 +1852,7 @@ select {
     font-style: normal;
 }
 .top_panel_contacts_right strong {
-    color: #fff;
+    color: #fffc;
 }
 .scheme_white .top_panel_contacts_right {
     color: #999ca9;
@@ -5444,6 +5445,7 @@ li.comment .comment_author_avatar + .comment_content {
 .contacts_wrap .logo {
     text-align: center;
     margin-bottom: 2em;
+    margin-top: 2em;
 }
 .contacts_wrap .logo .logo_text {
     font-size: 2em;
@@ -7473,6 +7475,9 @@ h4:hover {
     font-size: 12px;
     margin-top: 10px;
 }
+.btn-readmore2 {
+    margin-left: 45%;
+}
 .entry-title-accommo {
     font-size: 26px;
     text-align: center;
@@ -7537,7 +7542,7 @@ h4:hover {
     text-align: right;
 }
 .ribbon span {
-    font-size: 25px;
+    font-size: 20px;
     font-weight: bold;
     color: #FFF;
     text-transform: uppercase;
@@ -7762,6 +7767,11 @@ h4:hover {
 .property-info-facility{
     height: 290px;
 }
+.sp-phone{
+    padding-right: 10px;
+    color: #fffc;
+}
+
 @media (max-width: 767px) {
     .hidden-xs {
         display: none !important;
@@ -7920,7 +7930,10 @@ h4:hover {
     iframe, video, embed {
         height: 155px;
     }
-    
+    .btn-readmore2 {
+        margin-left: 57%;
+    }
+
 }
 @media (min-width: 768px) and (max-width: 991px) {
     .hidden-sm {
@@ -7942,6 +7955,6 @@ h4:hover {
 }
 @media (min-width: 320px) {
     .owl-nav {
-        margin: -225px -10px 174px -15px;
+        margin: -225px -17px 174px -25px;
     }
 }

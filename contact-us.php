@@ -45,7 +45,7 @@
                         <div class="content_wrap">
                             <h1 class="page_title banner-title">Contact Us</h1>
                             <div class="breadcrumbs banner-title">
-                                <a class="breadcrumbs_item home" href="index.php">Home</a>
+                                <a class="breadcrumbs_item home" href="./">Home</a>
                                 <span class="breadcrumbs_delimiter"></span>
                                 <span class="breadcrumbs_item current">Contact Us</span>
                             </div>
@@ -73,12 +73,12 @@
                                                         <li class="sc_list_item">
                                                             <span class="sc_list_icon icon-location color_2"></span>
                                                             <p>Address</p>
-                                                            <span>Uppermost-villa, galle</span>
+                                                            <span>Uppermost Villa, Galgamuwa Kanda, Kalahe, Wanchawala, </br> Galle, Sri Lanka</span>
                                                         </li>
                                                         <li class="sc_list_item">
                                                             <span class="sc_list_icon icon-message106 color_2"></span>                           
                                                             <p>E-mail</a></p>
-                                                            <span>uppermost@gmail.com</span>
+                                                            <span>info@uppermostvilla.com</span>
                                                         </li>                                                            
                                                     </ul>
 
@@ -86,12 +86,12 @@
                                                         <li class="sc_list_item">
                                                             <span class="sc_list_icon icon-mobile29 color_2"></span>
                                                             <p>Mobile</p>
-                                                            <span>077 2514785</span>
+                                                            <span>+94 77 192 6015 / +94 76 711 2035</span>
                                                         </li>
                                                         <li class="sc_list_item">
                                                             <span class="sc_list_icon icon-phone color_2"></span>
                                                             <p>Phone</p>
-                                                            <span>091 2215485</span>
+                                                            <span>+94 91 792 4959</span>
                                                         </li>
                                                     </ul>
 

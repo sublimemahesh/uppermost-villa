@@ -8,7 +8,7 @@ if (isset($_POST['create'])) {
     $VALID = new Validator();
 
     $ROOM_PHOTO->room = $_POST['id'];
-    $ROOM_PHOTO->caption = mysql_real_escape_string($_POST['caption']);
+    $ROOM_PHOTO->caption = $_POST['caption'];
 
     $dir_dest = '../../upload/room/gallery/';
     $dir_dest_thumb = '../../upload/room/gallery/thumb/';

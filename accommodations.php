@@ -54,7 +54,7 @@ $rooms = $ROOM->all();
                         <div class="content_wrap">
                             <h1 class="page_title banner-title">Accommodations</h1>
                             <div class="breadcrumbs banner-title">
-                                <a class="breadcrumbs_item home" href="index.php">Home</a>
+                                <a class="breadcrumbs_item home" href="./">Home</a>
                                 <span class="breadcrumbs_delimiter"></span>
                                 <span class="breadcrumbs_item current">Accommodations</span>
                             </div>
@@ -77,7 +77,7 @@ $rooms = $ROOM->all();
                                                 <div class="sc_property sc_property_style_property-1">
 
                                                     <div class="sc_columns columns_wrap excursion-bg-color col-margin">
-                                                        <div class="ribbon"><span><?php echo "$", $room['price'] ?></span></div>
+                                                        <div class="ribbon"><span><?php echo "US$ ", number_format($room['price']); ?></span></div>
                                                         <div class="column-1_4 col-4 padding-col">
                                                             <img src="upload/room/<?php echo $room['image_name'] ?>" alt=""/>
                                                         </div>
@@ -113,7 +113,7 @@ $rooms = $ROOM->all();
                                                 <div class="sc_property sc_property_style_property-1">
 
                                                     <div class="sc_columns columns_wrap excursion-bg-color col-margin">
-                                                        <div class="ribbon"><span><?php echo "$", $room['price'] ?></span></div>
+                                                        <div class="ribbon"><span><?php echo "US$ ", number_format($room['price']); ?></span></div>
                                                         <div class="column-1_4 col-4 padding-col">
                                                             <img src="upload/room/<?php echo $room['image_name'] ?>" alt=""/>
                                                         </div>
